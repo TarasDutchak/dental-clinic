@@ -1,0 +1,299 @@
+footer.footer {
+    background: #2B2D42;
+    border-top: 1px solid #B82A2A;
+    padding: 48px 0 27px;
+}
+
+.footer__logo {
+    img {
+        max-width: 225px;
+    }
+}
+
+.footer__nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: #D00404;
+        position: absolute;
+        left: 0;
+        top: 40px;
+    }
+
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 7px 35px 7px 0;
+
+        a {
+            color: var(--white);
+            font-weight: 300;
+            font-size: 18px;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--main);
+            }
+        }
+    }
+}
+
+.footer__info {
+    max-width: 745px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #D00404;
+    flex-wrap: wrap;
+    display: inline-flex;
+    align-items: center;
+
+    .mapwrap {
+        width: 100%;
+        max-width: 324px;
+        flex: 0 0 324px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+
+        iframe {
+            width: 100%;
+            vertical-align: top;
+            height: 187px;
+        }
+    }
+
+    .footinfwrap {
+        width: 100%;
+        max-width: calc(100% - 324px);
+        flex: 0 0 calc(100% - 324px);
+        padding-left: 35px;
+        padding-right: 10px;
+
+        ul {
+            text-align: left;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                margin-bottom: 18px;
+                padding-left: 28px;
+
+                img {
+                    width: 24px;
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin: 0;
+                    color: var(--white);
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+
+                a {
+                    color: var(--white);
+                    font-weight: 300;
+                    font-size: 16px;
+                    display: block;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: var(--main);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__bottomsect {
+    margin-top: 30px;
+
+    .weinsoc {
+        margin: 0;
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 300;
+
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -3px;
+
+            svg {
+                vertical-align: top;
+
+                path {
+                    transition: 0.3s;
+                }
+            }
+
+            &:hover {
+                svg path {
+                    fill: var(--white);
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+            margin-right: 28px;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                height: 19px;
+                width: 1px;
+                background: #fff;
+                position: absolute;
+                right: -14px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &:nth-child(1) {
+                margin-right: 40px;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            p {
+                margin: 0;
+                color: var(--white);
+                font-size: 12px;
+                font-weight: 300;
+                position: relative;
+                padding-left: 21px;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            a {
+                color: var(--white);
+                font-size: 12px;
+                font-weight: 300;
+                display: block;
+                transition: 0.3s;
+
+                &:hover {
+                    color: var(--main);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1399.8px) {
+    .footer__nav li {
+        margin: 7px 25px 7px 0;
+    }
+
+    .footer__info .footinfwrap {
+        padding-left: 15px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .footer__nav {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer__info {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .footer__nav:after {
+        display: none;
+    }
+}
+
+@media(max-width:991.8px) {
+    .footer__bottomsect ul {
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .footer__info .footinfwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0 20px;
+    }
+
+    .footer__info .mapwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .footer__nav li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .footer__info .footinfwrap {
+        padding: 0 10px;
+    }
+
+    .footer__bottomsect ul {
+        flex-wrap: wrap;
+    }
+
+    .footer__bottomsect ul li:first-child {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer__bottomsect ul li p img {
+        position: relative;
+        vertical-align: middle;
+        margin-top: -3px;
+    }
+}

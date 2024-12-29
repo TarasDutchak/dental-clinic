@@ -1,0 +1,94 @@
+:root {
+    --main: #D00404;
+    --darkred: #B82A2A;
+    --primblue900: #2B2D42;
+    --primblue700: #465D8B;
+    --secblue: #EFF1F5;
+    --white: #fff;
+    --text: #181818;
+    --dark: #313131;
+}
+
+@mixin semi-titleh1 {
+    font-size: 48px;
+    font-weight: 600;
+
+    @media(max-width:1399.8px) {
+        font-size: 42px;
+    }
+}
+
+@mixin light-titleh1 {
+    font-size: 48px;
+    font-weight: 400;
+
+    @media(max-width:1399.8px) {
+        font-size: 42px;
+    }
+}
+
+@mixin reg-titleh2 {
+    font-size: 38px;
+    font-weight: 400;
+
+    @media(max-width:1399.8px) {
+        font-size: 32px;
+    }
+
+    @media(max-width:1199.8px) {
+        font-size: 26px;
+    }
+
+    @media(max-width:767.8px) {
+        font-size: 24px;
+    }
+
+    @media(max-width:767.8px) {
+        font-size: 21px;
+    }
+}
+
+@mixin med-titleh3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@mixin reg-titleh4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@mixin semi-titleh4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@mixin reg-titleh4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@mixin light-titleh4 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+@mixin textlight20 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@mixin textreg20 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@mixin textlight18 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@mixin textreg18 {
+    font-size: 18px;
+    font-weight: 400;
+}
