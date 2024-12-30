@@ -1,0 +1,66 @@
+{
+    "sourceFile": "#source/scss/_global.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1735545520079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735545535663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n     display: none;\r\n }\r\n \r\n .breadcrumbs {\r\n-    \r\n+    margin: 60px 0 4px;\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1735545558421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,8 +225,14 @@\n }\r\n \r\n .breadcrumbs {\r\n     margin: 60px 0 4px;\r\n+\r\n+    ul {\r\n+        list-style-type: none;\r\n+        margin: 0;\r\n+        padding: 0;\r\n+    }\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1735545563529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,8 +230,13 @@\n     ul {\r\n         list-style-type: none;\r\n         margin: 0;\r\n         padding: 0;\r\n+\r\n+        li {\r\n+            display: inline-block;\r\n+            vertical-align: middle;\r\n+        }\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1735545576634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -234,8 +234,13 @@\n \r\n         li {\r\n             display: inline-block;\r\n             vertical-align: middle;\r\n+            margin-right: 22px;\r\n+\r\n+            &:last-child {\r\n+                margin-right: 0;\r\n+            }\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1735545628697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n     display: none;\r\n }\r\n \r\n .breadcrumbs {\r\n-    margin: 60px 0 4px;\r\n+    margin: 40px 0 4px;\r\n \r\n     ul {\r\n         list-style-type: none;\r\n         margin: 0;\r\n"
+                },
+                {
+                    "date": 1735545649397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -235,8 +235,9 @@\n         li {\r\n             display: inline-block;\r\n             vertical-align: middle;\r\n             margin-right: 22px;\r\n+            font-size: 16px;\r\n \r\n             &:last-child {\r\n                 margin-right: 0;\r\n             }\r\n"
+                },
+                {
+                    "date": 1735545673391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -236,9 +236,14 @@\n             display: inline-block;\r\n             vertical-align: middle;\r\n             margin-right: 22px;\r\n             font-size: 16px;\r\n+            color: #000;\r\n \r\n+            a {\r\n+                color: #656565;\r\n+            }\r\n+\r\n             &:last-child {\r\n                 margin-right: 0;\r\n             }\r\n         }\r\n"
+                },
+                {
+                    "date": 1735545706407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -238,8 +238,17 @@\n             margin-right: 22px;\r\n             font-size: 16px;\r\n             color: #000;\r\n \r\n+            &::after {\r\n+                content: '';\r\n+                display: inline-block;\r\n+                width: 6px;\r\n+                height: 6px;\r\n+                border-radius: 50%;\r\n+                background: #201F1F;\r\n+            }\r\n+\r\n             a {\r\n                 color: #656565;\r\n             }\r\n \r\n"
+                },
+                {
+                    "date": 1735545787914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,8 +237,9 @@\n             vertical-align: middle;\r\n             margin-right: 22px;\r\n             font-size: 16px;\r\n             color: #000;\r\n+            position: relative;\r\n \r\n             &::after {\r\n                 content: '';\r\n                 display: inline-block;\r\n"
+                },
+                {
+                    "date": 1735545794768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -246,8 +246,11 @@\n                 width: 6px;\r\n                 height: 6px;\r\n                 border-radius: 50%;\r\n                 background: #201F1F;\r\n+                position: absolute;\r\n+                right: 0;\r\n+                top: 0;\r\n             }\r\n \r\n             a {\r\n                 color: #656565;\r\n"
+                },
+                {
+                    "date": 1735545809581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -251,8 +251,14 @@\n                 right: 0;\r\n                 top: 0;\r\n             }\r\n \r\n+            &:last-child {\r\n+                &::after {\r\n+                    display: none;\r\n+                }\r\n+            }\r\n+\r\n             a {\r\n                 color: #656565;\r\n             }\r\n \r\n"
+                },
+                {
+                    "date": 1735545845950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,10 +247,10 @@\n                 height: 6px;\r\n                 border-radius: 50%;\r\n                 background: #201F1F;\r\n                 position: absolute;\r\n-                right: 0;\r\n-                top: 0;\r\n+                right: -17px;\r\n+    top: 8px;\r\n             }\r\n \r\n             &:last-child {\r\n                 &::after {\r\n"
+                }
+            ],
+            "date": 1735545520079,
+            "name": "Commit-0",
+            "content": "@media(min-width:1400px) {\r\n    .container {\r\n        max-width: 1264px;\r\n    }\r\n\r\n    .container-large {\r\n        max-width: 1364px;\r\n    }\r\n\r\n    .container_header  {\r\n        max-width: 1321px;\r\n    }\r\n   \r\n}\r\n\r\n\r\n\r\n\r\n\r\n.row {\r\n    margin-left: -10px;\r\n    margin-right: -10px;\r\n\r\n    &>* {\r\n        padding-left: 10px;\r\n        padding-right: 10px;\r\n    }\r\n}\r\n\r\nbody * {\r\n    box-sizing: border-box;\r\n    -webkit-tap-highlight-color: transparent;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n\r\nbody {\r\n    font-family: 'Lato';\r\n    font-size: 20px;\r\n    margin: 0;\r\n    position: relative;\r\n\r\n    &.hidden {\r\n        overflow: hidden;\r\n    }\r\n}\r\n\r\np,\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin-top: 0;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n}\r\n\r\nbutton {\r\n    padding: 0;\r\n    border: none;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n\r\ninput::-webkit-outer-spin-button,\r\ninput::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n    margin: 0;\r\n}\r\n\r\ninput[type=number] {\r\n    -moz-appearance: textfield;\r\n}\r\n\r\ninput {\r\n    outline: none;\r\n}\r\n\r\nh1 {\r\n    color: #000;\r\n    font-weight: 600;\r\n    font-size: 48px;\r\n\r\n    &.light {\r\n        font-weight: 400;\r\n    }\r\n}\r\n\r\nh2 {\r\n    color: #000;\r\n    font-size: 38px;\r\n    font-weight: 400;\r\n}\r\n\r\nh3 {\r\n    color: #000;\r\n    font-size: 38px;\r\n    font-weight: 400;\r\n}\r\n\r\nh4 {\r\n    color: #000;\r\n    font-size: 24px;\r\n    font-weight: 600;\r\n}\r\n\r\n.text-center {\r\n    text-align: center;\r\n}\r\n\r\n.text-end {\r\n    text-align: right;\r\n}\r\n\r\n.redbtn {\r\n    background: #D00404;\r\n    padding: 18px 32px;\r\n    border-radius: 20px;\r\n    color: var(--white);\r\n    font-size: 16px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n    box-shadow: 0 4px 4px rgba(#D00404, 0.15);\r\n    transition: 0.3s;\r\n    display: inline-block;\r\n\r\n    &:hover {\r\n        background: var(--darkred);\r\n    }\r\n\r\n    &:active {\r\n        background: var(--primblue900);\r\n    }\r\n\r\n    &.disabled {\r\n        background: #A2A2A2;\r\n        pointer-events: none;\r\n    }\r\n}\r\n\r\n.bluebtn {\r\n    background: var(--primblue900);\r\n    border: 1px solid var(--primblue900);\r\n    padding: 16px 30px;\r\n    border-radius: 20px;\r\n    color: var(--white);\r\n    font-size: 16px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n    transition: 0.3s;\r\n    display: inline-block;\r\n    cursor: pointer;\r\n\r\n    &:hover {\r\n        background: var(--white);\r\n        border-color: var(--main);\r\n        color: var(--primblue900);\r\n    }\r\n\r\n    &:active {\r\n        background: var(--primblue900);\r\n        color: var(--white);\r\n    }\r\n\r\n    &.disabled {\r\n        background: #A2A2A2;\r\n        border-color: #A2A2A2;\r\n        pointer-events: none;\r\n    }\r\n}\r\n\r\n.borderbtn {\r\n    background: var(--white);\r\n    border: 1px solid #D00404;\r\n    padding: 16px 30px;\r\n    border-radius: 20px;\r\n    color: #181818;\r\n    font-size: 16px;\r\n    font-weight: 500;\r\n    text-transform: uppercase;\r\n    transition: 0.3s;\r\n    display: inline-block;\r\n\r\n    &:hover {\r\n        background: var(--white);\r\n        border-color: #2B2D42;\r\n        color: var(--main);\r\n    }\r\n\r\n    &:active {\r\n        border-color: #D00404;\r\n        background: var(--white);\r\n        color: #181818;\r\n    }\r\n\r\n    &.disabled {\r\n        background: #A2A2A2;\r\n        border-color: #A2A2A2;\r\n        pointer-events: none;\r\n    }\r\n}\r\n\r\n.container-large {\r\n    margin: 0 auto;\r\n    width: 100%;\r\n}\r\n\r\nmain.main {\r\n    padding-top: 150px;\r\n}\r\n\r\n.d-flex {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n\r\n.mobshow {\r\n    display: none;\r\n}\r\n\r\n.breadcrumbs {\r\n    \r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n@media(max-width:767.8px) {\r\n    main.main {\r\n        padding-top: 100px;\r\n    }\r\n}\r\n\r\n@media(max-width:575.8px) {\r\n    .mobshow {\r\n        display: block;\r\n    }\r\n\r\n    main.main {\r\n        padding-top: 70px;\r\n    }\r\n\r\n    .redbtn {\r\n        padding: 16px 25px;\r\n    }\r\n}"
+        }
+    ]
+}

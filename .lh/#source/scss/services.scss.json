@@ -1,0 +1,402 @@
+{
+    "sourceFile": "#source/scss/services.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 96,
+            "patches": [
+                {
+                    "date": 1735544174115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735544185534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n \n \n .service-grid {\n-    \n+    display: grid;\n+grid-template-columns: repeat(3, 1fr);\n+grid-template-rows: repeat(6, 1fr);\n+grid-column-gap: 12px;\n+grid-row-gap: 12px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544231950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n+.service-grid {\n+    display: grid;\n+    grid-template-columns: repeat(3, 1fr);\n+    grid-template-rows: repeat(6, 1fr);\n+    gap: 12px;\n \n+    .item {\n \n-.service-grid {\n-    display: grid;\n-grid-template-columns: repeat(3, 1fr);\n-grid-template-rows: repeat(6, 1fr);\n-grid-column-gap: 12px;\n-grid-row-gap: 12px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544240858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n     grid-template-rows: repeat(6, 1fr);\n     gap: 12px;\n \n     .item {\n-\n+        &:last-child {\n+            grid-column-start: 2;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544623064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     grid-template-columns: repeat(3, 1fr);\n     grid-template-rows: repeat(6, 1fr);\n     gap: 12px;\n \n-    .item {\n+    .service-item {\n         &:last-child {\n             grid-column-start: 2;\n         }\n     }\n"
+                },
+                {
+                    "date": 1735544663303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,9 @@\n         &:last-child {\n             grid-column-start: 2;\n         }\n     }\n+}\n+\n+.service-topsect {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544672853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n     }\n }\n \n .service-topsect {\n-    \n+    text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544691347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,7 @@\n }\n \n .service-topsect {\n     text-align: center;\n+    padding: 80px 0 28px;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544712716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,10 @@\n .service-topsect {\n     text-align: center;\n     padding: 80px 0 28px;\n \n+    h1 {\n+        font-size: 28px;\n+        font-weight: 400;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544722436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     text-align: center;\n     padding: 80px 0 28px;\n \n     h1 {\n-        font-size: 28px;\n+        font-size: 38px;\n         font-weight: 400;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544743046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n     text-align: center;\n     padding: 80px 0 28px;\n \n     h1 {\n-        font-size: 38px;\n-        font-weight: 400;\n+       @include reg-titleh2;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544754076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     text-align: center;\n     padding: 80px 0 28px;\n \n     h1 {\n-       @include reg-titleh2;\n+        @include reg-titleh2;\n+        text-transform: uppercase;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544761451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,8 @@\n \n     h1 {\n         @include reg-titleh2;\n         text-transform: uppercase;\n+        margin-bottom: 28px;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544780866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,10 @@\n         text-transform: uppercase;\n         margin-bottom: 28px;\n     }\n \n+    p {\n+        max-width: 850px;\n+        margin: 0 auto;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544793890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     }\n \n     p {\n         max-width: 850px;\n-        margin: 0 auto;\n+        margin: 0 auto 56px;\n+\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544807896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,8 @@\n \n     p {\n         max-width: 850px;\n         margin: 0 auto 56px;\n-\n+        color: #000;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735544905068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,8 @@\n     p {\n         max-width: 850px;\n         margin: 0 auto 56px;\n         color: #000;\n+        @include textlight20;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735545061948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n     .service-item {\n         &:last-child {\n             grid-column-start: 2;\n         }\n+\n+        \n     }\n }\n \n .service-topsect {\n"
+                },
+                {
+                    "date": 1735545101372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n     grid-template-rows: repeat(6, 1fr);\n     gap: 12px;\n \n     .service-item {\n+        border: 1px solid #181818;\n+\n         &:last-child {\n             grid-column-start: 2;\n         }\n \n"
+                },
+                {
+                    "date": 1735545106576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     gap: 12px;\n \n     .service-item {\n         border: 1px solid #181818;\n+        height: 151px;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545121768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n     gap: 12px;\n \n     .service-item {\n         border: 1px solid #181818;\n-        height: 151px;\n+        min-height: 151px;\n+        display: flex;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545128095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n     .service-item {\n         border: 1px solid #181818;\n         min-height: 151px;\n         display: flex;\n+        align-items: center;\n+        justify-content: center;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545172756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n         min-height: 151px;\n         display: flex;\n         align-items: center;\n         justify-content: center;\n+        @include reg-titleh4;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545181813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         display: flex;\n         align-items: center;\n         justify-content: center;\n         @include reg-titleh4;\n+        text-transform: uppercase;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545208205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n         align-items: center;\n         justify-content: center;\n         @include reg-titleh4;\n         text-transform: uppercase;\n+        color: #000;\n+        transition: 0.3s;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545242081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,12 @@\n         &:last-child {\n             grid-column-start: 2;\n         }\n \n+        &:hover {\n+            background: #181818;\n+            color: var(--white);\n+        }\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735545275157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         @include reg-titleh4;\n         text-transform: uppercase;\n         color: #000;\n         transition: 0.3s;\n+        padding: 10px 15px;\n \n         &:last-child {\n             grid-column-start: 2;\n         }\n"
+                },
+                {
+                    "date": 1735545380452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\n \n .service-topsect {\n     text-align: center;\n-    padding: 80px 0 28px;\n+    padding: 80px 0 78px;\n \n     h1 {\n         @include reg-titleh2;\n         text-transform: uppercase;\n"
+                },
+                {
+                    "date": 1735545878583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\n \n .service-topsect {\n     text-align: center;\n-    padding: 80px 0 78px;\n+    padding: 60px 0 78px;\n \n     h1 {\n         @include reg-titleh2;\n         text-transform: uppercase;\n"
+                },
+                {
+                    "date": 1735545930573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     text-align: center;\n     padding: 60px 0 78px;\n \n     h1 {\n-        @include reg-titleh2;\n+        @include semi-titleh1;\n         text-transform: uppercase;\n         margin-bottom: 28px;\n     }\n \n"
+                },
+                {
+                    "date": 1735545937901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,8 @@\n     padding: 60px 0 78px;\n \n     h1 {\n         @include semi-titleh1;\n-        text-transform: uppercase;\n         margin-bottom: 28px;\n     }\n \n     p {\n"
+                },
+                {
+                    "date": 1735545956027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,12 @@\n \n     h1 {\n         @include semi-titleh1;\n         margin-bottom: 28px;\n+\n+        span {\n+            color: var(--darkred);\n+        }\n     }\n \n     p {\n         max-width: 850px;\n"
+                },
+                {
+                    "date": 1735545990171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     }\n \n     p {\n         max-width: 850px;\n-        margin: 0 auto 56px;\n+        margin: 0 auto 80px;\n         color: #000;\n         @include textlight20;\n     }\n \n"
+                },
+                {
+                    "date": 1735546015587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     grid-template-rows: repeat(6, 1fr);\n     gap: 12px;\n \n     .service-item {\n-        border: 1px solid #181818;\n+        border: 1px solid var(--main);\n         min-height: 151px;\n         display: flex;\n         align-items: center;\n         justify-content: center;\n"
+                },
+                {
+                    "date": 1735546084880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         }\n \n         &:hover {\n             background: #181818;\n-            color: var(--white);\n+            color: var(--primblue900);\n         }\n         \n     }\n }\n"
+                },
+                {
+                    "date": 1735546091531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,12 @@\n         &:hover {\n             background: #181818;\n             color: var(--primblue900);\n         }\n+\n+        &:active {\n+            \n+        }\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735546111260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,14 +20,14 @@\n             grid-column-start: 2;\n         }\n \n         &:hover {\n-            background: #181818;\n-            color: var(--primblue900);\n+            background: var(--primblue900);\n+            color: var(--white);\n         }\n \n         &:active {\n-            \n+\n         }\n         \n     }\n }\n"
+                },
+                {
+                    "date": 1735546140503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n \n         &:hover {\n             background: var(--primblue900);\n             color: var(--white);\n+            border-color: var(--primblue900);\n         }\n \n         &:active {\n \n"
+                },
+                {
+                    "date": 1735546168797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n             border-color: var(--primblue900);\n         }\n \n         &:active {\n-\n+            background: #D00404;\n         }\n         \n     }\n }\n"
+                },
+                {
+                    "date": 1735546210357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n         }\n \n         &:active {\n             background: #D00404;\n+            border-color: #D00404;\n         }\n         \n     }\n }\n"
+                },
+                {
+                    "date": 1735546662314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,5 +53,9 @@\n         color: #000;\n         @include textlight20;\n     }\n \n+}\n+\n+.result.lp {\n+    padding-bottom: 28px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735546746373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,9 @@\n }\n \n .result.lp {\n     padding-bottom: 28px;\n+}\n+\n+.pb128 {\n+    padding-bottom: 128px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735546893185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,11 @@\n }\n \n .pb128 {\n     padding-bottom: 128px;\n+}\n+\n+@media(max-width:1399.8px) {\n+    .pb128 {\n+        padding-bottom: 80px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735546913759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,5 +67,9 @@\n @media(max-width:1399.8px) {\n     .pb128 {\n         padding-bottom: 80px;\n     }\n+\n+    .teamsect {\n+        padding: 80px 0 28px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735546937055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,5 +71,9 @@\n \n     .teamsect {\n         padding: 80px 0 28px;\n     }\n+\n+    .service-topsect p {\n+        margin-bottom: 60px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735546953238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,9 @@\n \n     .service-topsect p {\n         margin-bottom: 60px;\n     }\n+\n+    .breadcrumbs {\n+        margin-top: 30px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547015151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,5 +79,9 @@\n \n     .breadcrumbs {\n         margin-top: 30px;\n     }\n+}\n+\n+@media(max-width:1399.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547033850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,7 +81,9 @@\n         margin-top: 30px;\n     }\n }\n \n-@media(max-width:1399.8px) {\n-    \n+@media(max-width:1199.8px) {\n+    .service-grid .service-item {\n+        font-size: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547094275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,12 @@\n \n     .breadcrumbs {\n         margin-top: 30px;\n     }\n+\n+    .service-topsect p {\n+        font-size: 18px;\n+    }\n }\n \n @media(max-width:1199.8px) {\n     .service-grid .service-item {\n"
+                },
+                {
+                    "date": 1735547104784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,5 +89,9 @@\n @media(max-width:1199.8px) {\n     .service-grid .service-item {\n         font-size: 20px;\n     }\n+\n+    .service-topsect p {\n+        margin-bottom: 30px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547125822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,5 +93,9 @@\n \n     .service-topsect p {\n         margin-bottom: 30px;\n     }\n+\n+    .service-topsect h1 {\n+        margin-bottom: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547140931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,9 @@\n \n @media(max-width:1199.8px) {\n     .service-grid .service-item {\n         font-size: 20px;\n+        min-height: 120px;\n     }\n \n     .service-topsect p {\n         margin-bottom: 30px;\n"
+                },
+                {
+                    "date": 1735547175229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,5 +98,9 @@\n \n     .service-topsect h1 {\n         margin-bottom: 20px;\n     }\n+\n+    .service-topsect {\n+        padding-bottom: 70px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547202696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,5 +102,9 @@\n \n     .service-topsect {\n         padding-bottom: 70px;\n     }\n+    \n+    .teamsect {\n+        padding: 70px 0 28px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547265583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,5 +106,9 @@\n     \n     .teamsect {\n         padding: 70px 0 28px;\n     }\n+}\n+\n+@media(max-width:991.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547271729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,16 +99,16 @@\n     .service-topsect h1 {\n         margin-bottom: 20px;\n     }\n \n+   \n+}\n+\n+@media(max-width:991.8px) {\n     .service-topsect {\n         padding-bottom: 70px;\n     }\n     \n     .teamsect {\n         padding: 70px 0 28px;\n     }\n-}\n-\n-@media(max-width:991.8px) {\n-    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547277912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,8 @@\n \n     .service-topsect h1 {\n         margin-bottom: 20px;\n     }\n-\n    \n }\n \n @media(max-width:991.8px) {\n@@ -110,5 +109,9 @@\n     \n     .teamsect {\n         padding: 70px 0 28px;\n     }\n+}\n+\n+@media(max-width:991.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547286052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,7 +111,9 @@\n         padding: 70px 0 28px;\n     }\n }\n \n-@media(max-width:991.8px) {\n-    \n+@media(max-width:767.8px) {\n+    .service-topsect h1 {\n+        font-size: 32px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547326597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,12 @@\n         &:active {\n             background: #D00404;\n             border-color: #D00404;\n         }\n+\n+        &:nth-child(1) {\n+            \n+        }\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735547383465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n             background: #D00404;\n             border-color: #D00404;\n         }\n \n-        &:nth-child(1) {\n-            \n+        &.br-lt {\n+            border-radius: 20px 0 0 0;\n         }\n         \n     }\n }\n"
+                },
+                {
+                    "date": 1735547416657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,12 @@\n \n         &.br-lt {\n             border-radius: 20px 0 0 0;\n         }\n+\n+        &.br-rt {\n+            border-radius: 0 20px 0 0;\n+        }\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735547460256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,12 @@\n \n         &.br-rt {\n             border-radius: 0 20px 0 0;\n         }\n+\n+        &.br-lb {}\n+\n+        &.br-rb {}\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735547498272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,11 @@\n         &.br-rt {\n             border-radius: 0 20px 0 0;\n         }\n \n-        &.br-lb {}\n+        &.br-lb {\n+            border-radius: 0 0 0 20px;\n+        }\n \n         &.br-rb {}\n         \n     }\n"
+                },
+                {
+                    "date": 1735547507400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,11 @@\n         &.br-lb {\n             border-radius: 0 0 0 20px;\n         }\n \n-        &.br-rb {}\n+        &.br-rb {\n+            border-radius: 0 0 20px 0;\n+        }\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735547518181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,12 @@\n \n         &.br-rb {\n             border-radius: 0 0 20px 0;\n         }\n+\n+        &.br-rlb {\n+            border-radius: 0 0 20px 0;\n+        }\n         \n     }\n }\n \n"
+                },
+                {
+                    "date": 1735547557715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,10 @@\n         &.br-rb {\n             border-radius: 0 0 20px 0;\n         }\n \n-        &.br-rlb {\n-            border-radius: 0 0 20px 0;\n+        &.br-b {\n+            border-radius: 0 0 20px 20px;\n         }\n         \n     }\n }\n@@ -135,5 +135,12 @@\n @media(max-width:767.8px) {\n     .service-topsect h1 {\n         font-size: 32px;\n     }\n+\n+    .service-grid {\n+        display: grid;\n+        grid-template-columns: repeat(3, 1fr);\n+        grid-template-rows: repeat(6, 1fr);\n+        gap: 12px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547568420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n     }\n \n     .service-grid {\n         display: grid;\n-        grid-template-columns: repeat(3, 1fr);\n+        grid-template-columns: repeat(2, 1fr);\n         grid-template-rows: repeat(6, 1fr);\n         gap: 12px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547577553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,8 @@\n \n     .service-grid {\n         display: grid;\n         grid-template-columns: repeat(2, 1fr);\n-        grid-template-rows: repeat(6, 1fr);\n+        grid-template-rows: repeat(8, 1fr);\n         gap: 12px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547628032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n             background: #D00404;\n             border-color: #D00404;\n         }\n \n-        &.br-lt {\n+        &:nth-child(1) {\n             border-radius: 20px 0 0 0;\n         }\n \n-        &.br-rt {\n+        &:nth-child(3) {\n             border-radius: 0 20px 0 0;\n         }\n \n         &.br-lb {\n"
+                },
+                {
+                    "date": 1735547659497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,17 +38,17 @@\n         &:nth-child(3) {\n             border-radius: 0 20px 0 0;\n         }\n \n-        &.br-lb {\n+        &:nth-last-child(4) {\n             border-radius: 0 0 0 20px;\n         }\n \n-        &.br-rb {\n+        &:nth-last-child(2) {\n             border-radius: 0 0 20px 0;\n         }\n \n-        &.br-b {\n+        &:last-child {\n             border-radius: 0 0 20px 20px;\n         }\n         \n     }\n"
+                },
+                {
+                    "date": 1735547690572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,5 +142,29 @@\n         grid-template-columns: repeat(2, 1fr);\n         grid-template-rows: repeat(8, 1fr);\n         gap: 12px;\n     }\n+\n+    &:nth-child(1) {\n+        border-radius: 20px 0 0 0;\n+    }\n+\n+    &:nth-child(3) {\n+        border-radius: 0 0 20px 0;\n+    }\n+\n+    &:nth-child(3) {\n+        border-radius: 0 0 0 0;\n+    }\n+\n+    &:nth-last-child(4) {\n+        border-radius: 0 0 0 20px;\n+    }\n+\n+    &:nth-last-child(2) {\n+        border-radius: 0 0 20px 0;\n+    }\n+\n+    &:last-child {\n+        border-radius: 0 0 20px 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547703252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,13 +143,10 @@\n         grid-template-rows: repeat(8, 1fr);\n         gap: 12px;\n     }\n \n-    &:nth-child(1) {\n-        border-radius: 20px 0 0 0;\n-    }\n \n-    &:nth-child(3) {\n+    &:nth-child(2) {\n         border-radius: 0 0 20px 0;\n     }\n \n     &:nth-child(3) {\n"
+                },
+                {
+                    "date": 1735547721075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,25 +143,28 @@\n         grid-template-rows: repeat(8, 1fr);\n         gap: 12px;\n     }\n \n-\n-    &:nth-child(2) {\n-        border-radius: 0 0 20px 0;\n+    .service-item {\n+        &:nth-child(2) {\n+            border-radius: 0 0 20px 0;\n+        }\n+    \n+        &:nth-child(3) {\n+            border-radius: 0 0 0 0;\n+        }\n+    \n+        &:nth-last-child(4) {\n+            border-radius: 0 0 0 20px;\n+        }\n+    \n+        &:nth-last-child(2) {\n+            border-radius: 0 0 20px 0;\n+        }\n+    \n+        &:last-child {\n+            border-radius: 0 0 20px 20px;\n+        }\n     }\n \n-    &:nth-child(3) {\n-        border-radius: 0 0 0 0;\n-    }\n-\n-    &:nth-last-child(4) {\n-        border-radius: 0 0 0 20px;\n-    }\n-\n-    &:nth-last-child(2) {\n-        border-radius: 0 0 20px 0;\n-    }\n-\n-    &:last-child {\n-        border-radius: 0 0 20px 20px;\n-    }\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547728150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n     }\n \n     .service-item {\n         &:nth-child(2) {\n-            border-radius: 0 0 20px 0;\n+            border-radius: 0 20px 0 0;\n         }\n     \n         &:nth-child(3) {\n             border-radius: 0 0 0 0;\n"
+                },
+                {
+                    "date": 1735547734839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n             border-radius: 0 20px 0 0;\n         }\n     \n         &:nth-child(3) {\n-            border-radius: 0 0 0 0;\n+            border-radius: 0;\n         }\n     \n         &:nth-last-child(4) {\n             border-radius: 0 0 0 20px;\n"
+                },
+                {
+                    "date": 1735547755042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,30 +141,32 @@\n         display: grid;\n         grid-template-columns: repeat(2, 1fr);\n         grid-template-rows: repeat(8, 1fr);\n         gap: 12px;\n-    }\n \n-    .service-item {\n-        &:nth-child(2) {\n-            border-radius: 0 20px 0 0;\n+        .service-item {\n+            &:nth-child(2) {\n+                border-radius: 0 20px 0 0;\n+            }\n+        \n+            &:nth-child(3) {\n+                border-radius: 0;\n+            }\n+        \n+            &:nth-last-child(4) {\n+                border-radius: 0 0 0 20px;\n+            }\n+        \n+            &:nth-last-child(2) {\n+                border-radius: 0 0 20px 0;\n+            }\n+        \n+            &:last-child {\n+                border-radius: 0 0 20px 20px;\n+            }\n         }\n-    \n-        &:nth-child(3) {\n-            border-radius: 0;\n-        }\n-    \n-        &:nth-last-child(4) {\n-            border-radius: 0 0 0 20px;\n-        }\n-    \n-        &:nth-last-child(2) {\n-            border-radius: 0 0 20px 0;\n-        }\n-    \n-        &:last-child {\n-            border-radius: 0 0 20px 20px;\n-        }\n     }\n \n     \n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547766829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,9 +152,9 @@\n                 border-radius: 0;\n             }\n         \n             &:nth-last-child(4) {\n-                border-radius: 0 0 0 20px;\n+                border-radius: 0 0 0 0;\n             }\n         \n             &:nth-last-child(2) {\n                 border-radius: 0 0 20px 0;\n"
+                },
+                {
+                    "date": 1735547797698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,13 +152,13 @@\n                 border-radius: 0;\n             }\n         \n             &:nth-last-child(4) {\n-                border-radius: 0 0 0 0;\n+                border-radius: 0;\n             }\n         \n             &:nth-last-child(2) {\n-                border-radius: 0 0 20px 0;\n+                border-radius: 0 0 0 20px;\n             }\n         \n             &:last-child {\n                 border-radius: 0 0 20px 20px;\n"
+                },
+                {
+                    "date": 1735547804695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n                 border-radius: 0 0 0 20px;\n             }\n         \n             &:last-child {\n-                border-radius: 0 0 20px 20px;\n+                border-radius: 0 0 20px 0;\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1735547825887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,174 @@\n+.service-grid {\n+    display: grid;\n+    grid-template-columns: repeat(3, 1fr);\n+    grid-template-rows: repeat(6, 1fr);\n+    gap: 12px;\n+\n+    .service-item {\n+        border: 1px solid var(--main);\n+        min-height: 151px;\n+        display: flex;\n+        align-items: center;\n+        justify-content: center;\n+        @include reg-titleh4;\n+        text-transform: uppercase;\n+        color: #000;\n+        transition: 0.3s;\n+        padding: 10px 15px;\n+\n+        &:last-child {\n+            grid-column-start: 2;\n+        }\n+\n+        &:hover {\n+            background: var(--primblue900);\n+            color: var(--white);\n+            border-color: var(--primblue900);\n+        }\n+\n+        &:active {\n+            background: #D00404;\n+            border-color: #D00404;\n+        }\n+\n+        &:nth-child(1) {\n+            border-radius: 20px 0 0 0;\n+        }\n+\n+        &:nth-child(3) {\n+            border-radius: 0 20px 0 0;\n+        }\n+\n+        &:nth-last-child(4) {\n+            border-radius: 0 0 0 20px;\n+        }\n+\n+        &:nth-last-child(2) {\n+            border-radius: 0 0 20px 0;\n+        }\n+\n+        &:last-child {\n+            border-radius: 0 0 20px 20px;\n+        }\n+        \n+    }\n+}\n+\n+.service-topsect {\n+    text-align: center;\n+    padding: 60px 0 78px;\n+\n+    h1 {\n+        @include semi-titleh1;\n+        margin-bottom: 28px;\n+\n+        span {\n+            color: var(--darkred);\n+        }\n+    }\n+\n+    p {\n+        max-width: 850px;\n+        margin: 0 auto 80px;\n+        color: #000;\n+        @include textlight20;\n+    }\n+\n+}\n+\n+.result.lp {\n+    padding-bottom: 28px;\n+}\n+\n+.pb128 {\n+    padding-bottom: 128px;\n+}\n+\n+@media(max-width:1399.8px) {\n+    .pb128 {\n+        padding-bottom: 80px;\n+    }\n+\n+    .teamsect {\n+        padding: 80px 0 28px;\n+    }\n+\n+    .service-topsect p {\n+        margin-bottom: 60px;\n+    }\n+\n+    .breadcrumbs {\n+        margin-top: 30px;\n+    }\n+\n+    .service-topsect p {\n+        font-size: 18px;\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .service-grid .service-item {\n+        font-size: 20px;\n+        min-height: 120px;\n+    }\n+\n+    .service-topsect p {\n+        margin-bottom: 30px;\n+    }\n+\n+    .service-topsect h1 {\n+        margin-bottom: 20px;\n+    }\n+   \n+}\n+\n+@media(max-width:991.8px) {\n+    .service-topsect {\n+        padding-bottom: 70px;\n+    }\n+    \n+    .teamsect {\n+        padding: 70px 0 28px;\n+    }\n+}\n+\n+@media(max-width:767.8px) {\n+    .service-topsect h1 {\n+        font-size: 32px;\n+    }\n+\n+    .service-grid {\n+        display: grid;\n+        grid-template-columns: repeat(2, 1fr);\n+        grid-template-rows: repeat(8, 1fr);\n+        gap: 12px;\n+\n+        .service-item {\n+            &:nth-child(2) {\n+                border-radius: 0 20px 0 0;\n+            }\n+        \n+            &:nth-child(3) {\n+                border-radius: 0;\n+            }\n+        \n+            &:nth-last-child(4) {\n+                border-radius: 0;\n+            }\n+        \n+            &:nth-last-child(2) {\n+                border-radius: 0 0 0 20px;\n+            }\n+        \n+            &:last-child {\n+                border-radius: 0 0 20px 0;\n+            }\n+        }\n+    }\n+\n+    .service-topsect {\n+        padding-bottom: 30px;\n+    }\n+\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547870511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n \n         &:last-child {\n             border-radius: 0 0 20px 20px;\n         }\n-        \n+\n     }\n }\n \n .service-topsect {\n@@ -118,16 +118,16 @@\n \n     .service-topsect h1 {\n         margin-bottom: 20px;\n     }\n-   \n+\n }\n \n @media(max-width:991.8px) {\n     .service-topsect {\n         padding-bottom: 70px;\n     }\n-    \n+\n     .teamsect {\n         padding: 70px 0 28px;\n     }\n }\n@@ -146,21 +146,21 @@\n         .service-item {\n             &:nth-child(2) {\n                 border-radius: 0 20px 0 0;\n             }\n-        \n+\n             &:nth-child(3) {\n                 border-radius: 0;\n             }\n-        \n+\n             &:nth-last-child(4) {\n                 border-radius: 0;\n             }\n-        \n+\n             &:nth-last-child(2) {\n                 border-radius: 0 0 0 20px;\n             }\n-        \n+\n             &:last-child {\n                 border-radius: 0 0 20px 0;\n             }\n         }\n@@ -169,178 +169,11 @@\n     .service-topsect {\n         padding-bottom: 30px;\n     }\n \n-    \n-}\n-.service-grid {\n-    display: grid;\n-    grid-template-columns: repeat(3, 1fr);\n-    grid-template-rows: repeat(6, 1fr);\n-    gap: 12px;\n+    // teamsect pb128\n \n-    .service-item {\n-        border: 1px solid var(--main);\n-        min-height: 151px;\n-        display: flex;\n-        align-items: center;\n-        justify-content: center;\n-        @include reg-titleh4;\n-        text-transform: uppercase;\n-        color: #000;\n-        transition: 0.3s;\n-        padding: 10px 15px;\n-\n-        &:last-child {\n-            grid-column-start: 2;\n-        }\n-\n-        &:hover {\n-            background: var(--primblue900);\n-            color: var(--white);\n-            border-color: var(--primblue900);\n-        }\n-\n-        &:active {\n-            background: #D00404;\n-            border-color: #D00404;\n-        }\n-\n-        &:nth-child(1) {\n-            border-radius: 20px 0 0 0;\n-        }\n-\n-        &:nth-child(3) {\n-            border-radius: 0 20px 0 0;\n-        }\n-\n-        &:nth-last-child(4) {\n-            border-radius: 0 0 0 20px;\n-        }\n-\n-        &:nth-last-child(2) {\n-            border-radius: 0 0 20px 0;\n-        }\n-\n-        &:last-child {\n-            border-radius: 0 0 20px 20px;\n-        }\n-        \n-    }\n-}\n-\n-.service-topsect {\n-    text-align: center;\n-    padding: 60px 0 78px;\n-\n-    h1 {\n-        @include semi-titleh1;\n-        margin-bottom: 28px;\n-\n-        span {\n-            color: var(--darkred);\n-        }\n-    }\n-\n-    p {\n-        max-width: 850px;\n-        margin: 0 auto 80px;\n-        color: #000;\n-        @include textlight20;\n-    }\n-\n-}\n-\n-.result.lp {\n-    padding-bottom: 28px;\n-}\n-\n-.pb128 {\n-    padding-bottom: 128px;\n-}\n-\n-@media(max-width:1399.8px) {\n     .pb128 {\n-        padding-bottom: 80px;\n-    }\n-\n-    .teamsect {\n-        padding: 80px 0 28px;\n-    }\n-\n-    .service-topsect p {\n-        margin-bottom: 60px;\n-    }\n-\n-    .breadcrumbs {\n-        margin-top: 30px;\n-    }\n-\n-    .service-topsect p {\n-        font-size: 18px;\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-    .service-grid .service-item {\n-        font-size: 20px;\n-        min-height: 120px;\n-    }\n-\n-    .service-topsect p {\n-        margin-bottom: 30px;\n-    }\n-\n-    .service-topsect h1 {\n-        margin-bottom: 20px;\n-    }\n-   \n-}\n-\n-@media(max-width:991.8px) {\n-    .service-topsect {\n         padding-bottom: 70px;\n     }\n-    \n-    .teamsect {\n-        padding: 70px 0 28px;\n-    }\n-}\n \n-@media(max-width:767.8px) {\n-    .service-topsect h1 {\n-        font-size: 32px;\n-    }\n-\n-    .service-grid {\n-        display: grid;\n-        grid-template-columns: repeat(2, 1fr);\n-        grid-template-rows: repeat(8, 1fr);\n-        gap: 12px;\n-\n-        .service-item {\n-            &:nth-child(2) {\n-                border-radius: 0 20px 0 0;\n-            }\n-        \n-            &:nth-child(3) {\n-                border-radius: 0;\n-            }\n-        \n-            &:nth-last-child(4) {\n-                border-radius: 0;\n-            }\n-        \n-            &:nth-last-child(2) {\n-                border-radius: 0 0 0 20px;\n-            }\n-        \n-            &:last-child {\n-                border-radius: 0 0 20px 0;\n-            }\n-        }\n-    }\n-\n-    \n-\n-    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547882498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,10 +169,8 @@\n     .service-topsect {\n         padding-bottom: 30px;\n     }\n \n-    // teamsect pb128\n-\n     .pb128 {\n         padding-bottom: 70px;\n     }\n \n"
+                },
+                {
+                    "date": 1735547914646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,5 +173,9 @@\n     .pb128 {\n         padding-bottom: 70px;\n     }\n \n+}\n+\n+@media(max-width:575.8px) {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547933534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,6 +176,12 @@\n \n }\n \n @media(max-width:575.8px) {\n+    .service-grid .service-item {\n+        font-size: 16px;\n+        min-height: 120px;\n+    }\n \n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547949666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,11 +177,11 @@\n }\n \n @media(max-width:575.8px) {\n     .service-grid .service-item {\n-        font-size: 16px;\n-        min-height: 120px;\n+        font-size: 15px;\n+        min-height: 100px;\n     }\n \n \n-    \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547957653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,9 +177,9 @@\n }\n \n @media(max-width:575.8px) {\n     .service-grid .service-item {\n-        font-size: 15px;\n+        font-size: 14px;\n         min-height: 100px;\n     }\n \n \n"
+                },
+                {
+                    "date": 1735547973864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,7 +181,9 @@\n         font-size: 14px;\n         min-height: 100px;\n     }\n \n+    .service-topsect h1 {\n+        font-size: 28px;\n+    }\n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735547987189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,6 +184,9 @@\n \n     .service-topsect h1 {\n         font-size: 28px;\n     }\n-\n+    \n+    .breadcrumbs {\n+        margin-top: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548004244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,5 +188,11 @@\n     \n     .breadcrumbs {\n         margin-top: 20px;\n     }\n+\n+    .service-topsect {\n+        padding: 50px 0 40px;\n+    }\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548024882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,8 +173,12 @@\n     .pb128 {\n         padding-bottom: 70px;\n     }\n \n+    .service-topsect p {\n+        font-size: 16px;\n+    }\n+\n }\n \n @media(max-width:575.8px) {\n     .service-grid .service-item {\n"
+                },
+                {
+                    "date": 1735548039075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -194,9 +194,9 @@\n         margin-top: 20px;\n     }\n \n     .service-topsect {\n-        padding: 50px 0 40px;\n+        padding: 40px 0;\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548055986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,6 +197,9 @@\n     .service-topsect {\n         padding: 40px 0;\n     }\n \n+    .breadcrumbs ul li {\n+        font-size: 14px;\n+    }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548075126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -194,9 +194,9 @@\n         margin-top: 20px;\n     }\n \n     .service-topsect {\n-        padding: 40px 0;\n+        padding: 30px 0 40px;\n     }\n \n     .breadcrumbs ul li {\n         font-size: 14px;\n"
+                },
+                {
+                    "date": 1735548099778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,5 +201,9 @@\n     .breadcrumbs ul li {\n         font-size: 14px;\n     }\n \n+    .result.lp {\n+        padding-bottom: 20px;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548119950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,5 +205,9 @@\n     .result.lp {\n         padding-bottom: 20px;\n     }\n \n+    .teamsect {\n+        padding-top: 50px;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548128489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,8 +206,8 @@\n         padding-bottom: 20px;\n     }\n \n     .teamsect {\n-        padding-top: 50px;\n+        // padding-top: 50px;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735548151034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,8 +206,12 @@\n         padding-bottom: 20px;\n     }\n \n     .teamsect {\n-        // padding-top: 50px;\n+        padding-top: 50px;\n     }\n \n+    .pb128 {\n+        padding-bottom: 50px;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1735544174115,
+            "name": "Commit-0",
+            "content": "\n\n.service-grid {\n    \n}"
+        }
+    ]
+}

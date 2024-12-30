@@ -48,34 +48,36 @@ $(document).ready(function () {
     });
 
     // головна - лічильник
-    const counters = document.querySelectorAll('.counter');
-    const animateCounters = () => {
-        counters.forEach(counter => {
-            const target = +counter.dataset.target;
-            const updateCounter = () => {
-                const current = +counter.innerText;
-                const increment = target / 100;
 
-                if (current < target) {
-                    counter.innerText = Math.ceil(current + increment);
-                    setTimeout(updateCounter, 10); // Час між оновленням
-                } else {
-                    counter.innerText = target;
+    if ($('.counter').length) {
+        const counters = document.querySelectorAll('.counter');
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.dataset.target;
+                const updateCounter = () => {
+                    const current = +counter.innerText;
+                    const increment = target / 100;
+
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment);
+                        setTimeout(updateCounter, 10); // Час між оновленням
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.disconnect(); // Зупиняє спостереження після першого спрацювання
                 }
-            };
-            updateCounter();
+            });
         });
-    };
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                observer.disconnect(); // Зупиняє спостереження після першого спрацювання
-            }
-        });
-    });
-    observer.observe(document.querySelector('.stats'));
-
+        observer.observe(document.querySelector('.stats'));
+    }
 
     // скрол вбік
 
@@ -86,32 +88,34 @@ $(document).ready(function () {
     //     teamscrollbox.scrollLeft += e.deltaY; 
     // });
 
-    const teamscrollbox = document.querySelector('.teamscrollbox');
+    if ($('.teamscrollbox').length) {
+        const teamscrollbox = document.querySelector('.teamscrollbox');
 
-    function smoothScroll(target, scrollAmount, duration) {
-        let start = target.scrollLeft;
-        let change = scrollAmount;
-        let startTime = performance.now();
+        function smoothScroll(target, scrollAmount, duration) {
+            let start = target.scrollLeft;
+            let change = scrollAmount;
+            let startTime = performance.now();
 
-        function animateScroll() {
-            let elapsed = performance.now() - startTime;
-            let progress = elapsed / duration;
-            if (progress < 1) {
-                target.scrollLeft = start + change * progress;
-                requestAnimationFrame(animateScroll);
-            } else {
-                target.scrollLeft = start + change;
+            function animateScroll() {
+                let elapsed = performance.now() - startTime;
+                let progress = elapsed / duration;
+                if (progress < 1) {
+                    target.scrollLeft = start + change * progress;
+                    requestAnimationFrame(animateScroll);
+                } else {
+                    target.scrollLeft = start + change;
+                }
             }
+            animateScroll();
         }
-        animateScroll();
+
+        teamscrollbox.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            let scrollAmount = e.deltaY;
+            smoothScroll(teamscrollbox, scrollAmount, 300); // 300 — це тривалість анімації в мілісекундах
+        });
+
     }
-
-    teamscrollbox.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        let scrollAmount = e.deltaY;
-        smoothScroll(teamscrollbox, scrollAmount, 300); // 300 — це тривалість анімації в мілісекундах
-    });
-
     // Результати - слайдер
     var swiper = new Swiper(".resultslider", {
         slidesPerView: 1,
