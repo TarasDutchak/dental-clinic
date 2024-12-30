@@ -81,13 +81,6 @@ $(document).ready(function () {
 
     // скрол вбік
 
-    // const teamscrollbox = document.querySelector('.teamscrollbox');
-
-    // teamscrollbox.addEventListener('wheel', (e) => {
-    //     e.preventDefault(); 
-    //     teamscrollbox.scrollLeft += e.deltaY; 
-    // });
-
     if ($('.teamscrollbox').length) {
         const teamscrollbox = document.querySelector('.teamscrollbox');
 
@@ -194,39 +187,34 @@ $(document).ready(function () {
     });
 
     // модалки
-    // Отримання всіх посилань і модальних вікон
     const modalLinks = document.querySelectorAll("[data-modal-target]");
     const closeButtons = document.querySelectorAll(".close");
 
-    // Відкриття модального вікна
     modalLinks.forEach(link => {
         link.addEventListener("click", (event) => {
-            event.preventDefault(); // Запобігання скролінгу сторінки
+            event.preventDefault();
             const modalId = link.getAttribute("data-modal-target");
             const modal = document.getElementById(modalId);
             if (modal) {
-                modal.classList.add("show"); // Додаємо клас для анімації
+                modal.classList.add("show");
             }
         });
     });
 
-    // Закриття модального вікна
     closeButtons.forEach(button => {
         button.addEventListener("click", () => {
             const modal = button.closest(".modal");
             if (modal) {
-                modal.classList.remove("show"); // Видаляємо клас для анімації
+                modal.classList.remove("show");
             }
         });
     });
 
-    // Закриття модального вікна при кліку поза вікном
     window.addEventListener("click", (event) => {
         if (event.target.classList.contains("modal")) {
             event.target.classList.remove("show");
         }
     });
-    // ------------------------------------------
 
     // Select
     if ($('.customselect').length) {
@@ -236,8 +224,33 @@ $(document).ready(function () {
         });
     }
 
+    // ------------------------------ПРО КЛІНІКУ------------------------------
 
+    var swiper = new Swiper(".abslider1", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1200,
 
+        mousewheel: {
+            releaseOnEdges: true,
+        },
+
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+    });
 
 
 
