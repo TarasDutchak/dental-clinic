@@ -39,6 +39,7 @@ body * {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
 }
 
 body {
@@ -49,6 +50,20 @@ body {
 
     &.hidden {
         overflow: hidden;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.row.g-0 {
+    margin-left: 0;
+    margin-right: 0;
+
+    &>* {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

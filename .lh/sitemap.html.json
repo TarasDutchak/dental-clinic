@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1735543817323,
@@ -64,6 +64,14 @@
                 {
                     "date": 1735548260734,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <div class=\"sitemap\">\n         <ul>\n             <li><a href=\"index.html\" target=\"_blank\">Головна</a></li>\n             <li><a href=\"services.html\" target=\"_blank\">Послуги</a></li>\n-            <li><a href=\"about.html\" target=\"_blank\">Послуги</a></li>\n+            <li><a href=\"about.html\" target=\"_blank\">Про Клініку</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1735630183367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,10 @@\n         <ul>\n             <li><a href=\"index.html\" target=\"_blank\">Головна</a></li>\n             <li><a href=\"services.html\" target=\"_blank\">Послуги</a></li>\n             <li><a href=\"about.html\" target=\"_blank\">Про Клініку</a></li>\n+            <li><a href=\"pediatric-dentistry.html\" target=\"_blank\">Про Клініку</a></li>\n+            \n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1735630199458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         <ul>\n             <li><a href=\"index.html\" target=\"_blank\">Головна</a></li>\n             <li><a href=\"services.html\" target=\"_blank\">Послуги</a></li>\n             <li><a href=\"about.html\" target=\"_blank\">Про Клініку</a></li>\n-            <li><a href=\"pediatric-dentistry.html\" target=\"_blank\">Про Клініку</a></li>\n+            <li><a href=\"pediatric-dentistry.html\" target=\"_blank\">Дитяча стоматологія</a></li>\n             \n         </ul>\n     </div>\n \n"
                 }
             ],
             "date": 1735543817323,
