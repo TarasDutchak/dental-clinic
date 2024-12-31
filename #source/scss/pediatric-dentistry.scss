@@ -32,6 +32,12 @@
             width: 100%;
             border-radius: 20px 0 0 20px;
         }
+
+        video {
+            vertical-align: top;
+            width: 100%;
+            border-radius: 20px 0 0 20px;
+        }
     }
 }
 
@@ -52,7 +58,9 @@
             }
 
             .imgsect {
-                img {
+
+                img,
+                video {
                     border-radius: 0 20px 20px 0;
                 }
             }
@@ -85,7 +93,7 @@
 
         h3 {
             color: var(--white);
-            font-size: 28px;
+            font-size: 38px;
             text-transform: uppercase;
             line-height: 140%;
         }
@@ -230,6 +238,10 @@
     justify-content: center;
     text-align: center;
 
+    &.heightauto {
+        height: auto;
+    }
+
     p {
         margin: 0;
         font-size: 20px;
@@ -238,6 +250,13 @@
         span {
             color: #D00404;
         }
+    }
+}
+
+.align-items-center {
+    .rdborderblock {
+        padding-top: 55px;
+        padding-bottom: 55px;
     }
 }
 
@@ -304,5 +323,479 @@
                 }
             }
         }
+    }
+}
+
+.insect1 {
+    .rdborderblock {
+        height: auto;
+        padding: 82px 45px;
+
+        p {
+            max-width: 100%;
+        }
+    }
+}
+
+.tablesect {
+    padding: 80px 0 28px;
+
+    .title {
+        margin-bottom: 28px;
+        font-size: 30px;
+        color: #313131;
+    }
+
+    p {
+        margin-bottom: 75px;
+        color: #000;
+        @include textlight20;
+    }
+
+    .tablewrapper {
+        max-width: 792px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        border: 0.5px dashed #313131;
+    }
+
+    table {
+        // border-radius: 20px;
+        width: 100%;
+
+        th {
+            font-size: 20px;
+            color: #000;
+            padding: 0;
+            background: var(--secblue);
+            padding: 15px 10px;
+        }
+
+        td {
+            padding: 20px 16px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000;
+
+            &:first-child {
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border-collapse: collapse;
+        border-right: 0.5px dashed #313131;
+        border-bottom: 0.5px dashed #313131;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    tr {
+        &:last-child {
+            td {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.tablesect+.consultation-wrap {
+    padding-top: 100px;
+}
+
+
+@media(max-width:1399.8px) {
+    .insect1 .descrlght {
+        max-width: calc(100% - (100vw - 1140px) / 2);
+    }
+
+    .result+.insect1 {
+        padding-top: 40px;
+    }
+
+    .perform-doc .title {
+        margin-bottom: 40px;
+    }
+
+    .perform-doc__wrapper .descrwrap ul li {
+        margin-bottom: 12px;
+    }
+
+    .perform-doc__wrapper .descrwrap .name {
+        margin-bottom: 30px;
+    }
+
+    .tablesect+.consultation-wrap {
+        padding-top: 80px;
+    }
+
+    .reversesect .container-r0:nth-child(odd) {
+        padding-right: calc((100vw - 1140px) / 2);
+    }
+
+
+
+    .perform-doc,
+    .insect1 {
+        padding-top: 80px;
+    }
+
+    .insect1 .descrblue h3 {
+        font-size: 32px;
+    }
+
+    .insect2 .title,
+    .perform-doc .title {
+        font-size: 26px;
+    }
+
+    .reversesect__left .descr p,
+    .insect1 .descrblue p,
+    .perform-doc__wrapper .descrwrap ul li {
+        font-size: 20px;
+    }
+
+    .insect2 .probltext,
+    .insect2 .probllist li,
+    .solutionlist p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .reversesect__right {
+        max-width: 400px;
+        flex: 0 0 400px;
+    }
+
+    .reversesect__left {
+        max-width: calc(100% - 400px);
+        flex: 0 0 calc(100% - 400px);
+    }
+
+    .reversesect .container-r0:nth-child(odd) {
+        padding-right: calc((100vw - 950px) / 2);
+    }
+
+    .insect1 .descrblue {
+        padding: 20px 60px;
+    }
+
+    .rdborderblock p {
+        max-width: calc(100% - 30px);
+    }
+
+    .tablesect p {
+        margin-bottom: 40px;
+    }
+
+
+    .insect1 .descrblue p,
+    .perform-doc__wrapper .descrwrap ul li,
+    .reversesect__left .descr p,
+    .tablesect p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .reversesect__left {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .reversesect__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .reversesect__left {
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .reversesect__right .imgsect video {
+        border-radius: 20px !important;
+    }
+
+    .reversesect__left .descr {
+        padding: 20px 40px;
+    }
+
+    .reversesect .container-r0:nth-child(odd) {
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+    }
+
+    .result+.insect1 {
+        padding-top: 20px;
+    }
+
+    .insect1 .descrblue {
+        max-width: 100%;
+    }
+
+    .insect1 .descrlght {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .insect1 img {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .insect2 .title {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .insect2 .probltext {
+        margin-bottom: 15px;
+    }
+
+    .solutionlist {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .rdborderblock {
+        border-right: 1px solid #B82A2A;
+        border-radius: 20px;
+        padding: 15px 20px;
+    }
+
+    .perform-doc__wrapper .descrwrap {
+        padding-left: 20px;
+    }
+
+    .insect1 .descrblue h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .insect1 .descrblue {
+        padding: 30px 40px;
+    }
+
+    .insect2 {
+        padding: 30px 0 20px;
+    }
+
+    .insect1 img {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .tablesect p {
+        margin-bottom: 30px;
+    }
+
+
+
+    .tablesect .title {
+        font-size: 26px;
+    }
+
+    .insect1,
+    .perform-doc {
+        padding-top: 70px;
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .perform-doc__wrapper .imgwrap {
+        max-width: 220px;
+        flex: 0 0 220px;
+    }
+
+    .perform-doc__wrapper .descrwrap {
+        max-width: calc(100% - 220px);
+        flex: 0 0 calc(100% - 220px);
+    }
+
+    .perform-doc__wrapper .descrwrap .name {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .insect1 .rdborderblock {
+        padding: 40px 30px;
+    }
+
+    .tablesect .title {
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .insect1,
+    .perform-doc {
+        padding-top: 50px;
+    }
+
+    .insect1 .descrblue p,
+    .perform-doc__wrapper .descrwrap ul li,
+    .reversesect__left .descr p,
+    .tablesect p {
+        font-size: 16px;
+    }
+
+    .rdborderblock p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .perform-doc__wrapper .imgwrap,
+    .perform-doc__wrapper .descrwrap {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .reversesect__left .descr {
+        padding: 20px;
+    }
+
+    .reversesect__left,
+    .reversesect .container-r0 {
+        margin-bottom: 10px;
+    }
+
+    .resultslider .imgwrap {
+        padding-bottom: 20px;
+    }
+
+    .insect1 .descrblue {
+        padding: 20px;
+    }
+
+    .insect2 .probllist li {
+        font-size: 14px;
+        min-height: 40px;
+    }
+
+    .solutionlist span {
+        font-size: 36px;
+    }
+
+    .solutionlist p {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .solutionlist li {
+        margin-bottom: 15px;
+    }
+
+    .rdborderblock p {
+        font-size: 16px;
+    }
+
+    .perform-doc .title {
+        margin-bottom: 20px;
+    }
+
+    .perform-doc__wrapper .imgwrap {
+        margin-bottom: 10px;
+    }
+
+    .perform-doc__wrapper .descrwrap {
+        padding-left: 0;
+    }
+
+    .perform-doc__wrapper .descrwrap .name {
+        margin-bottom: 10px;
+    }
+
+    .perform-doc__wrapper .descrwrap ul {
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 6px;
+        }
+    }
+
+    .perform-doc {
+        padding-bottom: 20px;
+    }
+
+    .tablesect .tablewrapper {
+        overflow: auto;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            height: 12px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background: #F4F4F4;
+            border-radius: 30px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #2B2D42;
+            border-radius: 30px;
+            border: 2px solid #F4F4F4;
+        }
+
+        table {
+            min-width: 700px;
+        }
+
+
+    }
+
+    .tablesect+.consultation-wrap {
+        padding-top: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .insect1 .descrblue h3,
+    .insect2 .title,
+    .perform-doc .title {
+        font-size: 21px;
+    }
+
+    .insect2 .probltext {
+        font-size: 16px;
+    }
+
+    .insect1 .descrlght p {
+        font-size: 15px;
+    }
+
+
+
+
+}
+
+@media(max-width:360.8px) {
+    .insect2 .probllist li {
+        font-size: 12px;
+        min-height: 35px;
     }
 }
