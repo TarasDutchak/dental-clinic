@@ -1,0 +1,378 @@
+{
+    "sourceFile": "#source/scss/diagnistic-oral-cavity.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 90,
+            "patches": [
+                {
+                    "date": 1735801391386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735801743957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+.tablesect__diagnostic {\n+    margin-bottom: 28px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735801757277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-.tablesect__diagnostic {\n+.tablesect__diagnostic.tablesect p {\n     margin-bottom: 28px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735802717326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n .tablesect__diagnostic.tablesect p {\n     margin-bottom: 28px;\n+}\n+\n+.insect1 img {\n+    width: 100%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735803060128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,13 @@\n }\n \n .insect1 img {\n     width: 100%;\n+}\n+\n+.rdborderblock p {\n+    font-weight: 300;\n+\n+    b {\n+        font-weight: 400;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735803088040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,11 @@\n \n     b {\n         font-weight: 400;\n     }\n+}\n+\n+.insect1 .descrlght p {\n+    b {\n+        font-weight: 400;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735803331617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,14 @@\n .insect1 .descrlght p {\n     b {\n         font-weight: 400;\n     }\n+}\n+\n+\n+@media(max-width:768.8px) {\n+    .tablesect {\n+        .rdborderblock {\n+            margin-top: 20px;\n+        }\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735803359894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     }\n }\n \n \n-@media(max-width:768.8px) {\n+@media(max-width:991.8px) {\n     .tablesect {\n         .rdborderblock {\n             margin-top: 20px;\n         }\n"
+                },
+                {
+                    "date": 1735803365155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,9 @@\n         .rdborderblock {\n             margin-top: 20px;\n         }\n     }\n+\n+    .tablesect {\n+        padding-top: 60px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735803416489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,11 @@\n \n     .tablesect {\n         padding-top: 60px;\n     }\n+}\n+\n+@media(max-width:575.8px) {\n+    .tablesect {\n+        padding-top: 50px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735803450224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,11 @@\n         font-weight: 400;\n     }\n }\n \n+.tablesect__diagnostic.tablesect .rdborderblock p {\n+    margin-bottom: 0;\n+}\n \n @media(max-width:991.8px) {\n     .tablesect {\n         .rdborderblock {\n@@ -36,5 +39,8 @@\n @media(max-width:575.8px) {\n     .tablesect {\n         padding-top: 50px;\n     }\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804006235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,12 @@\n .tablesect__diagnostic.tablesect .rdborderblock p {\n     margin-bottom: 0;\n }\n \n+.probltext.probltext__bott {\n+\n+}\n+\n @media(max-width:991.8px) {\n     .tablesect {\n         .rdborderblock {\n             margin-top: 20px;\n"
+                },
+                {
+                    "date": 1735804020764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     margin-bottom: 0;\n }\n \n .probltext.probltext__bott {\n-\n+    margin: 28px 0 0 0;\n }\n \n @media(max-width:991.8px) {\n     .tablesect {\n"
+                },
+                {
+                    "date": 1735804343046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,5 +46,11 @@\n     }\n \n \n \n+}\n+\n+\n+// відбілювання\n+.tablesect {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804373369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,7 +50,10 @@\n }\n \n \n // відбілювання\n+.tablesect .title {\n+    font-weight: 400;\n+}\n .tablesect {\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804382940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,7 +53,6 @@\n // відбілювання\n .tablesect .title {\n     font-weight: 400;\n }\n-.tablesect {\n-    \n-}\n\\ No newline at end of file\n+\n+.tablesect {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804436734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,11 @@\n \n // відбілювання\n .tablesect .title {\n     font-weight: 400;\n+\n+    .borderbtn {\n+        margin-left: 40px;\n+    }\n }\n \n .tablesect {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804445383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n     font-weight: 400;\n \n     .borderbtn {\n         margin-left: 40px;\n+        vertical-align: top;\n     }\n }\n \n .tablesect {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804452605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-weight: 400;\n \n     .borderbtn {\n         margin-left: 40px;\n-        vertical-align: top;\n+        margin-top: -5px;\n     }\n }\n \n .tablesect {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804458582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     font-weight: 400;\n \n     .borderbtn {\n         margin-left: 40px;\n-        margin-top: -5px;\n+        margin-top: -7px;\n     }\n }\n \n .tablesect {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804488712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,10 @@\n     font-weight: 400;\n \n     .borderbtn {\n         margin-left: 40px;\n-        margin-top: -7px;\n+        margin-top: -5px;\n+        vertical-align: middle;\n     }\n }\n \n .tablesect {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804568132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,5 +60,7 @@\n         vertical-align: middle;\n     }\n }\n \n-.tablesect {}\n\\ No newline at end of file\n+.tablewrapper big {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804597710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,7 +60,7 @@\n         vertical-align: middle;\n     }\n }\n \n-.tablewrapper big {\n-    \n+.tablewrapper.big {\n+    max-width: 1056px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735804785354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,5 +62,9 @@\n }\n \n .tablewrapper.big {\n     max-width: 1056px;\n+\n+    th, td {\n+        width: 25%;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805004657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,5 +66,9 @@\n \n     th, td {\n         width: 25%;\n     }\n+\n+    p {\n+        margin-bottom: 27px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805019728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,8 @@\n     th, td {\n         width: 25%;\n     }\n \n-    p {\n+    .tablesect p {\n         margin-bottom: 27px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805045686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n \n     th, td {\n         width: 25%;\n     }\n+}\n \n-    .tablesect p {\n-        margin-bottom: 27px;\n-    }\n+.tablesect p {\n+    margin-bottom: 27px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805056004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,4 @@\n     th, td {\n         width: 25%;\n     }\n }\n-\n-.tablesect p {\n-    margin-bottom: 27px;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805085786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n         vertical-align: middle;\n     }\n }\n \n-.tablewrapper.big {\n+.tablesect.big .tablewrapper  {\n     max-width: 1056px;\n \n     th, td {\n         width: 25%;\n"
+                },
+                {
+                    "date": 1735805095277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,4 +67,8 @@\n     th, td {\n         width: 25%;\n     }\n }\n+\n+.tablesect.big p {\n+    margin-bottom: 27px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805160660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,5 +70,9 @@\n }\n \n .tablesect.big p {\n     margin-bottom: 27px;\n+}\n+\n+.infosection2 {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805171666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,6 +73,6 @@\n     margin-bottom: 27px;\n }\n \n .infosection2 {\n-    \n+    padding: 80px 0 28px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805183223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,6 +73,6 @@\n     margin-bottom: 27px;\n }\n \n .infosection2 {\n-    padding: 80px 0 28px;\n+    padding: 52px 0 28px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805331690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,11 @@\n }\n \n .infosection2 {\n     padding: 52px 0 28px;\n+\n+    .bluerow {\n+        p {\n+            margin: 0;\n+        }\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805357407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n .infosection2 {\n     padding: 52px 0 28px;\n \n     .bluerow {\n+        background: var(--primblue900);\n         p {\n             margin: 0;\n         }\n     }\n"
+                },
+                {
+                    "date": 1735805368551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,10 @@\n     padding: 52px 0 28px;\n \n     .bluerow {\n         background: var(--primblue900);\n+        border-radius: 20px;\n+\n         p {\n             margin: 0;\n         }\n     }\n"
+                },
+                {
+                    "date": 1735805377603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,9 @@\n \n     .bluerow {\n         background: var(--primblue900);\n         border-radius: 20px;\n+        padding: 59px 105px;\n \n         p {\n             margin: 0;\n         }\n"
+                },
+                {
+                    "date": 1735805393083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,7 +82,8 @@\n         padding: 59px 105px;\n \n         p {\n             margin: 0;\n+            color: var(--white);\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805398802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,7 +83,9 @@\n \n         p {\n             margin: 0;\n             color: var(--white);\n+            font-size: 18px;\n+            font-weight: 300;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805422106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,7 +85,8 @@\n             margin: 0;\n             color: var(--white);\n             font-size: 18px;\n             font-weight: 300;\n+            max-width: 420px;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805485300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n     .bluerow {\n         background: var(--primblue900);\n         border-radius: 20px;\n         padding: 59px 105px;\n+        min-height: 257px;\n \n         p {\n             margin: 0;\n             color: var(--white);\n"
+                },
+                {
+                    "date": 1735805493160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,5 +89,9 @@\n             font-weight: 300;\n             max-width: 420px;\n         }\n     }\n+\n+    .picrow {\n+        min-height: 257px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805525961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,6 +92,10 @@\n     }\n \n     .picrow {\n         min-height: 257px;\n+\n+        &>img {\n+            \n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805536367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,10 +92,13 @@\n     }\n \n     .picrow {\n         min-height: 257px;\n+        position: relative;\n+        overflow: hidden;\n+        border-radius: 20px;\n \n         &>img {\n-            \n+\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805561769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,14 @@\n         overflow: hidden;\n         border-radius: 20px;\n \n         &>img {\n-\n-        }\n+            position: absolute;\n+            left: 0;\n+            top: 0;\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 0 100%;\n+        }   \n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805582932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,7 +104,12 @@\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             object-position: 0 100%;\n-        }   \n+        }  \n+        \n+        p {\n+            position: relative;\n+            z-index: 2;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805637029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n         min-height: 257px;\n         position: relative;\n         overflow: hidden;\n         border-radius: 20px;\n+        padding-right: 105px;\n \n         &>img {\n             position: absolute;\n             left: 0;\n"
+                },
+                {
+                    "date": 1735805675654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,7 +110,8 @@\n         \n         p {\n             position: relative;\n             z-index: 2;\n+            margin: 0;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735805764197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n             margin: 0;\n             color: var(--white);\n             font-size: 18px;\n             font-weight: 300;\n-            max-width: 420px;\n+            max-width: 490px;\n         }\n     }\n \n     .picrow {\n"
+                },
+                {
+                    "date": 1735806834903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,5 +113,9 @@\n             z-index: 2;\n             margin: 0;\n         }\n     }\n+}\n+\n+.infosection3 {\n+    padding: 80px 0 0 0;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806841967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,5 +117,9 @@\n }\n \n .infosection3 {\n     padding: 80px 0 0 0;\n+\n+    h4 {\n+        \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806850433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,7 +119,7 @@\n .infosection3 {\n     padding: 80px 0 0 0;\n \n     h4 {\n-        \n+        margin-bottom: 25px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806857565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,10 @@\n }\n \n .infosection3 {\n     padding: 80px 0 0 0;\n+    color: #000;\n+    font-size: 30px;\n \n     h4 {\n         margin-bottom: 25px;\n     }\n"
+                },
+                {
+                    "date": 1735806874450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,11 +117,13 @@\n }\n \n .infosection3 {\n     padding: 80px 0 0 0;\n-    color: #000;\n-    font-size: 30px;\n+  \n \n+\n     h4 {\n         margin-bottom: 25px;\n+        color: #000;\n+        font-size: 30px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806886024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,13 +117,15 @@\n }\n \n .infosection3 {\n     padding: 80px 0 0 0;\n-  \n \n-\n     h4 {\n         margin-bottom: 25px;\n         color: #000;\n         font-size: 30px;\n+\n+        img {\n+            vertical-align: top;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806908072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,10 +122,12 @@\n     h4 {\n         margin-bottom: 25px;\n         color: #000;\n         font-size: 30px;\n+        position: relative;\n+        padding-left: 50px;\n \n         img {\n-            vertical-align: top;\n+            vertical-align: middle;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806921710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,8 +126,11 @@\n         position: relative;\n         padding-left: 50px;\n \n         img {\n-            vertical-align: middle;\n+            max-width: 43px;\n+            position: absolute;\n+            left: 0;\n+            top: 0;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806926870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,8 @@\n         img {\n             max-width: 43px;\n             position: absolute;\n             left: 0;\n-            top: 0;\n+            top: -5px;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806948136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,12 @@\n         img {\n             max-width: 43px;\n             position: absolute;\n             left: 0;\n-            top: -5px;\n+            top: -7px;\n         }\n     }\n+\n+    .infbordbox {\n+        \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806974626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,7 +134,8 @@\n         }\n     }\n \n     .infbordbox {\n-        \n+        border: 1px solid var(--main);\n+        border-right: none;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735806993594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,6 +136,7 @@\n \n     .infbordbox {\n         border: 1px solid var(--main);\n         border-right: none;\n+        border-radius: 20px 0 0 20px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807004185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,6 +137,7 @@\n     .infbordbox {\n         border: 1px solid var(--main);\n         border-right: none;\n         border-radius: 20px 0 0 20px;\n+        padding: 29px 0 29px 85px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807014216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,7 +137,7 @@\n     .infbordbox {\n         border: 1px solid var(--main);\n         border-right: none;\n         border-radius: 20px 0 0 20px;\n-        padding: 29px 0 29px 85px;\n+        padding: 29px 85px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807023480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,6 +138,10 @@\n         border: 1px solid var(--main);\n         border-right: none;\n         border-radius: 20px 0 0 20px;\n         padding: 29px 85px;\n+\n+        p {\n+            \n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807034249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,8 +140,16 @@\n         border-radius: 20px 0 0 20px;\n         padding: 29px 85px;\n \n         p {\n-            \n+            margin-bottom: 30px;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n         }\n+\n+        ul {\n+\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807042978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,8 +141,11 @@\n         padding: 29px 85px;\n \n         p {\n             margin-bottom: 30px;\n+            font-size: 20px;\n+            font-weight: 300;\n+            color: #000;\n \n             &:last-child {\n                 margin-bottom: 0;\n             }\n"
+                },
+                {
+                    "date": 1735807053434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,15 @@\n             }\n         }\n \n         ul {\n+            li {\n+                margin-bottom: 16px;\n \n+                &:last-child {\n+                    margin-bottom: 0;\n+                }\n+            }\n+\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807063459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,10 @@\n             }\n         }\n \n         ul {\n+            margin-bottom: 19px;\n+            \n             li {\n                 margin-bottom: 16px;\n \n                 &:last-child {\n"
+                },
+                {
+                    "date": 1735807073093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,170 @@\n+.tablesect__diagnostic.tablesect p {\n+    margin-bottom: 28px;\n+}\n+\n+.insect1 img {\n+    width: 100%;\n+}\n+\n+.rdborderblock p {\n+    font-weight: 300;\n+\n+    b {\n+        font-weight: 400;\n+    }\n+}\n+\n+.insect1 .descrlght p {\n+    b {\n+        font-weight: 400;\n+    }\n+}\n+\n+.tablesect__diagnostic.tablesect .rdborderblock p {\n+    margin-bottom: 0;\n+}\n+\n+.probltext.probltext__bott {\n+    margin: 28px 0 0 0;\n+}\n+\n+@media(max-width:991.8px) {\n+    .tablesect {\n+        .rdborderblock {\n+            margin-top: 20px;\n+        }\n+    }\n+\n+    .tablesect {\n+        padding-top: 60px;\n+    }\n+}\n+\n+@media(max-width:575.8px) {\n+    .tablesect {\n+        padding-top: 50px;\n+    }\n+\n+\n+\n+}\n+\n+\n+// відбілювання\n+.tablesect .title {\n+    font-weight: 400;\n+\n+    .borderbtn {\n+        margin-left: 40px;\n+        margin-top: -5px;\n+        vertical-align: middle;\n+    }\n+}\n+\n+.tablesect.big .tablewrapper  {\n+    max-width: 1056px;\n+\n+    th, td {\n+        width: 25%;\n+    }\n+}\n+\n+.tablesect.big p {\n+    margin-bottom: 27px;\n+}\n+\n+.infosection2 {\n+    padding: 52px 0 28px;\n+\n+    .bluerow {\n+        background: var(--primblue900);\n+        border-radius: 20px;\n+        padding: 59px 105px;\n+        min-height: 257px;\n+\n+        p {\n+            margin: 0;\n+            color: var(--white);\n+            font-size: 18px;\n+            font-weight: 300;\n+            max-width: 490px;\n+        }\n+    }\n+\n+    .picrow {\n+        min-height: 257px;\n+        position: relative;\n+        overflow: hidden;\n+        border-radius: 20px;\n+        padding-right: 105px;\n+\n+        &>img {\n+            position: absolute;\n+            left: 0;\n+            top: 0;\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 0 100%;\n+        }  \n+        \n+        p {\n+            position: relative;\n+            z-index: 2;\n+            margin: 0;\n+        }\n+    }\n+}\n+\n+.infosection3 {\n+    padding: 80px 0 0 0;\n+\n+    h4 {\n+        margin-bottom: 25px;\n+        color: #000;\n+        font-size: 30px;\n+        position: relative;\n+        padding-left: 50px;\n+\n+        img {\n+            max-width: 43px;\n+            position: absolute;\n+            left: 0;\n+            top: -7px;\n+        }\n+    }\n+\n+    .infbordbox {\n+        border: 1px solid var(--main);\n+        border-right: none;\n+        border-radius: 20px 0 0 20px;\n+        padding: 29px 85px;\n+\n+        p {\n+            margin-bottom: 30px;\n+            font-size: 20px;\n+            font-weight: 300;\n+            color: #000;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n+        }\n+\n+        ul {\n+            margin-bottom: 19px;\n+            list-style-type: none;\n+            margin: 0;\n+            padding: 0;\n+\n+            li {\n+                margin-bottom: 16px;\n+\n+                &:last-child {\n+                    margin-bottom: 0;\n+                }\n+            }\n+\n+        }\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807089561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,176 +155,11 @@\n             margin-bottom: 19px;\n             list-style-type: none;\n             margin: 0;\n             padding: 0;\n-\n-            li {\n-                margin-bottom: 16px;\n-\n-                &:last-child {\n-                    margin-bottom: 0;\n-                }\n-            }\n-\n-        }\n-    }\n-}\n-.tablesect__diagnostic.tablesect p {\n-    margin-bottom: 28px;\n-}\n-\n-.insect1 img {\n-    width: 100%;\n-}\n-\n-.rdborderblock p {\n-    font-weight: 300;\n-\n-    b {\n-        font-weight: 400;\n-    }\n-}\n-\n-.insect1 .descrlght p {\n-    b {\n-        font-weight: 400;\n-    }\n-}\n-\n-.tablesect__diagnostic.tablesect .rdborderblock p {\n-    margin-bottom: 0;\n-}\n-\n-.probltext.probltext__bott {\n-    margin: 28px 0 0 0;\n-}\n-\n-@media(max-width:991.8px) {\n-    .tablesect {\n-        .rdborderblock {\n-            margin-top: 20px;\n-        }\n-    }\n-\n-    .tablesect {\n-        padding-top: 60px;\n-    }\n-}\n-\n-@media(max-width:575.8px) {\n-    .tablesect {\n-        padding-top: 50px;\n-    }\n-\n-\n-\n-}\n-\n-\n-// відбілювання\n-.tablesect .title {\n-    font-weight: 400;\n-\n-    .borderbtn {\n-        margin-left: 40px;\n-        margin-top: -5px;\n-        vertical-align: middle;\n-    }\n-}\n-\n-.tablesect.big .tablewrapper  {\n-    max-width: 1056px;\n-\n-    th, td {\n-        width: 25%;\n-    }\n-}\n-\n-.tablesect.big p {\n-    margin-bottom: 27px;\n-}\n-\n-.infosection2 {\n-    padding: 52px 0 28px;\n-\n-    .bluerow {\n-        background: var(--primblue900);\n-        border-radius: 20px;\n-        padding: 59px 105px;\n-        min-height: 257px;\n-\n-        p {\n-            margin: 0;\n-            color: var(--white);\n-            font-size: 18px;\n-            font-weight: 300;\n-            max-width: 490px;\n-        }\n-    }\n-\n-    .picrow {\n-        min-height: 257px;\n-        position: relative;\n-        overflow: hidden;\n-        border-radius: 20px;\n-        padding-right: 105px;\n-\n-        &>img {\n-            position: absolute;\n-            left: 0;\n-            top: 0;\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 0 100%;\n-        }  \n-        \n-        p {\n-            position: relative;\n-            z-index: 2;\n-            margin: 0;\n-        }\n-    }\n-}\n-\n-.infosection3 {\n-    padding: 80px 0 0 0;\n-\n-    h4 {\n-        margin-bottom: 25px;\n-        color: #000;\n-        font-size: 30px;\n-        position: relative;\n-        padding-left: 50px;\n-\n-        img {\n-            max-width: 43px;\n-            position: absolute;\n-            left: 0;\n-            top: -7px;\n-        }\n-    }\n-\n-    .infbordbox {\n-        border: 1px solid var(--main);\n-        border-right: none;\n-        border-radius: 20px 0 0 20px;\n-        padding: 29px 85px;\n-\n-        p {\n-            margin-bottom: 30px;\n             font-size: 20px;\n             font-weight: 300;\n-            color: #000;\n \n-            &:last-child {\n-                margin-bottom: 0;\n-            }\n-        }\n-\n-        ul {\n-            margin-bottom: 19px;\n-            \n             li {\n                 margin-bottom: 16px;\n \n                 &:last-child {\n"
+                },
+                {
+                    "date": 1735807107192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,11 +157,14 @@\n             margin: 0;\n             padding: 0;\n             font-size: 20px;\n             font-weight: 300;\n+            color: #000;\n \n             li {\n                 margin-bottom: 16px;\n+                position: relative;\n+                padding-left: 35px;\n \n                 &:last-child {\n                     margin-bottom: 0;\n                 }\n"
+                },
+                {
+                    "date": 1735807138086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,8 +164,15 @@\n                 margin-bottom: 16px;\n                 position: relative;\n                 padding-left: 35px;\n \n+                img {\n+                    width: 24px;\n+                    position: absolute;\n+                    left: 0;\n+                    top: 0;\n+                }\n+\n                 &:last-child {\n                     margin-bottom: 0;\n                 }\n             }\n"
+                },
+                {
+                    "date": 1735807146801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,8 +163,9 @@\n             li {\n                 margin-bottom: 16px;\n                 position: relative;\n                 padding-left: 35px;\n+                display: block;\n \n                 img {\n                     width: 24px;\n                     position: absolute;\n"
+                },
+                {
+                    "date": 1735807161264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,9 @@\n \n         ul {\n             margin-bottom: 19px;\n             list-style-type: none;\n-            margin: 0;\n+            margin: 0 0 19px 0;\n             padding: 0;\n             font-size: 20px;\n             font-weight: 300;\n             color: #000;\n"
+                },
+                {
+                    "date": 1735807234711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,5 +179,7 @@\n             }\n \n         }\n     }\n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807248698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,6 +180,8 @@\n \n         }\n     }\n \n-    \n+    .container-r0 {\n+        flex-direction: column-reverse;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807546036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,5 +183,9 @@\n \n     .container-r0 {\n         flex-direction: column-reverse;\n     }\n+}\n+\n+.infosection-row {\n+    margin-bottom: 80px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735807599883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,15 +122,11 @@\n     h4 {\n         margin-bottom: 25px;\n         color: #000;\n         font-size: 30px;\n-        position: relative;\n-        padding-left: 50px;\n \n         img {\n             max-width: 43px;\n-            position: absolute;\n-            left: 0;\n             top: -7px;\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1735807769831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,8 +174,12 @@\n                 }\n             }\n \n         }\n+\n+        &.blue {\n+            \n+        }\n     }\n \n     .container-r0 {\n         flex-direction: column-reverse;\n"
+                },
+                {
+                    "date": 1735807784594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,9 +176,10 @@\n \n         }\n \n         &.blue {\n-            \n+            background: var(--primblue900);\n+            border-radius: 20px 0 0 20px;\n         }\n     }\n \n     .container-r0 {\n"
+                },
+                {
+                    "date": 1735807797264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,8 +178,9 @@\n \n         &.blue {\n             background: var(--primblue900);\n             border-radius: 20px 0 0 20px;\n+            border: none;\n         }\n     }\n \n     .container-r0 {\n"
+                },
+                {
+                    "date": 1735807815891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,9 +177,9 @@\n         }\n \n         &.blue {\n             background: var(--primblue900);\n-            border-radius: 20px 0 0 20px;\n+            border-radius: 0 20px 20px 0;\n             border: none;\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1735807836118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,8 +179,12 @@\n         &.blue {\n             background: var(--primblue900);\n             border-radius: 0 20px 20px 0;\n             border: none;\n+\n+            p, ul {\n+                color: var(--white);\n+            }\n         }\n     }\n \n     .container-r0 {\n"
+                },
+                {
+                    "date": 1735807853776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,8 +183,12 @@\n \n             p, ul {\n                 color: var(--white);\n             }\n+\n+            ul li img {\n+                filter: brightness(0);\n+            }\n         }\n     }\n \n     .container-r0 {\n"
+                },
+                {
+                    "date": 1735807943926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,9 +185,8 @@\n                 color: var(--white);\n             }\n \n             ul li img {\n-                filter: brightness(0);\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1735808061985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,5 +196,14 @@\n }\n \n .infosection-row {\n     margin-bottom: 80px;\n+}\n+\n+.rightpic {\n+    padding-right: 40px;\n+    imf {\n+        position: absolute;\n+        right: 0;\n+        right: 0;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735808074074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,12 +60,13 @@\n         vertical-align: middle;\n     }\n }\n \n-.tablesect.big .tablewrapper  {\n+.tablesect.big .tablewrapper {\n     max-width: 1056px;\n \n-    th, td {\n+    th,\n+    td {\n         width: 25%;\n     }\n }\n \n@@ -105,10 +106,10 @@\n             width: 100%;\n             height: 100%;\n             object-fit: cover;\n             object-position: 0 100%;\n-        }  \n-        \n+        }\n+\n         p {\n             position: relative;\n             z-index: 2;\n             margin: 0;\n@@ -180,30 +181,32 @@\n             background: var(--primblue900);\n             border-radius: 0 20px 20px 0;\n             border: none;\n \n-            p, ul {\n+            p,\n+            ul {\n                 color: var(--white);\n             }\n \n-            ul li img {\n-            }\n+            ul li img {}\n         }\n     }\n \n     .container-r0 {\n         flex-direction: column-reverse;\n     }\n+\n+    .rightpic {\n+        padding-right: 40px;\n+    \n+        img {\n+            position: absolute;\n+            right: 0;\n+            right: 0;\n+        }\n+    }\n }\n\\ No newline at end of file\n \n .infosection-row {\n     margin-bottom: 80px;\n }\n \n-.rightpic {\n-    padding-right: 40px;\n-    imf {\n-        position: absolute;\n-        right: 0;\n-        right: 0;\n-    }\n-}\n"
+                },
+                {
+                    "date": 1735808124420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -200,12 +200,13 @@\n     \n         img {\n             position: absolute;\n             right: 0;\n-            right: 0;\n+            top: 0;\n         }\n     }\n }\n \n .infosection-row {\n     margin-bottom: 80px;\n }\n+\n"
+                },
+                {
+                    "date": 1735808142473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,13 +196,15 @@\n     }\n \n     .rightpic {\n         padding-right: 40px;\n+        position: relative;\n     \n         img {\n             position: absolute;\n             right: 0;\n             top: 0;\n+            max-width: 90px;\n         }\n     }\n }\n \n"
+                },
+                {
+                    "date": 1735808253811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n         flex-direction: column-reverse;\n     }\n \n     .rightpic {\n-        padding-right: 40px;\n+        padding-right: 100px;\n         position: relative;\n     \n         img {\n             position: absolute;\n@@ -209,6 +209,10 @@\n }\n \n .infosection-row {\n     margin-bottom: 80px;\n+\n+    &:last-child {\n+        margin-bottom: 0;\n+    }\n }\n \n"
+                },
+                {
+                    "date": 1735808262493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n     }\n }\n \n .infosection3 {\n-    padding: 80px 0 0 0;\n+    padding: 80px 0 28px 0;\n \n     h4 {\n         margin-bottom: 25px;\n         color: #000;\n"
+                }
+            ],
+            "date": 1735801391386,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

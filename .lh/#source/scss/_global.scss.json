@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 21,
             "patches": [
                 {
                     "date": 1735545520079,
@@ -72,6 +72,26 @@
                 {
                     "date": 1735635466187,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n     -ms-user-select: none;\r\n     user-select: none;\r\n+    line-height: 140%;\r\n }\r\n \r\n body {\r\n     font-family: 'Lato';\r\n"
+                },
+                {
+                    "date": 1735807313382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,15 @@\n     margin: 0 auto;\r\n     max-width: 1440px;\r\n }\r\n \r\n+.container-l0 {\r\n+    width: 100%;\r\n+    padding-right: calc((1440px - 1250px)/2);\r\n+    margin: 0 auto;\r\n+    max-width: 1440px;\r\n+}\r\n \r\n-\r\n .row {\r\n     margin-left: -10px;\r\n     margin-right: -10px;\r\n \r\n@@ -38,9 +43,9 @@\n     -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n     -ms-user-select: none;\r\n     user-select: none;\r\n-    line-height: 140%;\r\n+    \r\n }\r\n \r\n body {\r\n     font-family: 'Lato';\r\n"
+                },
+                {
+                    "date": 1735807341159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -309,8 +309,12 @@\n @media(max-width:1399.8px) {\r\n     .container-r0 {\r\n         padding-left: calc((100vw - 1140px)/2);\r\n     }\r\n+\r\n+    .container-l0 {\r\n+        padding-right: calc((100vw - 1140px)/2);\r\n+    }\r\n     \r\n }\r\n \r\n @media(max-width:1199.8px) {\r\n"
+                },
+                {
+                    "date": 1735807427179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -320,8 +320,11 @@\n @media(max-width:1199.8px) {\r\n     .container-r0 {\r\n         padding-left: calc((100vw - 950px)/2);\r\n     }\r\n+    .container-l0 {\r\n+        padding-right: calc((100vw - 950px)/2);\r\n+    }\r\n     \r\n }\r\n \r\n @media(max-width:991.8px) {\r\n"
+                },
+                {
+                    "date": 1735807437352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -332,8 +332,14 @@\n         max-width: 720px;\r\n         padding-right: var(--bs-gutter-x, .75rem);\r\n         padding-left: var(--bs-gutter-x, .75rem);\r\n     }\r\n+\r\n+    .container-l0 {\r\n+        max-width: 720px;\r\n+        padding-right: var(--bs-gutter-x, .75rem);\r\n+        padding-left: var(--bs-gutter-x, .75rem);\r\n+    }\r\n }\r\n \r\n \r\n @media(max-width:767.8px) {\r\n"
+                },
+                {
+                    "date": 1735807443918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -346,9 +346,10 @@\n     main.main {\r\n         padding-top: 100px;\r\n     }\r\n \r\n-    .container-r0 {\r\n+    .container-r0,\r\n+    .container-l0 {\r\n         max-width: 540px;\r\n         padding-right: var(--bs-gutter-x, 0.75rem);\r\n         padding-left: var(--bs-gutter-x, 0.75rem);\r\n     }\r\n"
                 }
             ],
             "date": 1735545520079,
