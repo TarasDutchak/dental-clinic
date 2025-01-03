@@ -37,12 +37,6 @@
     }
 }
 
-
-
-
-
-
-
 @media(max-width:991.8px) {
     .insect1 .imgwrap {
         height: auto;
@@ -112,39 +106,6 @@
         }
     }
 }
-
-// .waweblock {
-//     padding: 60px 0 28px;
-
-//     .title {
-//         font-size: 30px;
-//         color: #000;
-//         margin-bottom: 48px;
-//     }
-
-//     ul {
-//         list-style-type: none;
-//         margin: 0;
-//         padding: 0;
-//         text-align: right;
-
-//         li {
-//             text-align: left;
-//             display: inline-block;
-//             padding-right: 95px;
-
-//             &:nth-child(1) {
-//                 width: calc(100% - 312px);
-//             }
-
-//             &:nth-child(2) {
-//                 width: calc(100% - 312px);
-//             }
-
-//             &:nth-child(3) {}
-//         }
-//     }
-// }
 
 .insect4.v2 {
     ul li span:after {
@@ -287,5 +248,30 @@
            max-width: 100%;
            flex: 0 0 100%;
         }
+    }
+}
+
+.insect4.v2 ul li span {
+    height: 70px;
+}
+
+.infosection3 {
+    .infbordbox p b {
+        font-weight: 400;
+    }
+
+    .borderbtn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .insect2+.infosection3 {
+        padding-top: 30px;
+    }
+
+    .infosection3 .borderbtn {
+        text-align: center;
+        width: 100%;
     }
 }
