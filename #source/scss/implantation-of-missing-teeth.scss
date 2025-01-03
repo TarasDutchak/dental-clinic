@@ -1,0 +1,291 @@
+.insect1 {
+    .col-lg-5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .imgwrap {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        max-height: 500px;
+    }
+
+    .rdborderblock {
+        height: 100%;
+    }
+}
+
+.insect1 .align-items-center .rdborderblock {
+    min-height: 395px;
+}
+
+.insect2 {
+    h3.title {
+        margin-bottom: 64px;
+        text-transform: uppercase;
+        font-size: 38px;
+        color: #000;
+    }
+}
+
+
+
+
+
+
+
+@media(max-width:991.8px) {
+    .insect1 .imgwrap {
+        height: auto;
+        max-height: initial;
+
+        img {
+            height: auto;
+            object-fit: initial;
+        }
+    }
+
+    .insect1 .rdborderblock {
+        height: auto;
+    }
+
+    .insect1 .descrblue {
+        margin-bottom: 10px;
+    }
+
+    .tablesect table th {
+        font-size: 18px;
+    }
+
+    .insect1 .align-items-center .rdborderblock {
+        min-height: initial;
+    }
+
+    .insect2 h3.title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .insect2 h3.title {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .probltext.probltext__bott {
+        margin-top: 20px;
+    }
+}
+
+
+// gnatology
+.perform-doc+.insect2 {
+    padding-top: 100px;
+}
+
+.title-lg.mb65 {
+    margin-bottom: 65px;
+}
+
+.insect2 {
+    .imgwraplst {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+}
+
+// .waweblock {
+//     padding: 60px 0 28px;
+
+//     .title {
+//         font-size: 30px;
+//         color: #000;
+//         margin-bottom: 48px;
+//     }
+
+//     ul {
+//         list-style-type: none;
+//         margin: 0;
+//         padding: 0;
+//         text-align: right;
+
+//         li {
+//             text-align: left;
+//             display: inline-block;
+//             padding-right: 95px;
+
+//             &:nth-child(1) {
+//                 width: calc(100% - 312px);
+//             }
+
+//             &:nth-child(2) {
+//                 width: calc(100% - 312px);
+//             }
+
+//             &:nth-child(3) {}
+//         }
+//     }
+// }
+
+.insect4.v2 {
+    ul li span:after {
+        border-radius: 0 20px 0 0;
+    }
+
+    ul li:first-child span {
+        min-height: 77px;
+    }
+
+    ul li p:after {
+        height: calc(100% - 65px);
+    }
+}
+
+.tablesect {
+    .redbtn {
+        margin-top: 48px;
+    }
+}
+
+
+.littpadd {
+    padding: 48px 0 28px;
+}
+
+.proces {
+    .title.thin {
+        font-weight: 300;
+    }
+}
+
+.proces__img {
+    img {
+        vertical-align: top;
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.styledlist:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width:1399.8px) {
+    .title-lg {
+        font-size: 32px;
+    }
+
+    .title-lg.mb65 {
+        margin-bottom: 40px;
+    }
+
+    .perform-doc+.insect2 {
+        padding-top: 80px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .title-lg {
+        font-size: 26px;
+    }
+
+    .title-lg.mb65 {
+        margin-bottom: 20px;
+    }
+
+    .perform-doc+.insect2 {
+        padding-top: 70px;
+    }
+
+    .insect4 ul li:first-child span {
+        min-height: 80px;
+    }
+
+    .insect4 ul li p:after {
+        height: calc(100% - 40px);
+    }
+}
+
+@media(max-width:991.8px) {
+    .insect2 .imgwraplst img {
+        border-radius: 20px;
+    }
+
+    .insect4 ul li span {
+        min-height: 60px;
+    }
+
+    .insect4 ul li {
+        align-items: flex-start;
+    }
+
+    .insect4 ul li span {
+        margin-top: 0;
+    }
+
+    .insect4 ul li p {
+        padding-top: 15px;
+    }
+
+    .insect4.v2 ul li p:after {
+        height: calc(100% - 50px);
+    }
+
+    .tablesect .redbtn {
+        margin-top: 30px;
+    }
+
+    .proces__img {
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media(max-width:767.8px) {
+    .insect4 ul li p:after {
+        height: calc(100% - 10px);
+    }
+}
+
+@media(max-width:575.8px) {
+    .perform-doc+.insect2 {
+        padding-top: 50px;
+    }
+
+    .title-lg {
+        font-size: 21px;
+    }
+
+    .insect4.v2 {
+        ul li span {
+            display: none;
+        }
+
+        ul li p {
+           max-width: 100%;
+           flex: 0 0 100%;
+        }
+    }
+}

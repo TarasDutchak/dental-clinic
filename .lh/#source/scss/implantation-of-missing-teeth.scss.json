@@ -1,0 +1,350 @@
+{
+    "sourceFile": "#source/scss/implantation-of-missing-teeth.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 83,
+            "patches": [
+                {
+                    "date": 1735888605006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735888617389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,9 @@\n     .col-lg-5 {\n         display: flex;\n         flex-direction: column;\n     }\n+\n+    img {\n+        height: 100%;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735888661597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,11 @@\n \n     img {\n         height: 100%;\n     }\n+\n+    .imgwrap {\n+        width: 100%;\n+        position: relative;\n+        overflow: hidden;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735888712927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,16 @@\n     }\n \n     img {\n         height: 100%;\n+        width: 100%;\n+        object-fit: cover;\n+        object-position: 50% 50%;\n     }\n \n     .imgwrap {\n         width: 100%;\n         position: relative;\n         overflow: hidden;\n+        height: 100%;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735888878711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,6 +15,7 @@\n         width: 100%;\n         position: relative;\n         overflow: hidden;\n         height: 100%;\n+        max-height: 500px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735889011587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,25 @@\n         overflow: hidden;\n         height: 100%;\n         max-height: 500px;\n     }\n+}\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+@media(max-width:991.8px) {\n+    .insect1 .imgwrap {\n+\n+    }\n+\n+\n+\n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735889027195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,17 @@\n \n \n @media(max-width:991.8px) {\n     .insect1 .imgwrap {\n+        height: auto;\n \n+        img {\n+            height: auto;\n+            object-fit: initial;\n+        }\n     }\n \n \n \n \n-    \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735889052438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n \n @media(max-width:991.8px) {\n     .insect1 .imgwrap {\n         height: auto;\n+        max-height: initial;\n \n         img {\n             height: auto;\n             object-fit: initial;\n"
+                },
+                {
+                    "date": 1735889772343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,12 @@\n         overflow: hidden;\n         height: 100%;\n         max-height: 500px;\n     }\n+\n+    .rdborderblock  {\n+        height: 100%;\n+    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1735889777417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,13 @@\n             object-fit: initial;\n         }\n     }\n \n+    .rdborderblock  {\n+        height: auto;\n+    }\n \n \n \n \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735889917650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,17 +23,19 @@\n         height: 100%;\n     }\n }\n \n+.insect1 .align-items-center .rdborderblock {\n+    min-height: 395px;\n+}\n \n \n \n \n \n \n \n \n-\n @media(max-width:991.8px) {\n     .insect1 .imgwrap {\n         height: auto;\n         max-height: initial;\n@@ -43,9 +45,9 @@\n             object-fit: initial;\n         }\n     }\n \n-    .rdborderblock  {\n+    .insect1 .rdborderblock  {\n         height: auto;\n     }\n \n \n"
+                },
+                {
+                    "date": 1735890011246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,15 +27,20 @@\n .insect1 .align-items-center .rdborderblock {\n     min-height: 395px;\n }\n \n+.insect2 {\n+    h3.title {\n \n+    }\n+}\n \n \n \n \n \n \n+\n @media(max-width:991.8px) {\n     .insect1 .imgwrap {\n         height: auto;\n         max-height: initial;\n"
+                },
+                {
+                    "date": 1735890032842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\n \n .insect2 {\n     h3.title {\n-\n+        margin-bottom: 64px;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1735890040022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n \n .insect2 {\n     h3.title {\n         margin-bottom: 64px;\n+        text-transform: uppercase;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1735890059481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,10 @@\n .insect2 {\n     h3.title {\n         margin-bottom: 64px;\n         text-transform: uppercase;\n+        font-size: 38px;\n+        color: #000;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1735890350489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,11 @@\n     .insect1 .rdborderblock  {\n         height: auto;\n     }\n \n+    .insect1 .descrblue {\n+        margin-bottom: 10px;\n+    }\n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890405582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,7 +61,9 @@\n     .insect1 .descrblue {\n         margin-bottom: 10px;\n     }\n \n+    .tablesect table th {\n+        font-size: 18px;\n+    }\n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890431165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,8 @@\n     .tablesect table th {\n         font-size: 18px;\n     }\n \n+    .insect1 .align-items-center .rdborderblock {\n+        min-height: initial;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890460076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,5 +68,10 @@\n \n     .insect1 .align-items-center .rdborderblock {\n         min-height: initial;\n     }\n+\n+    .insect2 h3.title {\n+        font-size: 26px;\n+        margin-bottom: 30px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890492757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,5 +73,12 @@\n     .insect2 h3.title {\n         font-size: 26px;\n         margin-bottom: 30px;\n     }\n+}\n+\n+@media(max-width:991.8px) {\n+    .insect2 h3.title {\n+        font-size: 21px;\n+        margin-bottom: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890498082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,7 +78,7 @@\n \n @media(max-width:991.8px) {\n     .insect2 h3.title {\n         font-size: 21px;\n-        margin-bottom: 20px;\n+        margin-bottom: 15px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890517902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n         margin-bottom: 30px;\n     }\n }\n \n-@media(max-width:991.8px) {\n+@media(max-width:575.8px) {\n     .insect2 h3.title {\n         font-size: 21px;\n         margin-bottom: 15px;\n     }\n"
+                },
+                {
+                    "date": 1735890531951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,5 +80,9 @@\n     .insect2 h3.title {\n         font-size: 21px;\n         margin-bottom: 15px;\n     }\n+\n+    .probltext.probltext__bott {\n+        margin-top: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735890693572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,5 +84,8 @@\n \n     .probltext.probltext__bott {\n         margin-top: 20px;\n     }\n-}\n\\ No newline at end of file\n+}\n+\n+\n+// gnatology\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891117829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         height: 100%;\n         max-height: 500px;\n     }\n \n-    .rdborderblock  {\n+    .rdborderblock {\n         height: 100%;\n     }\n }\n \n@@ -53,9 +53,9 @@\n             object-fit: initial;\n         }\n     }\n \n-    .insect1 .rdborderblock  {\n+    .insect1 .rdborderblock {\n         height: auto;\n     }\n \n     .insect1 .descrblue {\n@@ -87,5 +87,8 @@\n     }\n }\n \n \n-// gnatology\n\\ No newline at end of file\n+// gnatology\n+.perform-doc+.insect2 {\n+    padding-top: 100px;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891146008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,5 +90,9 @@\n \n // gnatology\n .perform-doc+.insect2 {\n     padding-top: 100px;\n+}\n+\n+.title-lg.mb65 {\n+    margin-bottom: 65px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891274939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,5 +94,9 @@\n }\n \n .title-lg.mb65 {\n     margin-bottom: 65px;\n+}\n+\n+.insect2 {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891304871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,6 +97,17 @@\n     margin-bottom: 65px;\n }\n \n .insect2 {\n-    \n+    .imgwraplst {\n+        position: relative;\n+        overflow: hidden;\n+        height: 100%;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891319884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,8 +101,9 @@\n     .imgwraplst {\n         position: relative;\n         overflow: hidden;\n         height: 100%;\n+        border-radius: 20px 0 0 20px;\n \n         img {\n             width: 100%;\n             height: 100%;\n"
+                },
+                {
+                    "date": 1735891667446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,5 +110,9 @@\n             object-fit: cover;\n             object-position: 50% 50%;\n         }\n     }\n+}\n+\n+.waweblock {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891679506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,6 +113,10 @@\n     }\n }\n \n .waweblock {\n-    \n+    ul {\n+        list-style-type: none;\n+        margin: 0;\n+        padding: 0;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891686951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,6 +117,10 @@\n     ul {\n         list-style-type: none;\n         margin: 0;\n         padding: 0;\n+\n+        li {\n+            padding-right: 95px;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891693594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,8 +113,12 @@\n     }\n }\n \n .waweblock {\n+.title {\n+    СНЩС: причини та лікування\n+}\n+\n     ul {\n         list-style-type: none;\n         margin: 0;\n         padding: 0;\n"
+                },
+                {
+                    "date": 1735891708112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,11 +113,12 @@\n     }\n }\n \n .waweblock {\n-.title {\n-    СНЩС: причини та лікування\n-}\n+    .title {\n+        font-size: 30px;\n+        color: #000;\n+    }\n \n     ul {\n         list-style-type: none;\n         margin: 0;\n"
+                },
+                {
+                    "date": 1735891718687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,9 @@\n .waweblock {\n     .title {\n         font-size: 30px;\n         color: #000;\n+        margin-bottom: 48px;\n     }\n \n     ul {\n         list-style-type: none;\n"
+                },
+                {
+                    "date": 1735891735346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,8 +113,10 @@\n     }\n }\n \n .waweblock {\n+    padding: 80px 0 28px;\n+    \n     .title {\n         font-size: 30px;\n         color: #000;\n         margin-bottom: 48px;\n"
+                },
+                {
+                    "date": 1735891744707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,10 +113,10 @@\n     }\n }\n \n .waweblock {\n-    padding: 80px 0 28px;\n-    \n+    padding: 60px 0 28px;\n+\n     .title {\n         font-size: 30px;\n         color: #000;\n         margin-bottom: 48px;\n"
+                },
+                {
+                    "date": 1735891765645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,10 +125,13 @@\n     ul {\n         list-style-type: none;\n         margin: 0;\n         padding: 0;\n+        text-align: right;\n \n         li {\n+            text-align: left;\n+            display: inline-block;\n             padding-right: 95px;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891772622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,7 +131,9 @@\n         li {\n             text-align: left;\n             display: inline-block;\n             padding-right: 95px;\n+\n+            &:nth-child(1) {}\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891779775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,7 +133,11 @@\n             display: inline-block;\n             padding-right: 95px;\n \n             &:nth-child(1) {}\n+\n+            &:nth-child(2) {}\n+\n+            &:nth-child(3) {}\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891804722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,11 @@\n             text-align: left;\n             display: inline-block;\n             padding-right: 95px;\n \n-            &:nth-child(1) {}\n+            &:nth-child(1) {\n+                width: calc(100% - 312px);\n+            }\n \n             &:nth-child(2) {}\n \n             &:nth-child(3) {}\n"
+                },
+                {
+                    "date": 1735891816218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,11 @@\n             &:nth-child(1) {\n                 width: calc(100% - 312px);\n             }\n \n-            &:nth-child(2) {}\n+            &:nth-child(2) {\n+                width: calc(100% - 312px);\n+            }\n \n             &:nth-child(3) {}\n         }\n     }\n"
+                },
+                {
+                    "date": 1735891870137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,36 +112,36 @@\n         }\n     }\n }\n \n-.waweblock {\n-    padding: 60px 0 28px;\n+// .waweblock {\n+//     padding: 60px 0 28px;\n \n-    .title {\n-        font-size: 30px;\n-        color: #000;\n-        margin-bottom: 48px;\n-    }\n+//     .title {\n+//         font-size: 30px;\n+//         color: #000;\n+//         margin-bottom: 48px;\n+//     }\n \n-    ul {\n-        list-style-type: none;\n-        margin: 0;\n-        padding: 0;\n-        text-align: right;\n+//     ul {\n+//         list-style-type: none;\n+//         margin: 0;\n+//         padding: 0;\n+//         text-align: right;\n \n-        li {\n-            text-align: left;\n-            display: inline-block;\n-            padding-right: 95px;\n+//         li {\n\\ No newline at end of file\n+//             text-align: left;\n+//             display: inline-block;\n+//             padding-right: 95px;\n \n-            &:nth-child(1) {\n-                width: calc(100% - 312px);\n-            }\n+//             &:nth-child(1) {\n+//                 width: calc(100% - 312px);\n+//             }\n \n-            &:nth-child(2) {\n-                width: calc(100% - 312px);\n-            }\n+//             &:nth-child(2) {\n+//                 width: calc(100% - 312px);\n+//             }\n \n-            &:nth-child(3) {}\n-        }\n-    }\n-}\n+//             &:nth-child(3) {}\n+//         }\n+//     }\n+// }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891915867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,5 +143,9 @@\n \n //             &:nth-child(3) {}\n //         }\n //     }\n-// }\n\\ No newline at end of file\n+// }\n+\n+.insect4.v2 {\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891928879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,6 +146,8 @@\n //     }\n // }\n \n .insect4.v2 {\n-\n+    .insect4 ul li span:after {\n+        border-radius: 0 20px 0 0 ;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735891957268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,8 +146,8 @@\n //     }\n // }\n \n .insect4.v2 {\n-    .insect4 ul li span:after {\n+    ul li span:after {\n         border-radius: 0 20px 0 0 ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892051543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,5 +149,9 @@\n .insect4.v2 {\n     ul li span:after {\n         border-radius: 0 20px 0 0 ;\n     }\n+\n+    ul li:first-child span {\n+        min-height: 77px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892080567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,5 +153,9 @@\n \n     ul li:first-child span {\n         min-height: 77px;\n     }\n+\n+    .insect4 ul li p {\n+        min-height: 120px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892090529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,8 +154,8 @@\n     ul li:first-child span {\n         min-height: 77px;\n     }\n \n-    .insect4 ul li p {\n+    ul li p {\n         min-height: 120px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892119508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,5 +157,9 @@\n \n     ul li p {\n         min-height: 120px;\n     }\n+\n+    ul li p:after {\n+\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892129544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,7 +159,7 @@\n         min-height: 120px;\n     }\n \n     ul li p:after {\n-\n+        height: calc(100% - 50px);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892146289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,7 +159,7 @@\n         min-height: 120px;\n     }\n \n     ul li p:after {\n-        height: calc(100% - 50px);\n+        height: calc(100% - 650px);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892175676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,12 +154,8 @@\n     ul li:first-child span {\n         min-height: 77px;\n     }\n \n-    ul li p {\n-        min-height: 120px;\n-    }\n-\n     ul li p:after {\n-        height: calc(100% - 650px);\n+        height: calc(100% - 65px);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892417111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,5 +157,11 @@\n \n     ul li p:after {\n         height: calc(100% - 65px);\n     }\n+}\n+\n+.tablesect {\n+    .redbtn {\n+        margin-top: 48px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892753359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,5 +163,10 @@\n .tablesect {\n     .redbtn {\n         margin-top: 48px;\n     }\n+}\n+\n+\n+.littpadd {\n+    padding: 48px 0 28px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892794047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -168,5 +168,11 @@\n \n \n .littpadd {\n     padding: 48px 0 28px;\n+}\n+\n+.proces {\n+    .title.thin {\n+        font-weight: 300;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735892992106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,5 +174,12 @@\n .proces {\n     .title.thin {\n         font-weight: 300;\n     }\n+}\n+\n+.proces__img {\n+    img {\n+        vertical-align: top;\n+        border-radius: 20px 0 0 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893270736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,5 +181,9 @@\n     img {\n         vertical-align: top;\n         border-radius: 20px 0 0 20px;\n     }\n+}\n+\n+@media(max-width:1399.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893283485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,6 +184,8 @@\n     }\n }\n \n @media(max-width:1399.8px) {\n-    \n+    .title-lg {\n+        \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893296211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,7 +185,11 @@\n }\n \n @media(max-width:1399.8px) {\n     .title-lg {\n-        \n+        font-size: 32px;\n     }\n+\n+    .title-lg.mb65 {\n+        margin-bottom: 40px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893342957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,5 +191,15 @@\n \n     .title-lg.mb65 {\n         margin-bottom: 40px;\n     }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .title-lg {\n+        font-size: 32px;\n+    }\n+\n+    .title-lg.mb65 {\n+        margin-bottom: 40px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893348929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,11 +195,11 @@\n }\n \n @media(max-width:1199.8px) {\n     .title-lg {\n-        font-size: 32px;\n+        font-size: 26px;\n     }\n \n     .title-lg.mb65 {\n-        margin-bottom: 40px;\n+        margin-bottom: 20px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893391840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,8 +183,12 @@\n         border-radius: 20px 0 0 20px;\n     }\n }\n \n+.styledlist:last-child {\n+    margin-bottom: 0;\n+}\n+\n @media(max-width:1399.8px) {\n     .title-lg {\n         font-size: 32px;\n     }\n"
+                },
+                {
+                    "date": 1735893430923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,12 @@\n \n     .title-lg.mb65 {\n         margin-bottom: 40px;\n     }\n+\n+    .perform-doc+.insect2 {\n+        padding-top: 80px;\n+    }\n }\n \n @media(max-width:1199.8px) {\n     .title-lg {\n@@ -205,5 +209,9 @@\n \n     .title-lg.mb65 {\n         margin-bottom: 20px;\n     }\n+\n+    .perform-doc+.insect2 {\n+        padding-top: 70px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893473011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,5 +213,11 @@\n \n     .perform-doc+.insect2 {\n         padding-top: 70px;\n     }\n+}\n+\n+@media(max-width:991.8px) {\n+    .insect2 .imgwraplst img {\n+        border-radius: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893571597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,5 +219,9 @@\n @media(max-width:991.8px) {\n     .insect2 .imgwraplst img {\n         border-radius: 20px;\n     }\n+\n+    .insect4 ul li span {\n+        min-height: 60px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893603785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,5 +223,9 @@\n \n     .insect4 ul li span {\n         min-height: 60px;\n     }\n+\n+    .insect4 ul li {\n+        align-items: flex-start;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893620903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,5 +227,9 @@\n \n     .insect4 ul li {\n         align-items: flex-start;\n     }\n+\n+    .insect4 ul li span {\n+        margin-top: 0;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893631028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,5 +231,9 @@\n \n     .insect4 ul li span {\n         margin-top: 0;\n     }\n+\n+    .insect4 ul li p {\n+        padding-top: 15px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893647847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -235,5 +235,9 @@\n \n     .insect4 ul li p {\n         padding-top: 15px;\n     }\n+\n+    .insect4.v2 ul li p:after {\n+        height: calc(100% - 65px);\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893828933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,8 +213,12 @@\n \n     .perform-doc+.insect2 {\n         padding-top: 70px;\n     }\n+\n+    .insect4 ul li:first-child span {\n+        min-height: 80px;\n+    }\n }\n \n @media(max-width:991.8px) {\n     .insect2 .imgwraplst img {\n@@ -237,7 +241,7 @@\n         padding-top: 15px;\n     }\n \n     .insect4.v2 ul li p:after {\n-        height: calc(100% - 65px);\n+        height: calc(100% - 50px);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893835717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -217,8 +217,12 @@\n \n     .insect4 ul li:first-child span {\n         min-height: 80px;\n     }\n+\n+    .insect4.v2 ul li p:after {\n+        height: calc(100% - 60px);\n+    }\n }\n \n @media(max-width:991.8px) {\n     .insect2 .imgwraplst img {\n"
+                },
+                {
+                    "date": 1735893850649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,9 +218,9 @@\n     .insect4 ul li:first-child span {\n         min-height: 80px;\n     }\n \n-    .insect4.v2 ul li p:after {\n+    .insect4 ul li p:after {\n         height: calc(100% - 60px);\n     }\n }\n \n"
+                },
+                {
+                    "date": 1735893868156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -219,9 +219,9 @@\n         min-height: 80px;\n     }\n \n     .insect4 ul li p:after {\n-        height: calc(100% - 60px);\n+        height: calc(100% - 40px);\n     }\n }\n \n @media(max-width:991.8px) {\n"
+                },
+                {
+                    "date": 1735893909118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,5 +247,11 @@\n \n     .insect4.v2 ul li p:after {\n         height: calc(100% - 50px);\n     }\n+}\n+\n+@media(max-width:767.8px) {\n+    .insect4 ul li p:after {\n+        height: calc(100% - 40px);\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893916674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -251,7 +251,7 @@\n }\n \n @media(max-width:767.8px) {\n     .insect4 ul li p:after {\n-        height: calc(100% - 40px);\n+        height: calc(100% - 10px);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735893958453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,261 @@\n+.insect1 {\n+    .col-lg-5 {\n+        display: flex;\n+        flex-direction: column;\n+    }\n+\n+    img {\n+        height: 100%;\n+        width: 100%;\n+        object-fit: cover;\n+        object-position: 50% 50%;\n+    }\n+\n+    .imgwrap {\n+        width: 100%;\n+        position: relative;\n+        overflow: hidden;\n+        height: 100%;\n+        max-height: 500px;\n+    }\n+\n+    .rdborderblock {\n+        height: 100%;\n+    }\n+}\n+\n+.insect1 .align-items-center .rdborderblock {\n+    min-height: 395px;\n+}\n+\n+.insect2 {\n+    h3.title {\n+        margin-bottom: 64px;\n+        text-transform: uppercase;\n+        font-size: 38px;\n+        color: #000;\n+    }\n+}\n+\n+\n+\n+\n+\n+\n+\n+@media(max-width:991.8px) {\n+    .insect1 .imgwrap {\n+        height: auto;\n+        max-height: initial;\n+\n+        img {\n+            height: auto;\n+            object-fit: initial;\n+        }\n+    }\n+\n+    .insect1 .rdborderblock {\n+        height: auto;\n+    }\n+\n+    .insect1 .descrblue {\n+        margin-bottom: 10px;\n+    }\n+\n+    .tablesect table th {\n+        font-size: 18px;\n+    }\n+\n+    .insect1 .align-items-center .rdborderblock {\n+        min-height: initial;\n+    }\n+\n+    .insect2 h3.title {\n+        font-size: 26px;\n+        margin-bottom: 30px;\n+    }\n+}\n+\n+@media(max-width:575.8px) {\n+    .insect2 h3.title {\n+        font-size: 21px;\n+        margin-bottom: 15px;\n+    }\n+\n+    .probltext.probltext__bott {\n+        margin-top: 20px;\n+    }\n+}\n+\n+\n+// gnatology\n+.perform-doc+.insect2 {\n+    padding-top: 100px;\n+}\n+\n+.title-lg.mb65 {\n+    margin-bottom: 65px;\n+}\n+\n+.insect2 {\n+    .imgwraplst {\n+        position: relative;\n+        overflow: hidden;\n+        height: 100%;\n+        border-radius: 20px 0 0 20px;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+}\n+\n+// .waweblock {\n+//     padding: 60px 0 28px;\n+\n+//     .title {\n+//         font-size: 30px;\n+//         color: #000;\n+//         margin-bottom: 48px;\n+//     }\n+\n+//     ul {\n+//         list-style-type: none;\n+//         margin: 0;\n+//         padding: 0;\n+//         text-align: right;\n+\n+//         li {\n+//             text-align: left;\n+//             display: inline-block;\n+//             padding-right: 95px;\n+\n+//             &:nth-child(1) {\n+//                 width: calc(100% - 312px);\n+//             }\n+\n+//             &:nth-child(2) {\n+//                 width: calc(100% - 312px);\n+//             }\n+\n+//             &:nth-child(3) {}\n+//         }\n+//     }\n+// }\n+\n+.insect4.v2 {\n+    ul li span:after {\n+        border-radius: 0 20px 0 0 ;\n+    }\n+\n+    ul li:first-child span {\n+        min-height: 77px;\n+    }\n+\n+    ul li p:after {\n+        height: calc(100% - 65px);\n+    }\n+}\n+\n+.tablesect {\n+    .redbtn {\n+        margin-top: 48px;\n+    }\n+}\n+\n+\n+.littpadd {\n+    padding: 48px 0 28px;\n+}\n+\n+.proces {\n+    .title.thin {\n+        font-weight: 300;\n+    }\n+}\n+\n+.proces__img {\n+    img {\n+        vertical-align: top;\n+        border-radius: 20px 0 0 20px;\n+    }\n+}\n+\n+.styledlist:last-child {\n+    margin-bottom: 0;\n+}\n+\n+@media(max-width:1399.8px) {\n+    .title-lg {\n+        font-size: 32px;\n+    }\n+\n+    .title-lg.mb65 {\n+        margin-bottom: 40px;\n+    }\n+\n+    .perform-doc+.insect2 {\n+        padding-top: 80px;\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .title-lg {\n+        font-size: 26px;\n+    }\n+\n+    .title-lg.mb65 {\n+        margin-bottom: 20px;\n+    }\n+\n+    .perform-doc+.insect2 {\n+        padding-top: 70px;\n+    }\n+\n+    .insect4 ul li:first-child span {\n+        min-height: 80px;\n+    }\n+\n+    .insect4 ul li p:after {\n+        height: calc(100% - 40px);\n+    }\n+}\n+\n+@media(max-width:991.8px) {\n+    .insect2 .imgwraplst img {\n+        border-radius: 20px;\n+    }\n+\n+    .insect4 ul li span {\n+        min-height: 60px;\n+    }\n+\n+    .insect4 ul li {\n+        align-items: flex-start;\n+    }\n+\n+    .insect4 ul li span {\n+        margin-top: 0;\n+    }\n+\n+    .insect4 ul li p {\n+        padding-top: 15px;\n+    }\n+\n+    .insect4.v2 ul li p:after {\n+        height: calc(100% - 50px);\n+    }\n+\n+    .tablesect .redbtn {\n+        margin-top: 30px;\n+    }\n+}\n+\n+@media(max-width:767.8px) {\n+    .insect4 ul li p:after {\n+        height: calc(100% - 10px);\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735894117891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -251,265 +251,13 @@\n \n     .tablesect .redbtn {\n         margin-top: 30px;\n     }\n-}\n \n-@media(max-width:767.8px) {\n-    .insect4 ul li p:after {\n-        height: calc(100% - 10px);\n-    }\n-}\n-.insect1 {\n-    .col-lg-5 {\n-        display: flex;\n-        flex-direction: column;\n-    }\n-\n-    img {\n-        height: 100%;\n+    .proces__img img {\n         width: 100%;\n-        object-fit: cover;\n-        object-position: 50% 50%;\n-    }\n-\n-    .imgwrap {\n-        width: 100%;\n-        position: relative;\n-        overflow: hidden;\n-        height: 100%;\n-        max-height: 500px;\n-    }\n-\n-    .rdborderblock {\n-        height: 100%;\n-    }\n-}\n-\n-.insect1 .align-items-center .rdborderblock {\n-    min-height: 395px;\n-}\n-\n-.insect2 {\n-    h3.title {\n-        margin-bottom: 64px;\n-        text-transform: uppercase;\n-        font-size: 38px;\n-        color: #000;\n-    }\n-}\n-\n-\n-\n-\n-\n-\n-\n-@media(max-width:991.8px) {\n-    .insect1 .imgwrap {\n-        height: auto;\n-        max-height: initial;\n-\n-        img {\n-            height: auto;\n-            object-fit: initial;\n-        }\n-    }\n-\n-    .insect1 .rdborderblock {\n-        height: auto;\n-    }\n-\n-    .insect1 .descrblue {\n-        margin-bottom: 10px;\n-    }\n-\n-    .tablesect table th {\n-        font-size: 18px;\n-    }\n-\n-    .insect1 .align-items-center .rdborderblock {\n-        min-height: initial;\n-    }\n-\n-    .insect2 h3.title {\n-        font-size: 26px;\n-        margin-bottom: 30px;\n-    }\n-}\n-\n-@media(max-width:575.8px) {\n-    .insect2 h3.title {\n-        font-size: 21px;\n-        margin-bottom: 15px;\n-    }\n-\n-    .probltext.probltext__bott {\n-        margin-top: 20px;\n-    }\n-}\n-\n-\n-// gnatology\n-.perform-doc+.insect2 {\n-    padding-top: 100px;\n-}\n-\n-.title-lg.mb65 {\n-    margin-bottom: 65px;\n-}\n-\n-.insect2 {\n-    .imgwraplst {\n-        position: relative;\n-        overflow: hidden;\n-        height: 100%;\n-        border-radius: 20px 0 0 20px;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n-}\n-\n-// .waweblock {\n-//     padding: 60px 0 28px;\n-\n-//     .title {\n-//         font-size: 30px;\n-//         color: #000;\n-//         margin-bottom: 48px;\n-//     }\n-\n-//     ul {\n-//         list-style-type: none;\n-//         margin: 0;\n-//         padding: 0;\n-//         text-align: right;\n-\n-//         li {\n-//             text-align: left;\n-//             display: inline-block;\n-//             padding-right: 95px;\n-\n-//             &:nth-child(1) {\n-//                 width: calc(100% - 312px);\n-//             }\n-\n-//             &:nth-child(2) {\n-//                 width: calc(100% - 312px);\n-//             }\n-\n-//             &:nth-child(3) {}\n-//         }\n-//     }\n-// }\n-\n-.insect4.v2 {\n-    ul li span:after {\n-        border-radius: 0 20px 0 0 ;\n-    }\n-\n-    ul li:first-child span {\n-        min-height: 77px;\n-    }\n-\n-    ul li p:after {\n-        height: calc(100% - 65px);\n-    }\n-}\n-\n-.tablesect {\n-    .redbtn {\n-        margin-top: 48px;\n-    }\n-}\n-\n-\n-.littpadd {\n-    padding: 48px 0 28px;\n-}\n-\n-.proces {\n-    .title.thin {\n-        font-weight: 300;\n-    }\n-}\n-\n-.proces__img {\n-    img {\n-        vertical-align: top;\n-        border-radius: 20px 0 0 20px;\n-    }\n-}\n-\n-.styledlist:last-child {\n-    margin-bottom: 0;\n-}\n-\n-@media(max-width:1399.8px) {\n-    .title-lg {\n-        font-size: 32px;\n-    }\n-\n-    .title-lg.mb65 {\n-        margin-bottom: 40px;\n-    }\n-\n-    .perform-doc+.insect2 {\n-        padding-top: 80px;\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-    .title-lg {\n-        font-size: 26px;\n-    }\n-\n-    .title-lg.mb65 {\n-        margin-bottom: 20px;\n-    }\n-\n-    .perform-doc+.insect2 {\n-        padding-top: 70px;\n-    }\n-\n-    .insect4 ul li:first-child span {\n-        min-height: 80px;\n-    }\n-\n-    .insect4 ul li p:after {\n-        height: calc(100% - 40px);\n-    }\n-}\n-\n-@media(max-width:991.8px) {\n-    .insect2 .imgwraplst img {\n         border-radius: 20px;\n     }\n-\n-    .insect4 ul li span {\n-        min-height: 60px;\n-    }\n-\n-    .insect4 ul li {\n-        align-items: flex-start;\n-    }\n-\n-    .insect4 ul li span {\n-        margin-top: 0;\n-    }\n-\n-    .insect4 ul li p {\n-        padding-top: 15px;\n-    }\n-\n-    .insect4.v2 ul li p:after {\n-        height: calc(100% - 50px);\n-    }\n }\n \n @media(max-width:767.8px) {\n     .insect4 ul li p:after {\n"
+                },
+                {
+                    "date": 1735894124820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -252,11 +252,15 @@\n     .tablesect .redbtn {\n         margin-top: 30px;\n     }\n \n-    .proces__img img {\n-        width: 100%;\n-        border-radius: 20px;\n+    .proces__img {\n+        margin-top: 20px;\n+\n+        img {\n+            width: 100%;\n+            border-radius: 20px;\n+        }\n     }\n }\n \n @media(max-width:767.8px) {\n"
+                },
+                {
+                    "date": 1735894189967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -266,5 +266,11 @@\n @media(max-width:767.8px) {\n     .insect4 ul li p:after {\n         height: calc(100% - 10px);\n     }\n+}\n+\n+@media(max-width:575.8px) {\n+    .perform-doc+.insect2 {\n+        padding-top: 50px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735894218267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n // }\n \n .insect4.v2 {\n     ul li span:after {\n-        border-radius: 0 20px 0 0 ;\n+        border-radius: 0 20px 0 0;\n     }\n \n     ul li:first-child span {\n         min-height: 77px;\n@@ -272,5 +272,9 @@\n @media(max-width:575.8px) {\n     .perform-doc+.insect2 {\n         padding-top: 50px;\n     }\n+\n+    .title-lg {\n+        font-size: 26px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735894234986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -274,7 +274,11 @@\n         padding-top: 50px;\n     }\n \n     .title-lg {\n-        font-size: 26px;\n+        font-size: 21px;\n     }\n+\n+    .insect4 v2 {\n+        \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735894265973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -277,8 +277,10 @@\n     .title-lg {\n         font-size: 21px;\n     }\n \n-    .insect4 v2 {\n-        \n+    .insect4.v2 {\n+        ul li span {\n+            display: none;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735894289186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -281,6 +281,11 @@\n     .insect4.v2 {\n         ul li span {\n             display: none;\n         }\n+\n+        ul li p {\n+           max-width: 100%;\n+           flex: 0 0 100%;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1735888605006,
+            "name": "Commit-0",
+            "content": ".insect1 {\n    .col-lg-5 {\n        display: flex;\n        flex-direction: column;\n    }\n}"
+        }
+    ]
+}
