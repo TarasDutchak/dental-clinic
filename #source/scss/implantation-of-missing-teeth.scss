@@ -183,6 +183,7 @@
     .insect4 ul li p:after {
         height: calc(100% - 40px);
     }
+    
 }
 
 @media(max-width:991.8px) {
@@ -245,8 +246,8 @@
         }
 
         ul li p {
-           max-width: 100%;
-           flex: 0 0 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
         }
     }
 }
@@ -275,3 +276,177 @@
         width: 100%;
     }
 }
+
+// Caries treatment
+
+.insect5 {
+    padding: 60px 0 0 0;
+    position: relative;
+    margin-bottom: 60px;
+
+    .descr {
+        background: var(--primblue900);
+        border-radius: 0 20px 20px 0;
+        padding: 48px 62px 48px 85px;
+        color: #fff;
+        width: 100%;
+        max-width: 73%;
+        flex: 0 0 73%;
+
+        p {
+            font-weight: 300;
+            margin-bottom: 28px;
+
+            b {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .imgwrap {
+        width: 100%;
+        max-width: calc(27% - 14px);
+        flex: 0 0 calc(27% - 14px);
+
+        img {
+            width: 100%;
+            vertical-align: top;
+            border-radius: 20px 0 0 20px;
+        }
+    }
+
+    .abspic {
+        position: absolute;
+        bottom: 0;
+        right: 27%;
+        border-radius: 20px;
+    }
+
+    .container-large {
+        position: relative;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .insect5 .abspic {
+        max-width: 400px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .insect5 .abspic {
+        display: none;
+    }
+}
+
+@media(max-width:991.8px) {
+    .insect5 .imgwrap {
+        display: none;
+    }
+
+    .container-large {
+        max-width: 720px;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+    }
+
+    .insect5 .descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 20px 40px;
+        border-radius: 20px;
+    }
+
+    .insect5 {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .insect5 .descr {
+        padding: 20px 30px;
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .borderbtn {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .insect5 {
+        margin-bottom: 20px;
+    }
+}
+
+// Treatment of canals
+
+.insect2 .imgwraplst img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media(max-width:991.8px) {
+    .aboutsect h1 br {
+        display: none;
+    }
+
+    .solutionlist {
+        margin-bottom: 0;
+    }
+}
+
+// Gum treatment
+
+.imgwraplst.sml {
+    img {
+        max-width: 460px;
+        display: inline-block;
+        right: 0;
+        left: initial;
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.tablesect__imgright {
+    height: 100%;
+    position: relative;
+
+    img {
+        border-radius: 20px 0 0 20px;
+        vertical-align: top;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media(max-width:991.8px) {
+    .insect2 .imgwraplst img {
+        position: relative;
+    }
+
+    .insect2 .imgwraplst {
+        margin-top: 10px;
+    }
+
+    .imgwraplst.sml {
+        margin-top: 10px;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+            max-width: inherit;
+        }
+    }
+}
+
+// Зубні імпланти
