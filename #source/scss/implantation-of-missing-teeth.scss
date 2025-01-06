@@ -331,6 +331,11 @@
     .insect5 .abspic {
         max-width: 400px;
     }
+
+    .littpadd,
+    .tablesect {
+        padding-bottom: 20px;
+    }
 }
 
 @media(max-width:1199.8px) {
@@ -450,3 +455,57 @@
 }
 
 // Зубні імпланти
+.insect1+.insect4 {
+    padding-top: 70px;
+}
+
+.insect4 ul li p {
+    min-height: 110px;
+}
+
+.insect4.v2+.tablesect.big {
+    padding-top: 42px;
+}
+
+.descrblue.p50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.solutionlist p b {
+    font-weight: 400;
+}
+
+@media(max-width:991.8px) {
+    .descrblue.p50 {
+        padding: 30px 40px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .insect1+.insect4 {
+        padding-top: 50px;
+    }
+
+    .littpadd,
+    .infosection3 {
+        padding-bottom: 20px;
+    }
+
+    .descrblue.p50 {
+        padding: 20px;
+    }
+}
+
+// --
+.tablesect td, .tablesect th {
+    width: 33.333%;
+}
+
+.proces.big {
+    padding: 100px 0 28px;
+
+    h2 {
+        text-transform: uppercase;
+    }
+}
