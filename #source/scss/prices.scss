@@ -1,0 +1,471 @@
+.aboutsect.prices {
+    text-align: center;
+    margin-bottom: 80px;
+
+    h1 {
+        margin-bottom: 28px;
+    }
+
+    .subtitle {
+        max-width: 1040px;
+        margin: 0 auto;
+        color: #000;
+        font-size: 24px;
+        font-weight: 300;
+    }
+}
+
+.accordeon-row {
+    margin-bottom: 28px;
+}
+
+.accordeon__header {
+    border-radius: 20px;
+    background: #EFF1F5;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 8px 60px 8px 30px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &.active {
+        background: #2B2D42;
+
+        p {
+            color: #fff;
+        }
+
+        .arrow {
+            top: 50%;
+            transform: translateY(-50%) rotate(-180deg);
+
+            svg {
+                path {
+                    fill: var(--main);
+                }
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        text-transform: uppercase;
+        color: #181818;
+        font-size: 30px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .arrow {
+        display: inline-block;
+        position: absolute;
+        right: 29px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.5s;
+
+        svg {
+            width: 24px;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.accordeon__body {
+    margin-top: 28px;
+    border-radius: 20px;
+    background: #EFF1F5;
+    padding: 32px;
+    display: none;
+}
+
+.accordeon__body-title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+
+    p {
+        margin: 0;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .proc {
+        width: 100%;
+        max-width: calc(100% - 200px);
+        flex: 0 0 calc(100% - 200px);
+    }
+
+    .price {
+        width: 100%;
+        max-width: 200px;
+        flex: 0 0 200px;
+        text-align: right;
+    }
+}
+
+.accordeon__body-body {
+    .pricesrow {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .proc {
+        width: 100%;
+        max-width: calc(100% - 200px);
+        flex: 0 0 calc(100% - 200px);
+        color: #000;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .price {
+        width: 100%;
+        max-width: 200px;
+        flex: 0 0 200px;
+        text-align: right;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.installments-payment {
+    padding: 60px 0 28px;
+}
+
+.installments-payment__box {
+    border-radius: 20px;
+    background: var(--primblue900);
+    padding: 60px 60px 80px 75px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .ip__left {
+        width: 100%;
+        max-width: 53%;
+        flex: 0 0 53%;
+        padding-right: 20px;
+
+        p {
+            margin-bottom: 28px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+
+    .ip__right {
+        width: 100%;
+        max-width: 47%;
+        flex: 0 0 47%;
+
+        .imgwrap {
+            img {
+                width: 100%;
+                border-radius: 20px;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.testimonials-sect+.consultation-wrap {
+    padding-top: 100px;
+}
+
+@media(max-width:1399.8px) {
+    .aboutsect.prices .subtitle {
+        font-size: 20px;
+    }
+
+    .aboutsect.prices {
+        margin-bottom: 50px;
+    }
+
+    .accordeon__header p {
+        font-size: 26px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .aboutsect.prices .subtitle,
+    .accordeon__body-body .proc,
+    .accordeon__body-body .price,
+    .installments-payment__box .ip__left p {
+        font-size: 18px;
+    }
+
+    .installments-payment__box .ip__left p br {
+        display: none;
+    }
+
+    .installments-payment__box .ip__right .imgwrap {
+        height: 100%;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border-radius: 0;
+        }
+    }
+
+    .testimonials-sect+.consultation-wrap {
+        padding-top: 80px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .accordeon__header p {
+        font-size: 21px;
+    }
+
+    .aboutsect.prices {
+        margin-bottom: 30px;
+    }
+
+    .accordeon-row {
+        margin-bottom: 20px;
+    }
+
+    .testimonials-sect+.consultation-wrap {
+        padding-top: 70px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .installments-payment__box {
+        padding: 30px;
+    }
+
+    .installments-payment__box .ip__left,
+    .installments-payment__box .ip__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .installments-payment__box .ip__right .imgwrap {
+        margin-top: 15px;
+        height: auto;
+    }
+
+    .aboutsect.prices .subtitle,
+    .accordeon__body-body .proc,
+    .accordeon__body-body .price,
+    .installments-payment__box .ip__left p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .aboutsect.prices {
+        margin-bottom: 20px;
+    }
+
+    .accordeon__header p {
+        font-size: 18px;
+    }
+
+    .accordeon__header {
+        min-height: 60px;
+        padding: 8px 40px 8px 15px;
+    }
+
+    .accordeon__header .arrow svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .accordeon__header .arrow {
+        right: 20px;
+    }
+
+    .accordeon-row {
+        margin-bottom: 10px;
+    }
+
+    .accordeon__body {
+        padding: 15px;
+    }
+
+    .accordeon__body-title .proc,
+    .accordeon__body-title .price {
+        font-size: 16px;
+    }
+
+    .accordeon__body-title {
+        margin-bottom: 15px;
+    }
+
+    .accordeon__body-body .price {
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .accordeon__body-body .proc {
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+    }
+
+    .accordeon__body {
+        margin-top: 15px;
+    }
+
+    .accordeon__body-body .pricesrow {
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+// Оплата частинами
+.reversesect.red {
+    .reversesect__left .descr {
+        background: #fff;
+        border: 1px solid var(--darkred);
+
+        p {
+            color: #313131;
+
+            b {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.probltext b {
+    font-weight: 400;
+}
+
+.instpayhowwaork {
+    padding: 60px 0 120px;
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 28px;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .infosection3 {
+        padding-top: 0;
+    }
+
+    .paymethods {
+        display: inline-flex;
+        align-items: center;
+
+        img {
+            margin-right: 26px;
+        }
+    }
+}
+
+.infosection3 {
+    .infbordbox .redbtn {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .instpayhowwaork {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .styledlist.pr20 {
+        padding-right: 0 !important;
+    }
+
+    .instpayhowwaork {
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .instpayhowwaork p,
+    .styledlist li p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .infosection3 .infbordbox {
+        .redbtn {
+            margin-left: 10px;
+        }
+
+        .redbtn,
+        .borderbtn {
+            padding: 16px 20px;
+        }
+    }
+
+    .infosection3 .infbordbox .redbtn {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .instpayhowwaork p,
+    .styledlist li p {
+        font-size: 16px;
+    } 
+}
+
+@media(max-width:575.8px) {
+    .instpayhowwaork .paymethods img {
+        max-width: 120px;
+        max-height: 40px;
+    }
+
+    .instpayhowwaork {
+        padding-bottom: 60px;
+    }
+
+    .instpayhowwaork {
+        padding-top: 50px;
+    }
+
+    .instpayhowwaork p {
+        margin-bottom: 20px;
+    }
+}

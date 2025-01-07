@@ -283,5 +283,10 @@ $(document).ready(function () {
 
     }
 
+    // PRICES accordeon
+    $('.accordeon__header').click(function(){
+        $(this).toggleClass('active');
+        $(this).parents('.accordeon-row').find('.accordeon__body').slideToggle('open');
+    })
 
 });
