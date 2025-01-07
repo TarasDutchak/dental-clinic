@@ -183,7 +183,7 @@
     .insect4 ul li p:after {
         height: calc(100% - 40px);
     }
-    
+
 }
 
 @media(max-width:991.8px) {
@@ -498,7 +498,8 @@
 }
 
 // --
-.tablesect td, .tablesect th {
+.tablesect td,
+.tablesect th {
     width: 33.333%;
 }
 
@@ -507,5 +508,184 @@
 
     h2 {
         text-transform: uppercase;
+    }
+}
+
+// bite correction
+.doc-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding-bottom: 48px;
+
+    .perform-doc__wrapper {
+        width: 100%;
+        max-width: 80%;
+        flex: 0 0 80%;
+        padding-right: 15px;
+
+        .descrwrap {
+            padding-left: 45px;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        height: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #E2E2E2;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #AFAFAF;
+        border-radius: 30px;
+        border: 2px solid #E2E2E2;
+    }
+}
+
+.imgwrap.cover {
+    max-height: inherit;
+}
+
+.container-l0 {
+    .infbordbox {
+        border-radius: 0 20px 20px 0;
+        border-left: none;
+        border-right: 1px solid var(--main);
+
+        .borderbtn {
+            margin-top: 28px;
+        }
+    }
+}
+
+.tablesect.large .tablewrapper td,
+.tablesect.large .tablewrapper th {
+    width: 20%;
+}
+
+.tablesect.large .tablewrapper {
+    width: 100%;
+    max-width: 100%;
+}
+
+.tablesect.large .tablewrapper td {
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.proces.v2 {
+    padding: 80px 0 28px;
+
+    .title {
+        margin: 0;
+        color: #000;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .styledlist {
+        margin-top: 46px;
+    }
+}
+
+.rdborderblock.mh400 {
+    min-height: 400px;
+}
+
+@media(max-width:991.8px) {
+    .doc-group .perform-doc__wrapper {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+    }
+
+    .container-l0 .infbordbox {
+        border-radius: 20px;
+        border-left: 1px solid var(--main);
+    }
+
+    .proces.v2 {
+        padding-top: 60px;
+
+        .text-end {
+            text-align: left;
+
+            .borderbtn {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .rdborderblock.mh400 {
+        min-height: initial;
+        padding: 15px 20px;
+    }
+
+    .insect2  .rdborderblock {
+        margin-top: 15px;
+    }
+ 
+}
+
+@media(max-width:767.8px) {
+    .perform-doc__wrapper {
+        .bottblock {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .doc-group .perform-doc__wrapper .descrwrap {
+        padding-left: 0;
+    }
+
+    .doc-group {
+        padding-bottom: 20px;
+    }
+
+    .proces.v2 {
+        padding: 50px 0 20px;
+    }
+
+    .proces.v2 .title {
+        font-size: 21px;
+    }
+}
+
+// Стоматологія сну
+.tablesect .title i {
+    font-style: normal;
+}
+
+.insect2 {
+    .imgwrap {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        max-height: 500px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+}
+
+@media(max-width:767.8px) {
+    .insect2 {
+        .col-lg-3.text-end {
+            text-align: left;
+
+            .borderbtn {
+                margin-bottom: 20px;
+            }
+        }
     }
 }

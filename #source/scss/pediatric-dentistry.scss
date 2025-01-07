@@ -109,23 +109,25 @@
         }
     }
 
-    .descrlght {
-        max-width: calc(100% - 95px);
-        border-radius: 20px;
-        background: var(--secblue);
-        padding: 10px 18px;
-        margin-bottom: 20px;
-
-        p {
-            font-weight: 300;
-            font-size: 17px;
-            margin: 0;
-        }
-    }
+    
 
     img {
         border-radius: 20px 0 0 20px;
         vertical-align: top;
+    }
+}
+
+.descrlght {
+    max-width: calc(100% - 95px);
+    border-radius: 20px;
+    background: var(--secblue);
+    padding: 10px 18px;
+    margin-bottom: 20px;
+
+    p {
+        font-weight: 300;
+        font-size: 17px;
+        margin: 0;
     }
 }
 
@@ -415,7 +417,7 @@
 
 
 @media(max-width:1399.8px) {
-    .insect1 .descrlght {
+   .descrlght {
         max-width: calc(100% - (100vw - 1140px) / 2);
     }
 
@@ -545,7 +547,7 @@
         max-width: 100%;
     }
 
-    .insect1 .descrlght {
+    .descrlght {
         max-width: 100%;
         margin: 10px 0;
     }
@@ -784,7 +786,7 @@
         font-size: 16px;
     }
 
-    .insect1 .descrlght p {
+   .descrlght p {
         font-size: 15px;
     }
 

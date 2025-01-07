@@ -252,6 +252,36 @@ $(document).ready(function () {
         },
     });
 
+    // скрол вбік
+
+    if ($('.doc-group').length) {
+        const docscrl = document.querySelector('.doc-group');
+
+        function smoothScroll(target, scrollAmount, duration) {
+            let start = target.scrollLeft;
+            let change = scrollAmount;
+            let startTime = performance.now();
+
+            function animateScroll() {
+                let elapsed = performance.now() - startTime;
+                let progress = elapsed / duration;
+                if (progress < 1) {
+                    target.scrollLeft = start + change * progress;
+                    requestAnimationFrame(animateScroll);
+                } else {
+                    target.scrollLeft = start + change;
+                }
+            }
+            animateScroll();
+        }
+
+        docscrl.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            let scrollAmount = e.deltaY;
+            smoothScroll(docscrl, scrollAmount, 300); 
+        });
+
+    }
 
 
 });
