@@ -289,4 +289,70 @@ $(document).ready(function () {
         $(this).parents('.accordeon-row').find('.accordeon__body').slideToggle('open');
     })
 
+    // сертифікати
+    var swiper3 = new Swiper(".certificates", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1200,
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
+
+        navigation: {
+            nextEl: ".swiper-button-next.t",
+            prevEl: ".swiper-button-prev.t",
+        },
+
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+            },
+
+            768: {
+                slidesPerView: 3,
+            },
+
+            991: {
+                slidesPerView: 2,
+            },
+            1199: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    var swiper4 = new Swiper(".history", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1200,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next.t",
+            prevEl: ".swiper-button-prev.t",
+        },
+
+        breakpoints: {
+            768: {
+                slidesPerView: 1.3,
+                spaceBetween: 15,
+            },
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+            },
+
+            1199: {
+                slidesPerView: 1.3,
+                spaceBetween: 28,
+            },
+        },
+    });
+
 });

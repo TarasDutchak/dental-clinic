@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Степан Соловей</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/plyr.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-4">
+                        <p>
+                            <img src="img/header/loc.svg" alt="location">
+                            Івано-Франківськ, 76018, вул. Шухевичів, 14
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <p>
+                            <img src="img/header/time.svg" alt="workingday">
+                            <span>Пн-Пт: 9:00-20:00</span>
+                            <span>Сб-Нд: Зачинено</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 text-center">
+                        <p>
+                            <a href="tel:+380978008181">
+                                <img src="img/header/tel.svg" alt="tel">
+                                +38 097 80 08 181
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container_header container">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li class="submenu">
+                                <a href="#">
+                                    Послуги
+                                </a>
+                                <ul class="large">
+                                    <li><a href="#">Всі послуги</a></li>
+                                    <li><a href="#">Відбілювання</a></li>
+                                    <li><a href="#">Вініри</a></li>
+                                    <li><a href="#">Коронки</a></li>
+                                    <li><a href="#">Імплантація</a></li>
+                                    <li><a href="#">Гнатологія</a></li>
+                                    <li><a href="#">Гігієна ротової порожнини</a></li>
+                                    <li><a href="#" class="active">Лікування карієсу</a></li>
+                                    <li><a href="#" class="disable">Лікування каналів</a></li>
+                                    <li><a href="#">Лікування ясен</a></li>
+                                    <li><a href="#">Зубні імпланти</a></li>
+                                    <li><a href="#">Хірургічна стоматологія</a></li>
+                                    <li><a href="#">Видалення зубів мудрості</a></li>
+                                    <li><a href="#">Стоматологія сну</a></li>
+                                    <li><a href="#">Виправлення прикусу</a></li>
+                                    <li><a href="#">Дитяча стоматологія</a></li>
+                                    <li><a href="#">Діагностика ротової порожнини</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    Про нас
+                                </a>
+                                <ul>
+                                    <li><a href="#">Наша клініка</a></li>
+                                    <li><a href="#">Лікарі</a></li>
+                                    <li><a href="#">Історії лікування</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    Ціни
+                                </a>
+                                <ul>
+                                    <li><a href="#">Прайс</a></li>
+                                    <li><a href="#">Оплата частинами</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Відгуки
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Медичний туризм
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="redbtn mobshow" data-modal-target="appointmentmodal">
+                            записатись на прийом
+                        </a>
+                    </nav>
+                    <button class="closemenu">
+                        <img src="img/header/close.png" alt="close menu">
+                    </button>
+                </div>
+                <div class="header__rightsect">
+                    <a href="#" class="redbtn" data-modal-target="appointmentmodal">
+                        записатись на прийом
+                    </a>
+                    <div class="languagebox">
+                        <span>
+                            <img src="img/header/earth.svg" alt="language">
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/header/us-flag.svg" alt="english">
+                                    En
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="img/header/ua-flag.svg" alt="ukrainian">
+                                    Uk
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="headermenubtn">
+                        <img src="img/header/menu.png" alt="menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="menubg"></div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Головна сторінка</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li>Степан Соловей</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="teamsingle">
+            <div class="container-r0">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="teamsingle__leftcol">
+                            <div class="imgwrap">
+                                <img src="img/team/team6.jpg" alt="img">
+                            </div>
+                            <p>Степан Соловей</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="teamsingle__rightcol">
+                            <div class="prbox">
+                                <h4>Ортодонтія, Загальна стоматологічна реабілітація</h4>
+                                <ul>
+                                    <li>
+                                        <span>Досвід роботи:</span> 32 роки
+                                    </li>
+                                    <li>
+                                        <span>Освіта:</span> Україна, Німеччина, Польща, Іспанія
+                                    </li>
+                                    <li>
+                                        <span>Сертифікати:</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- certificates -->
+                            <div class="swiper certificates smarrow">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="certificate-wrap">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="certificate-wrap">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="certificate-wrap">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="certificate-wrap">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next t">
+                                    <img src="img/general/slider-right.svg" alt="next">
+                                </div>
+                                <div class="swiper-button-prev t">
+                                    <img src="img/general/slider-left.svg" alt="prev">
+                                </div>
+                            </div>
+                            <!-- history -->
+                            <p class="team__slidertitle">Історії лікування:</p>
+                            <div class="swiper history smarrow">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="history-wrap">
+                                            <a href="#" class="history-slide">
+                                                <img src="img/main/result2.jpg" alt="img">
+                                                <p>
+                                                    <span>Лікування та подальша корекція усмішки вінірами</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="history-wrap">
+                                            <a href="#" class="history-slide">
+                                                <img src="img/main/result2.jpg" alt="img">
+                                                <p>
+                                                    <span>Лікування та подальша корекція усмішки вінірами</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-next t">
+                                    <img src="img/general/slider-right.svg" alt="next">
+                                </div>
+                                <div class="swiper-button-prev t">
+                                    <img src="img/general/slider-left.svg" alt="prev">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="consultations-sect">
+            <div class="container">
+                <h2 class="secttitle">Як проходить консультація у наших лікарів?</h2>
+                <div class="teamlistsect">
+                    <p class="subtitle">Онлайн консультація</p>
+                    <ul class="styledlist">
+                        <li>
+                            <p>
+                                Заповнити форму для запису на онлайн-консультацію.
+
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Після цього з Вами звʼяжеться лікар-куратор, який розкаже, які фото/відео потрібно
+                                зробити
+                                для більш розширеної консультації.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                У деяких випадках фото та відео буває недостатньо для якісної онлайн-консультації. Тоді
+                                ми
+                                самостійно знайдемо для Вас місце поряд із Вами, де можна буде зробити необхідний для
+                                нас
+                                рентген-знімок.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ваші діагностичні дані оглянуть всі потрібні спеціалісти у SOLO Dental<br> Clinic.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Після цього наш лікар-куратор надасть Вам детальний попередній план лікування з цінами і
+                                термінами виконання, і Ви зможете прийняти для себе єдине правильне рішення щодо Вашого
+                                майбутнього стоматологічного лікування.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="teamlistsect">
+                    <p class="subtitle">Консультація у нас в клініці
+                    </p>
+                    <ul class="styledlist">
+                        <li>
+                            <p>
+                                Заповнити форму для запису на консультацію в клініці.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ваш лікар огляне Вас у зручний для Вас час у нашій клініці, а також, за необхідності, на
+                                місці проведе всі потрібні діагностичні процедури, такі як компʼютерна томографія,
+                                3D-сканування зубів тощо.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Після цього лікар зможе надати Вам детальний план лікування з цінами і термінами
+                                виконання, і Ви зможете прийняти для себе єдине правильне рішення щодо Вашого
+                                майбутнього стоматологічного лікування.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="consultation-wrap pb128">
+            <div class="container">
+                <div class="consultation">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="consultation__left">
+                                <h2>
+                                    Потрібна консультація
+                                    стоматолога?
+                                </h2>
+                                <p>
+                                    Заповніть форму і ми зв’яжемось<br> з Вами у робочі години
+                                </p>
+                                <a href="#" class="redbtn" data-modal-target="consultationmodal">
+                                    записатись на консультацію
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="consultation__right">
+                                <p class="title">Контакти</p>
+                                <ul>
+                                    <li>
+                                        <a href="tel:+380978008181" class="telnum borderbtn">+38 097 80 08 181</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:solodentalclinic@gmail.com"
+                                            class="email">solodentalclinic@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <p class="address">
+                                            м.Івано-Франківськ, <br>
+                                            вул. Шухевичів, 14
+                                        </p>
+                                    </li>
+                                </ul>
+                                <a href="https://www.instagram.com/solo.dental.clinic?igsh=MWQ5aHA1aHplOXM5cg=="
+                                    target="_blank" class="instagramic">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.5714 0C30.3839 0.0075 31.8114 0.0225 33.0439 0.0575L33.5289 0.0749999C34.0889 0.0949999 34.6414 0.12 35.3089 0.15C37.9689 0.275 39.7839 0.695 41.3764 1.3125C43.0264 1.9475 44.4164 2.8075 45.8064 4.195C47.0782 5.44433 48.0619 6.95618 48.6889 8.625C49.3064 10.2175 49.7264 12.0325 49.8514 14.695C49.8814 15.36 49.9064 15.9125 49.9264 16.475L49.9414 16.96C49.9789 18.19 49.9939 19.6175 49.9989 22.43L50.0014 24.295V27.57C50.0075 29.3935 49.9883 31.217 49.9439 33.04L49.9289 33.525C49.9089 34.0875 49.8839 34.64 49.8539 35.305C49.7289 37.9675 49.3039 39.78 48.6889 41.375C48.0619 43.0438 47.0782 44.5557 45.8064 45.805C44.5571 47.0767 43.0452 48.0605 41.3764 48.6875C39.7839 49.305 37.9689 49.725 35.3089 49.85L33.5289 49.925L33.0439 49.94C31.8114 49.975 30.3839 49.9925 27.5714 49.9975L25.7064 50H22.4339C20.6096 50.0064 18.7852 49.9873 16.9614 49.9425L16.4764 49.9275C15.8829 49.905 15.2896 49.8792 14.6964 49.85C12.0364 49.725 10.2214 49.305 8.62642 48.6875C6.9585 48.0601 5.44753 47.0764 4.19892 45.805C2.92629 44.5559 1.94169 43.044 1.31392 41.375C0.696422 39.7825 0.276422 37.9675 0.151422 35.305L0.0764219 33.525L0.0639222 33.04C0.0178373 31.217 -0.00299824 29.3935 0.00142199 27.57V22.43C-0.00549775 20.6065 0.0128375 18.783 0.0564222 16.96L0.0739221 16.475C0.0939221 15.9125 0.118922 15.36 0.148922 14.695C0.273922 12.0325 0.693922 10.22 1.31142 8.625C1.94066 6.9555 2.92698 5.44359 4.20142 4.195C5.44931 2.92387 6.95939 1.94018 8.62642 1.3125C10.2214 0.695 12.0339 0.275 14.6964 0.15C15.3614 0.12 15.9164 0.0949999 16.4764 0.0749999L16.9614 0.0599998C18.7844 0.0155818 20.6079 -0.00358674 22.4314 0.00249982L27.5714 0ZM25.0014 12.5C21.6862 12.5 18.5068 13.817 16.1626 16.1612C13.8184 18.5054 12.5014 21.6848 12.5014 25C12.5014 28.3152 13.8184 31.4946 16.1626 33.8388C18.5068 36.183 21.6862 37.5 25.0014 37.5C28.3166 37.5 31.4961 36.183 33.8403 33.8388C36.1845 31.4946 37.5014 28.3152 37.5014 25C37.5014 21.6848 36.1845 18.5054 33.8403 16.1612C31.4961 13.817 28.3166 12.5 25.0014 12.5ZM25.0014 17.5C25.9863 17.4998 26.9616 17.6937 27.8716 18.0704C28.7816 18.4472 29.6085 18.9995 30.3051 19.6958C31.0016 20.3921 31.5542 21.2188 31.9313 22.1287C32.3083 23.0386 32.5025 24.0138 32.5027 24.9988C32.5028 25.9837 32.309 26.959 31.9322 27.869C31.5555 28.779 31.0032 29.6059 30.3069 30.3024C29.6105 30.999 28.7838 31.5516 27.874 31.9286C26.9641 32.3057 25.9888 32.4998 25.0039 32.5C23.0148 32.5 21.1071 31.7098 19.7006 30.3033C18.2941 28.8968 17.5039 26.9891 17.5039 25C17.5039 23.0109 18.2941 21.1032 19.7006 19.6967C21.1071 18.2902 23.0148 17.5 25.0039 17.5M38.1289 8.75C37.3001 8.75 36.5053 9.07924 35.9192 9.66529C35.3332 10.2513 35.0039 11.0462 35.0039 11.875C35.0039 12.7038 35.3332 13.4987 35.9192 14.0847C36.5053 14.6708 37.3001 15 38.1289 15C38.9577 15 39.7526 14.6708 40.3386 14.0847C40.9247 13.4987 41.2539 12.7038 41.2539 11.875C41.2539 11.0462 40.9247 10.2513 40.3386 9.66529C39.7526 9.07924 38.9577 8.75 38.1289 8.75Z"
+                                            fill="#2B2D42"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/footer/logo-footer.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xl-4">
+                    <ul class="footer__nav">
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Наша команда</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Mедичний туризм</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 text-end">
+                    <div class="footer__info">
+                        <div class="footinfwrap">
+                            <ul>
+                                <li>
+                                    <img src="img/footer/foot-clock.svg" alt="icon">
+                                    <p>
+                                        Пн-Пт: 9:00-20:00 <br>
+                                        Сб-Нд: Зачинено
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-tel.svg" alt="icon">
+                                    <a href="tel: +380978008181"> +38 097 80 08 181</a>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-email.svg" alt="icon">
+                                    <a href="mailto:solodentalclinic@gmail.com">solodentalclinic@gmail.com</a>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-loc.svg" alt="icon">
+                                    <p>
+                                        Івано-Франківськ, 76018, вул. Шухевичів, 14
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mapwrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.917959431259!2d24.720775176848996!3d48.91695529658282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c166259a99f7%3A0xe9b1d0f143ae48f0!2z0LLRg9C70LjRhtGPINCo0YPRhdC10LLQuNGH0ZbQsiwgMTQsINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LosINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1suk!2sua!4v1735398550766!5m2!1suk!2sua"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottomsect">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-5">
+                        <p class="weinsoc">
+                            Ми в соцмережах:
+                            <a href="#">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.8667 2.83301C16.1792 2.83651 16.8453 2.84351 17.4205 2.85984L17.6468 2.86801C17.9082 2.87734 18.166 2.88901 18.4775 2.90301C19.7188 2.96134 20.5658 3.15734 21.309 3.44551C22.079 3.74184 22.7277 4.14317 23.3763 4.79067C23.9698 5.3737 24.4289 6.07923 24.7215 6.85801C25.0097 7.60117 25.2057 8.44817 25.264 9.69067C25.278 10.001 25.2897 10.2588 25.299 10.5213L25.306 10.7477C25.3235 11.3217 25.3305 11.9878 25.3328 13.3003L25.334 14.1707V15.699C25.3368 16.55 25.3279 17.4009 25.3072 18.2517L25.3002 18.478C25.2908 18.7405 25.2792 18.9983 25.2652 19.3087C25.2068 20.5512 25.0085 21.397 24.7215 22.1413C24.4289 22.9201 23.9698 23.6257 23.3763 24.2087C22.7933 24.8022 22.0878 25.2612 21.309 25.5538C20.5658 25.842 19.7188 26.038 18.4775 26.0963L17.6468 26.1313L17.4205 26.1383C16.8453 26.1547 16.1792 26.1628 14.8667 26.1652L13.9963 26.1663H12.4692C11.6178 26.1693 10.7664 26.1604 9.91533 26.1395L9.689 26.1325C9.41204 26.122 9.13515 26.11 8.85833 26.0963C7.617 26.038 6.77 25.842 6.02566 25.5538C5.2473 25.2611 4.54218 24.802 3.9595 24.2087C3.3656 23.6258 2.90612 22.9202 2.61316 22.1413C2.325 21.3982 2.129 20.5512 2.07066 19.3087L2.03566 18.478L2.02983 18.2517C2.00832 17.401 1.9986 16.55 2.00066 15.699V13.3003C1.99743 12.4494 2.00599 11.5984 2.02633 10.7477L2.0345 10.5213C2.04383 10.2588 2.0555 10.001 2.0695 9.69067C2.12783 8.44817 2.32383 7.60234 2.612 6.85801C2.90564 6.07891 3.36592 5.37335 3.96066 4.79067C4.54301 4.19748 5.24772 3.73843 6.02566 3.44551C6.77 3.15734 7.61583 2.96134 8.85833 2.90301C9.16866 2.88901 9.42766 2.87734 9.689 2.86801L9.91533 2.86101C10.7661 2.84028 11.617 2.83133 12.468 2.83417L14.8667 2.83301ZM13.6673 8.66634C12.1202 8.66634 10.6365 9.28092 9.54254 10.3749C8.44858 11.4688 7.834 12.9526 7.834 14.4997C7.834 16.0468 8.44858 17.5305 9.54254 18.6245C10.6365 19.7184 12.1202 20.333 13.6673 20.333C15.2144 20.333 16.6982 19.7184 17.7921 18.6245C18.8861 17.5305 19.5007 16.0468 19.5007 14.4997C19.5007 12.9526 18.8861 11.4688 17.7921 10.3749C16.6982 9.28092 15.2144 8.66634 13.6673 8.66634ZM13.6673 10.9997C14.127 10.9996 14.5821 11.0901 15.0068 11.2659C15.4314 11.4417 15.8173 11.6994 16.1424 12.0244C16.4674 12.3493 16.7253 12.7351 16.9013 13.1597C17.0772 13.5844 17.1678 14.0395 17.1679 14.4991C17.168 14.9587 17.0775 15.4139 16.9017 15.8385C16.7259 16.2632 16.4682 16.6491 16.1432 16.9741C15.8182 17.2992 15.4325 17.5571 15.0078 17.733C14.5832 17.909 14.1281 17.9996 13.6685 17.9997C12.7402 17.9997 11.85 17.6309 11.1936 16.9745C10.5372 16.3182 10.1685 15.4279 10.1685 14.4997C10.1685 13.5714 10.5372 12.6812 11.1936 12.0248C11.85 11.3684 12.7402 10.9997 13.6685 10.9997M19.7935 6.91634C19.4067 6.91634 19.0358 7.06999 18.7623 7.34348C18.4888 7.61697 18.3352 7.9879 18.3352 8.37467C18.3352 8.76145 18.4888 9.13238 18.7623 9.40587C19.0358 9.67936 19.4067 9.83301 19.7935 9.83301C20.1803 9.83301 20.5512 9.67936 20.8247 9.40587C21.0982 9.13238 21.2518 8.76145 21.2518 8.37467C21.2518 7.9879 21.0982 7.61697 20.8247 7.34348C20.5512 7.06999 20.1803 6.91634 19.7935 6.91634Z"
+                                        fill="#D00404" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <ul>
+                            <li>
+                                <p>
+                                    <img src="img/footer/copyright.svg" alt="icon">
+                                    2024. Усі права захищені
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">Політика конфіденційності</a>
+                            </li>
+                            <li>
+                                <a href="#">Договір оферти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- consultationmodal -->
+    <div id="consultationmodal" class="modal bgmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Заповніть форму нижче і ми зв’яжемось з Вами у робочі години</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="inputfield">
+                                <label for="name">Ваше ім’я*</label>
+                                <input id="name" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 selwr">
+                            <div class="inputfield rpad">
+                                <select class="customselect" name="formcons" data-placeholder="форма консультації:">
+                                    <option></option>
+                                    <option value="0">Онлайн консультація</option>
+                                    <option value="1">Консультація в клініці</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="inputfield">
+                                <label for="tel">Номер телефону*</label>
+                                <input id="tel" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="inputfield">
+                                <label for="comment">Ваш коментар</label>
+                                <textarea id="comment" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="inputfield check">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    Я погоджуюсь з обробкою персональних даних <br>
+                                    політика конфіденційності
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-end">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">НАДІСЛАТИ</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="thankmodal" class="modal smmodal text-center">
+        <div class="modal-content">
+            <span class="close closemod">
+                <img src="img/general/close-modal.svg" alt="close">
+            </span>
+            <p>
+                Вашу форму надіслано!
+            </p>
+            <p>
+                Дякуємо, ми Вам залетелефонуємо
+                <img src="img/general/modicon.svg" alt="img">
+            </p>
+            <button class="bluebtn close">
+                Закрити
+            </button>
+        </div>
+    </div>
+
+    <div id="appointmentmodal" class="modal mdmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Заповніть форму нижче<br> і ми зв’яжемось з Вами у робочі години</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="name">Ваше ім’я*</label>
+                                <input id="name" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="tel">Номер телефону*</label>
+                                <input id="tel" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="comment">Ваш коментар</label>
+                                <textarea id="comment" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield check">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    Я погоджуюсь з обробкою персональних даних <br>
+                                    політика конфіденційності
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">НАДІСЛАТИ</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimmodal" class="modal mdmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Залишити відгук</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="name">Ваше ім’я*</label>
+                                <input id="name" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="tel">Номер телефону*</label>
+                                <input id="tel" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="comment">Ваш коментар</label>
+                                <textarea id="comment" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield check">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    Я погоджуюсь з обробкою персональних даних <br>
+                                    політика конфіденційності
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">залишити відгук</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/plyr.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+</html>
