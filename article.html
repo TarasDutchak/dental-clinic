@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стаття</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/plyr.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="css/lib/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-4">
+                        <p>
+                            <img src="img/header/loc.svg" alt="location">
+                            Івано-Франківськ, 76018, вул. Шухевичів, 14
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <p>
+                            <img src="img/header/time.svg" alt="workingday">
+                            <span>Пн-Пт: 9:00-20:00</span>
+                            <span>Сб-Нд: Зачинено</span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 text-center">
+                        <p>
+                            <a href="tel:+380978008181">
+                                <img src="img/header/tel.svg" alt="tel">
+                                +38 097 80 08 181
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container_header container">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li class="submenu">
+                                <a href="#">
+                                    Послуги
+                                </a>
+                                <ul class="large">
+                                    <li><a href="#">Всі послуги</a></li>
+                                    <li><a href="#">Відбілювання</a></li>
+                                    <li><a href="#">Вініри</a></li>
+                                    <li><a href="#">Коронки</a></li>
+                                    <li><a href="#">Імплантація</a></li>
+                                    <li><a href="#">Гнатологія</a></li>
+                                    <li><a href="#">Гігієна ротової порожнини</a></li>
+                                    <li><a href="#" class="active">Лікування карієсу</a></li>
+                                    <li><a href="#" class="disable">Лікування каналів</a></li>
+                                    <li><a href="#">Лікування ясен</a></li>
+                                    <li><a href="#">Зубні імпланти</a></li>
+                                    <li><a href="#">Хірургічна стоматологія</a></li>
+                                    <li><a href="#">Видалення зубів мудрості</a></li>
+                                    <li><a href="#">Стоматологія сну</a></li>
+                                    <li><a href="#">Виправлення прикусу</a></li>
+                                    <li><a href="#">Дитяча стоматологія</a></li>
+                                    <li><a href="#">Діагностика ротової порожнини</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    Про нас
+                                </a>
+                                <ul>
+                                    <li><a href="#">Наша клініка</a></li>
+                                    <li><a href="#">Лікарі</a></li>
+                                    <li><a href="#">Історії лікування</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="#">
+                                    Ціни
+                                </a>
+                                <ul>
+                                    <li><a href="#">Прайс</a></li>
+                                    <li><a href="#">Оплата частинами</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Відгуки
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Медичний туризм
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="redbtn mobshow" data-modal-target="appointmentmodal">
+                            записатись на прийом
+                        </a>
+                    </nav>
+                    <button class="closemenu">
+                        <img src="img/header/close.png" alt="close menu">
+                    </button>
+                </div>
+                <div class="header__rightsect">
+                    <a href="#" class="redbtn" data-modal-target="appointmentmodal">
+                        записатись на прийом
+                    </a>
+                    <div class="languagebox">
+                        <span>
+                            <img src="img/header/earth.svg" alt="language">
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/header/us-flag.svg" alt="english">
+                                    En
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <img src="img/header/ua-flag.svg" alt="ukrainian">
+                                    Uk
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="headermenubtn">
+                        <img src="img/header/menu.png" alt="menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="menubg"></div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Головна сторінка</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li>Коли потрібно видаляти зуби “мудрості”?</li>
+                </ul>
+            </div>
+        </div>
+
+        <article>
+            <div class="container">
+                <div class="article__hero">
+                    <img src="img/general/article1.jpg" alt="img">
+                    <h1>Коли потрібно видаляти зуби “мудрості”?</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-10">
+                        <p>
+                            <b>
+                                Зуби мудрості, або треті моляри, можуть викликати ряд проблем, через які їх часто
+                                рекомендують
+                                видаляти.<br>
+                                Ось основні причини, коли необхідно видаляти зуби мудрості:
+                            </b>
+                        </p>
+                        <h3>Основні причини видалення зубів мудрості:</h3>
+                        <ol>
+                            <li>
+                                Неправильне розташування: Зуби мудрості часто ростуть під кутом або навіть
+                                горизонтально, що
+                                може пошкодити сусідні зуби.
+                            </li>
+                            <li>
+                                Нестача місця: Багато людей мають недостатньо місця в ротовій порожнині для зубів
+                                мудрості,
+                                через що вони можуть не повністю прорізатися або залишитися частково в яснах.
+                            </li>
+                            <li>
+                                Запалення та інфекції: Частково прорізані зуби мудрості можуть створювати кишені, де
+                                накопичується їжа та бактерії, що веде до запалення та інфекцій ясен.
+                            </li>
+                            <li>
+                                Кісти та пухлини: У деяких випадках навколо непрорізаних зубів мудрості можуть
+                                утворюватися
+                                кісти або навіть пухлини, що може пошкодити кістку щелепи та сусідні зуби.
+                            </li>
+                        </ol>
+                        <h3>Коли видаляти зуби мудрості?</h3>
+                        <ol>
+                            <li>
+                                Молодий вік: Зазвичай видалення рекомендується в молодому віці (підлітковий вік або
+                                ранній
+                                дорослий вік), коли кістка щелепи є гнучкою, а ризик ускладнень менший.
+                            </li>
+                            <li>
+                                Планування ортодонтичного лікування: Якщо планується встановлення брекетів чи іншого
+                                ортодонтичного лікування, видалення зубів мудрості може бути рекомендоване, щоб уникнути
+                                зсуву
+                                зубів.
+                            </li>
+                            <li>
+                                Періодичні болі та дискомфорт: Якщо зуби мудрості викликають періодичні болі або
+                                дискомфорт,
+                                навіть якщо вони ще не прорізалися повністю.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="article__bottnav">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-6">
+                        <a href="#" class="article__prev">
+                            <span><img src="img/general/slider-left.svg" alt="prev"></span>
+                            попередня стаття
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="#" class="bluebtn">ПОВЕРНУТИСЬ ДО ПЕРЕЛІКУ СТАТТЕЙ</a>
+                    </div>
+                    <div class="col-lg-4 col-6 text-end">
+                        <a href="#" class="article__next">
+                            наступна стаття
+                            <span><img src="img/general/slider-right.svg" alt="next"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="artfaq">
+            <div class="container">
+                <p class="artfaq__title">Часті питання та відповіді</p>
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-1">
+                        <div class="artfaq-sect">
+                            <div class="artfaq__row">
+                                <div class="artfaq__header">
+                                    <p>
+                                        Чи потрібно видаляти всі зуби мудрості?
+                                    </p>
+                                </div>
+                                <div class="artfaq__body">
+                                    <p>
+                                        Видалення зубів мудрості необхідне не завжди. Якщо вони правильно прорізалися,
+                                        не викликають дискомфорту, запалення чи проблем із прикусом, їх можна залишити.
+                                        Однак у разі неправильного положення, нестачі місця або ризику ускладнень лікар
+                                        може рекомендувати видалення. Кожен випадок потребує індивідуальної консультації
+                                        стоматолога.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="artfaq__row">
+                                <div class="artfaq__header">
+                                    <p>
+                                        Які симптоми вказують на те, що зуби мудрості потрібно видалити?
+                                    </p>
+                                </div>
+                                <div class="artfaq__body">
+                                    <p>
+                                        Біль, запалення, набряк, інфекція, тиск на сусідні зуби, карієс або
+                                        кіста.Рекомендується звернутися до стоматолога для огляду та рентгену.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="artfaq__row">
+                                <div class="artfaq__header">
+                                    <p>
+                                        Чи боляче видаляти зуби мудрості?
+                                    </p>
+                                </div>
+                                <div class="artfaq__body">
+                                    <p>
+                                        Під час видалення зуба мудрості болю зазвичай немає, оскільки використовується
+                                        анестезія. Можливий дискомфорт і біль після процедури, які знімаються
+                                        знеболювальними.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/footer/logo-footer.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xl-4">
+                    <ul class="footer__nav">
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Наша команда</a></li>
+                        <li><a href="#">Ціни</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Mедичний туризм</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 text-end">
+                    <div class="footer__info">
+                        <div class="footinfwrap">
+                            <ul>
+                                <li>
+                                    <img src="img/footer/foot-clock.svg" alt="icon">
+                                    <p>
+                                        Пн-Пт: 9:00-20:00 <br>
+                                        Сб-Нд: Зачинено
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-tel.svg" alt="icon">
+                                    <a href="tel: +380978008181"> +38 097 80 08 181</a>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-email.svg" alt="icon">
+                                    <a href="mailto:solodentalclinic@gmail.com">solodentalclinic@gmail.com</a>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-loc.svg" alt="icon">
+                                    <p>
+                                        Івано-Франківськ, 76018, вул. Шухевичів, 14
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mapwrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.917959431259!2d24.720775176848996!3d48.91695529658282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c166259a99f7%3A0xe9b1d0f143ae48f0!2z0LLRg9C70LjRhtGPINCo0YPRhdC10LLQuNGH0ZbQsiwgMTQsINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LosINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzYwMDA!5e0!3m2!1suk!2sua!4v1735398550766!5m2!1suk!2sua"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottomsect">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-5">
+                        <p class="weinsoc">
+                            Ми в соцмережах:
+                            <a href="#">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.8667 2.83301C16.1792 2.83651 16.8453 2.84351 17.4205 2.85984L17.6468 2.86801C17.9082 2.87734 18.166 2.88901 18.4775 2.90301C19.7188 2.96134 20.5658 3.15734 21.309 3.44551C22.079 3.74184 22.7277 4.14317 23.3763 4.79067C23.9698 5.3737 24.4289 6.07923 24.7215 6.85801C25.0097 7.60117 25.2057 8.44817 25.264 9.69067C25.278 10.001 25.2897 10.2588 25.299 10.5213L25.306 10.7477C25.3235 11.3217 25.3305 11.9878 25.3328 13.3003L25.334 14.1707V15.699C25.3368 16.55 25.3279 17.4009 25.3072 18.2517L25.3002 18.478C25.2908 18.7405 25.2792 18.9983 25.2652 19.3087C25.2068 20.5512 25.0085 21.397 24.7215 22.1413C24.4289 22.9201 23.9698 23.6257 23.3763 24.2087C22.7933 24.8022 22.0878 25.2612 21.309 25.5538C20.5658 25.842 19.7188 26.038 18.4775 26.0963L17.6468 26.1313L17.4205 26.1383C16.8453 26.1547 16.1792 26.1628 14.8667 26.1652L13.9963 26.1663H12.4692C11.6178 26.1693 10.7664 26.1604 9.91533 26.1395L9.689 26.1325C9.41204 26.122 9.13515 26.11 8.85833 26.0963C7.617 26.038 6.77 25.842 6.02566 25.5538C5.2473 25.2611 4.54218 24.802 3.9595 24.2087C3.3656 23.6258 2.90612 22.9202 2.61316 22.1413C2.325 21.3982 2.129 20.5512 2.07066 19.3087L2.03566 18.478L2.02983 18.2517C2.00832 17.401 1.9986 16.55 2.00066 15.699V13.3003C1.99743 12.4494 2.00599 11.5984 2.02633 10.7477L2.0345 10.5213C2.04383 10.2588 2.0555 10.001 2.0695 9.69067C2.12783 8.44817 2.32383 7.60234 2.612 6.85801C2.90564 6.07891 3.36592 5.37335 3.96066 4.79067C4.54301 4.19748 5.24772 3.73843 6.02566 3.44551C6.77 3.15734 7.61583 2.96134 8.85833 2.90301C9.16866 2.88901 9.42766 2.87734 9.689 2.86801L9.91533 2.86101C10.7661 2.84028 11.617 2.83133 12.468 2.83417L14.8667 2.83301ZM13.6673 8.66634C12.1202 8.66634 10.6365 9.28092 9.54254 10.3749C8.44858 11.4688 7.834 12.9526 7.834 14.4997C7.834 16.0468 8.44858 17.5305 9.54254 18.6245C10.6365 19.7184 12.1202 20.333 13.6673 20.333C15.2144 20.333 16.6982 19.7184 17.7921 18.6245C18.8861 17.5305 19.5007 16.0468 19.5007 14.4997C19.5007 12.9526 18.8861 11.4688 17.7921 10.3749C16.6982 9.28092 15.2144 8.66634 13.6673 8.66634ZM13.6673 10.9997C14.127 10.9996 14.5821 11.0901 15.0068 11.2659C15.4314 11.4417 15.8173 11.6994 16.1424 12.0244C16.4674 12.3493 16.7253 12.7351 16.9013 13.1597C17.0772 13.5844 17.1678 14.0395 17.1679 14.4991C17.168 14.9587 17.0775 15.4139 16.9017 15.8385C16.7259 16.2632 16.4682 16.6491 16.1432 16.9741C15.8182 17.2992 15.4325 17.5571 15.0078 17.733C14.5832 17.909 14.1281 17.9996 13.6685 17.9997C12.7402 17.9997 11.85 17.6309 11.1936 16.9745C10.5372 16.3182 10.1685 15.4279 10.1685 14.4997C10.1685 13.5714 10.5372 12.6812 11.1936 12.0248C11.85 11.3684 12.7402 10.9997 13.6685 10.9997M19.7935 6.91634C19.4067 6.91634 19.0358 7.06999 18.7623 7.34348C18.4888 7.61697 18.3352 7.9879 18.3352 8.37467C18.3352 8.76145 18.4888 9.13238 18.7623 9.40587C19.0358 9.67936 19.4067 9.83301 19.7935 9.83301C20.1803 9.83301 20.5512 9.67936 20.8247 9.40587C21.0982 9.13238 21.2518 8.76145 21.2518 8.37467C21.2518 7.9879 21.0982 7.61697 20.8247 7.34348C20.5512 7.06999 20.1803 6.91634 19.7935 6.91634Z"
+                                        fill="#D00404" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <ul>
+                            <li>
+                                <p>
+                                    <img src="img/footer/copyright.svg" alt="icon">
+                                    2024. Усі права захищені
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">Політика конфіденційності</a>
+                            </li>
+                            <li>
+                                <a href="#">Договір оферти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- consultationmodal -->
+    <div id="consultationmodal" class="modal bgmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Заповніть форму нижче і ми зв’яжемось з Вами у робочі години</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="inputfield">
+                                <label for="name">Ваше ім’я*</label>
+                                <input id="name" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 selwr">
+                            <div class="inputfield rpad">
+                                <select class="customselect" name="formcons" data-placeholder="форма консультації:">
+                                    <option></option>
+                                    <option value="0">Онлайн консультація</option>
+                                    <option value="1">Консультація в клініці</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="inputfield">
+                                <label for="tel">Номер телефону*</label>
+                                <input id="tel" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="inputfield">
+                                <label for="comment">Ваш коментар</label>
+                                <textarea id="comment" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="inputfield check">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    Я погоджуюсь з обробкою персональних даних <br>
+                                    політика конфіденційності
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-end">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">НАДІСЛАТИ</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="thankmodal" class="modal smmodal text-center">
+        <div class="modal-content">
+            <span class="close closemod">
+                <img src="img/general/close-modal.svg" alt="close">
+            </span>
+            <p>
+                Вашу форму надіслано!
+            </p>
+            <p>
+                Дякуємо, ми Вам залетелефонуємо
+                <img src="img/general/modicon.svg" alt="img">
+            </p>
+            <button class="bluebtn close">
+                Закрити
+            </button>
+        </div>
+    </div>
+
+    <div id="appointmentmodal" class="modal mdmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Заповніть форму нижче<br> і ми зв’яжемось з Вами у робочі години</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="name">Ваше ім’я*</label>
+                                <input id="name" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="tel">Номер телефону*</label>
+                                <input id="tel" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="comment">Ваш коментар</label>
+                                <textarea id="comment" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield check">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    Я погоджуюсь з обробкою персональних даних <br>
+                                    політика конфіденційності
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">НАДІСЛАТИ</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimmodal" class="modal mdmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Залишити відгук</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="name">Ваше ім’я*</label>
+                                <input id="name" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="tel">Номер телефону*</label>
+                                <input id="tel" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="comment">Ваш коментар</label>
+                                <textarea id="comment" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield check">
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    Я погоджуюсь з обробкою персональних даних <br>
+                                    політика конфіденційності
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">залишити відгук</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/plyr.js"></script>
+    <script src="js/lib/select2.js"></script>
+    <script src="js/lib/fancybox.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+</html>

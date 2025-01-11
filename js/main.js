@@ -360,4 +360,10 @@ $(document).ready(function () {
         // Your custom options
     });
 
+    // faq
+    $('.artfaq__header').click(function(){
+        $(this).toggleClass('active');
+        $(this).next('.artfaq__body').slideToggle();
+    });
+
 });
