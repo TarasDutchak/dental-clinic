@@ -47,10 +47,34 @@
         <div class="header__content">
             <div class="container_header container">
                 <div class="header__logo">
-                    <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="img/header/moblogo.svg" media="(max-width: 575px)">
+                            <img src="img/header/logo.svg" alt="logo">
+                          </picture>
+                    </a>
                 </div>
                 <div class="header__nav">
                     <nav>
+                        <div class="languagebox languagebox__mobile">
+                            <span>
+                                <img src="img/header/earth.svg" alt="language">
+                            </span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/header/us-flag.svg" alt="english">
+                                        En
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <img src="img/header/ua-flag.svg" alt="ukrainian">
+                                        Uk
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <ul>
                             <li class="submenu">
                                 <a href="#">
@@ -114,6 +138,8 @@
                         <a href="#" class="redbtn mobshow" data-modal-target="appointmentmodal">
                             записатись на прийом
                         </a>
+
+                        
                     </nav>
                     <button class="closemenu">
                         <img src="img/header/close.png" alt="close menu">
@@ -143,7 +169,10 @@
                         </ul>
                     </div>
                     <button class="headermenubtn">
-                        <img src="img/header/menu.png" alt="menu">
+                        <picture>
+                            <source srcset="img/header/menu.svg" media="(max-width: 575px)">
+                            <img src="img/header/menu.png" alt="menu">
+                          </picture>
                     </button>
                 </div>
             </div>

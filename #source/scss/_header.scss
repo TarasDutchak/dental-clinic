@@ -350,6 +350,9 @@ header.header {
     display: none;
 }
 
+.languagebox.languagebox__mobile {
+    display: none;
+}
 
 @media(max-width:1399.8px) {
     header.header {
@@ -590,7 +593,25 @@ header.header {
 
 
 
+    header.header {
+        background: var(--primblue900);
+    }
 
+    .header__content {
+        padding: 13px 0;
+    }
 
+    .languagebox {
+        display: none;
+    }
 
+    .languagebox.languagebox__mobile {
+        display: block;
+        margin-bottom: 20px;
+
+        ul {
+            z-index: 3;
+        }
+    }
+    
 }
