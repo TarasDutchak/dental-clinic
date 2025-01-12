@@ -48,7 +48,7 @@ body * {
     // -moz-user-select: none;
     // -ms-user-select: none;
     // user-select: none;
-    
+
 }
 
 body {
@@ -326,17 +326,18 @@ main.main {
     .container-l0 {
         padding-right: calc((100vw - 1140px)/2);
     }
-    
+
 }
 
 @media(max-width:1199.8px) {
     .container-r0 {
         padding-left: calc((100vw - 950px)/2);
     }
+
     .container-l0 {
         padding-right: calc((100vw - 950px)/2);
     }
-    
+
 }
 
 @media(max-width:991.8px) {
@@ -413,3 +414,6 @@ main.main {
 // pt48
 // mb65
 // mw391
+
+
+

@@ -1,0 +1,186 @@
+@media(max-width:575.8px) {
+    .resultslider .imgwrap {
+        padding-bottom: 40px;
+    }
+
+    .resultslider .slidewrapper>p.text-end {
+        display: none;
+    }
+
+    .testimonials-sect .titleblock .text-end,
+    .blog-section .titleblock .text-end,
+    .insect2 .col-lg-3.text-end {
+        text-align: center !important;
+    }
+
+    .borderbtn {
+        font-size: 14px;
+    }
+
+    .testimbox {
+        padding: 48px 28px 28px 28px;
+    }
+
+    .testimbox__header .ava {
+        max-width: 50px;
+        flex: 0 0 50px;
+        height: 50px;
+
+        img {
+            width: 28px;
+        }
+    }
+
+    .testimbox__header .userinfo {
+        max-width: calc(100% - 50px);
+        flex: 0 0 calc(100% - 50px);
+        padding-left: 19px;
+    }
+
+    .blogbox .imgwrap {
+        height: 331px;
+    }
+
+    .blogbox .descrwrap h4,
+    .blogbox .descrwrap p {
+        margin-bottom: 16px;
+    }
+
+    .col-md-4:last-child .blogbox {
+        margin-bottom: 0;
+    }
+
+    .trusted h2 img {
+        margin-top: 0;
+    }
+
+    .tablesect .title .borderbtn {
+        display: inline-block;
+    }
+
+    .title-lg br {
+        display: none;
+    }
+
+    .tablesect .title.twocol a {
+        margin: 0 auto !important;
+    }
+
+    .proces.big {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .aboutsect.prices h1,
+    .installments-payment__box .ip__left p {
+        margin-bottom: 20px;
+    }
+
+    .installments-payment__box .ip__left {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .installments-payment__box {
+        padding: 30px 20px;
+    }
+
+    .instpayhowwaork .paymethods {
+        justify-content: center;
+        display: flex;
+
+        img {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .history-slide{
+        padding-bottom: 35px;
+    }
+
+    .blogsection__title {
+        margin-bottom: 20px;
+    }
+
+
+    .installments-payment {
+        padding-bottom: 20px;
+    }
+
+    .historyslider-head .btnwrap {
+        text-align: center;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    .testimbox__header .userinfo .name {
+        font-size: 20px;
+    }
+
+    .testimbox__header .userinfo .date,
+    .testimbox__body p {
+        font-size: 16px;
+    }
+
+    .blogbox .descrwrap a {
+        font-size: 14px;
+    }
+
+    .capabilities h2,
+    .result h2,
+    .infosection h2,
+    .testimonials-sect h2,
+    .blog-section h2,
+    .partnerssect .title,
+    .trusted h2,
+    .perform-doc .title,
+    .tablesect.big .title,
+    .title-lg,
+    .tablesect .title,
+    .insect4 .title,
+    .insect2 .title,
+    .proces.big h2,
+    .instpayhowwaork .title,
+    .consultations-sect .secttitle,
+    .historyslider-head p,
+    .medtourinfo h2,
+    .insect4.insect4__medtour .title,
+    .choose .title {
+        font-size: 26px;
+    }
+
+    .capabilities h2,
+    .result h2,
+    .testimonials-sect h2,
+    .blog-section h2,
+    .aboutsect h1,
+    .partnerssect .title,
+    .trusted h2,
+    .perform-doc .title,
+    .tablesect.big .title,
+    .title-lg,
+    .tablesect .title,
+    .insect4 .title,
+    .insect2 .title,
+    .insect2 .probltext,
+    .tablesect p,
+    .proces.big h2,
+    .instpayhowwaork .title,
+    .consultations-sect .secttitle,
+    .historysect h1,
+    .historyslider-head p,
+    .videotestimonials__title,
+    .medtourinfo h2,
+    .insect4.insect4__medtour .title {
+        text-align: center;
+    }
+
+    .instpayhowwaork p {
+        text-align: center;
+    }
+
+
+}
