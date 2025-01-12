@@ -1,0 +1,248 @@
+.onescreenpage {
+    height: 100vh;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        max-width: 645px;
+    }
+
+    .title {
+        font-size: 289px;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 257px;
+            margin: 0 25px;
+        }
+    }
+
+    .descr {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 70px;
+        margin-bottom: 60px;
+    }
+
+    a.borderbtn {
+        color: #B82A2A;
+        border-color: #000000;
+        box-shadow: 0 4px 4px rgba(#979797, 0.20);
+
+        &:hover {
+            border-color: var(--darkred);
+            color: #fff;
+            background: var(--darkred);
+        }
+    }
+}
+
+.onescreenpage {
+    position: relative;
+
+    .tohome {
+        position: absolute;
+        top: 55px;
+        left: 99px;
+        color: #181818;
+        font-size: 18px;
+        padding-left: 29px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #465D8B;
+        }
+
+        img {
+            width: 19px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.3s;
+        }
+    }
+
+    .wrapper.inpr {
+        max-width: 100%;
+        padding: 20px;
+        text-align: center;
+
+        .title-inpr {
+            font-size: 38px;
+            color: #181818;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 143px;
+
+            span {
+                font-weight: 700;
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            img {
+                width: 84px;
+                margin-right: 19px;
+            }
+        }
+
+        .inprdescr {
+            margin-bottom: 45px;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 70px;
+        }
+
+        .inprsubdescr {
+            margin: 0;
+            color: #181818;
+            font-size: 40px;
+        }
+
+    }
+
+    
+}
+
+@media(max-width:1199.8px) {
+    .onescreenpage .title img {
+        width: 200px;
+    }
+
+    .onescreenpage .title {
+        font-size: 220px;
+        margin-bottom: 30px;
+    }
+
+    .onescreenpage .descr {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr {
+        margin-bottom: 50px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprdescr {
+        font-size: 50px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprsubdescr {
+        font-size: 28px;
+    }
+
+    .onescreenpage .tohome {
+        left: 30px;
+        top: 30px;
+    }
+}
+
+
+
+@media(max-width:767.8px) {
+    .onescreenpage .title img {
+        width: 160px;
+    }
+
+    .onescreenpage .title {
+        font-size: 200px;
+        margin-bottom: 20px;
+    }
+
+    .onescreenpage .descr {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr {
+        font-size: 32px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr img {
+        width: 60px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprdescr {
+        font-size: 38px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprsubdescr {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .onescreenpage {
+        text-align: center;
+    }
+
+    .onescreenpage .title img {
+        width: 100px;
+    }
+
+    .onescreenpage .title {
+        font-size: 120px;
+    }
+
+    .onescreenpage .descr {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .onescreenpage a.borderbtn {
+        width: 100%;
+        font-size: 14px;
+        padding: 14px 15px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr img {
+        width: 40px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprdescr {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprsubdescr {
+        font-size: 21px;
+    }
+
+}
+
+
+@media(max-height:750px) and (min-width:1200px) {
+    .onescreenpage .title {
+        margin-bottom: 40px;
+    }
+
+    .onescreenpage .descr {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media(max-height:650px) and (min-width:1200px) {
+    .onescreenpage .title {
+        font-size: 240px;
+    }
+
+    .onescreenpage .title img {
+        width: 180px;
+    }
+}

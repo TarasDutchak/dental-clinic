@@ -278,13 +278,13 @@ $(document).ready(function () {
         docscrl.addEventListener('wheel', (e) => {
             e.preventDefault();
             let scrollAmount = e.deltaY;
-            smoothScroll(docscrl, scrollAmount, 300); 
+            smoothScroll(docscrl, scrollAmount, 300);
         });
 
     }
 
     // PRICES accordeon
-    $('.accordeon__header').click(function(){
+    $('.accordeon__header').click(function () {
         $(this).toggleClass('active');
         $(this).parents('.accordeon-row').find('.accordeon__body').slideToggle('open');
     })
@@ -355,13 +355,15 @@ $(document).ready(function () {
         },
     });
 
-     // fancybox
-     Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-    });
+    // fancybox
+    if ($('[data-fancybox]').length) {
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    }
 
     // faq
-    $('.artfaq__header').click(function(){
+    $('.artfaq__header').click(function () {
         $(this).toggleClass('active');
         $(this).next('.artfaq__body').slideToggle();
     });

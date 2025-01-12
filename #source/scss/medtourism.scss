@@ -1,0 +1,449 @@
+.medtourism {
+    padding: 60px 0 28px;
+
+    h1 {
+        margin-bottom: 48px;
+        color: var(--main);
+        font-size: 38px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        margin: 0 auto 64px;
+        max-width: 516px;
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+
+    .imgwrap {
+        text-align: center;
+
+        .tour-mainpic {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 45px;
+        }
+
+        .tour-logo {
+            width: 44px;
+        }
+    }
+}
+
+.medtourinfo {
+    padding: 100px 0 28px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 64px;
+        text-transform: uppercase;
+
+        span {
+            color: var(--darkred);
+        }
+    }
+}
+
+.medtourinfo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .mrleft {
+        width: 100%;
+        max-width: 54%;
+        flex: 0 0 54%;
+        background: var(--primblue900);
+        border-radius: 20px;
+        min-height: 390px;
+        display: flex;
+        align-items: center;
+        padding: 20px 55px;
+
+        p {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 300;
+
+            span {
+                color: var(--main);
+            }
+        }
+    }
+
+    .mrright {
+        width: 100%;
+        max-width: calc(46% - 20px);
+        flex: 0 0 calc(46% - 20px);
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border-radius: 20px 0 0 20px;
+        }
+    }
+}
+
+.wrapper {
+    .container-r0 {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+
+        &:nth-child(even) {
+            padding-right: 95px;
+            padding-left: 0;
+
+            .medtourinfo-row {
+                flex-direction: row-reverse;
+
+                .mrright img {
+                    border-radius: 0 20px 20px 0;
+                }
+            }
+        }
+    }
+}
+
+.insect4.insect4__medtour {
+    padding: 80px 0 28px;
+
+    .title {
+        text-transform: uppercase;
+        font-size: 38px;
+        margin-bottom: 55px;
+    }
+}
+
+.insect4__medtour .botbtn {
+    margin-top: 64px;
+
+    a {
+        margin-right: 44px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.choose {
+    padding: 100px 0 70px;
+
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 100px;
+
+        span {
+            color: var(--darkred);
+        }
+    }
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 308px;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 24px;
+            font-weight: 600;
+            padding-right: 40px;
+        }
+    }
+
+    .right .wrapper p {
+        padding-right: 0;
+    }
+
+    .col-lg-5.right {
+        .wrapper {
+            padding-left: 40px;
+        }
+    }
+
+    .choose .videowrapper {
+        video {
+            vertical-align: top;
+        }
+    }
+}
+
+.choosecontimg {
+    position: relative;
+    height: 308px;
+    margin-bottom: 129px;
+
+    .centerpic {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .medtourinfo h2,
+    .insect4.insect4__medtour .title,
+    .choose .title {
+        font-size: 32px;
+    }
+
+    .medtourinfo-row .mrleft p,
+    .choose .wrapper p,
+    .medtourism .subtitle {
+        font-size: 20px;
+    }
+
+    .medtourinfo-row .mrleft {
+        min-height: 340px;
+    }
+
+    .medtourism .subtitle,
+    .medtourinfo h2,
+    .insect4.insect4__medtour .title {
+        margin-bottom: 30px;
+    }
+
+    .medtourinfo {
+        padding-top: 70px;
+    }
+
+    .choose .title {
+        margin-bottom: 60px;
+    }
+
+    .choose {
+        padding-bottom: 50px;
+    }
+
+    .wrapper .container-r0:nth-child(2n) {
+        padding-right: calc((100vw - 1140px) / 2);
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .choose .title,
+    .insect4.insect4__medtour .title,
+    .medtourinfo h2 {
+        font-size: 26px;
+    }
+
+    .choose .wrapper,
+    .choosecontimg {
+        height: 320px;
+    }
+
+    .choose .wrapper p,
+    .medtourinfo-row .mrleft p,
+    .medtourism .subtitle {
+        font-size: 18px;
+    }
+
+    .wrapper .container-r0:nth-child(2n) {
+        padding-right: calc((100vw - 950px) / 2);
+    }
+}
+
+@media(max-width:991.8px) {
+    .tablesect .rdborderblock {
+        height: auto;
+    }
+
+    .medtourism h1 {
+        margin-bottom: 30px;
+    }
+
+    .medtourinfo-row .mrright img,
+    .wrapper .container-r0:nth-child(2n) .medtourinfo-row .mrright img {
+        border-radius: 20px;
+    }
+
+    .medtourinfo-row .mrleft {
+        padding: 40px 20px;
+    }
+
+    .medtourinfo-row .mrleft {
+        min-height: initial;
+    }
+
+    .wrapper .container-r0:nth-child(2n) {
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        max-width: 720px;
+    }
+
+    .medtourinfo {
+        padding-bottom: 20px;
+    }
+
+    .insect4.insect4__medtour {
+        padding-top: 50px;
+    }
+
+    .insect4__medtour .botbtn {
+        margin-top: 40px;
+    }
+
+    .choose .wrapper p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .choose {
+        padding: 50px 0 30px;
+    }
+
+    .choosecontimg {
+        margin-bottom: 70px;
+    }
+
+    .choose .videowrapper {
+        margin-bottom: 20px;
+
+        video {
+            vertical-align: top;
+        }
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .choose .wrapper p {
+        font-size: 16px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .choose .title,
+    .insect4.insect4__medtour .title,
+    .medtourinfo h2 {
+        font-size: 21px;
+    }
+
+    .medtourism .imgwrap .tour-mainpic {
+        margin-bottom: 15px;
+    }
+
+    .medtourinfo {
+        padding-top: 40px;
+    }
+
+    .medtourism h1 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .medtourism h1 {
+        font-size: 28px;
+    }
+
+    .medtourism {
+        padding-top: 40px;
+    }
+
+    .choose .wrapper p,
+    .medtourinfo-row .mrleft p,
+    .medtourism .subtitle {
+        font-size: 16px;
+    }
+
+    .medtourism .imgwrap .tour-logo {
+        width: 30px;
+    }
+
+    .medtourism {
+        padding-bottom: 20px;
+    }
+
+    .medtourinfo-row .mrleft,
+    .medtourinfo-row .mrright {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .medtourinfo-row .mrleft {
+        margin-bottom: 15px;
+    }
+
+    .insect4.insect4__medtour {
+        padding-top: 30px;
+    }
+    .insect4__medtour .botbtn {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        a {
+            font-size: 14px;
+            padding: 14px 15px;
+            margin-right: 0;
+        }
+    }
+
+    .choosecontimg .centerpic {
+        width: 150px;
+    }
+
+    .choose .wrapper p {
+        font-size: 13px;
+    }
+
+    .choose .wrapper, .choosecontimg {
+        height: 250px;
+    }
+
+    .choose .title {
+        margin-bottom: 40px;
+    }
+
+    .choose {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width:360.8px) {
+    .insect4__medtour .botbtn a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .insect4.insect4__medtour {
+        padding-bottom: 0;
+    }
+}

@@ -1332,9 +1332,79 @@
         }
     }
 
+    .consultation {
+        text-align: center;
+
+    }
+
+    .consultation__left h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .consultation__left p {
+        margin-bottom: 47px;
+    }
+
+    .consultation__right {
+        margin-top: 47px;
+    }
+
+    .consultation__right .title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .consultation__right .telnum {
+        font-size: 14px;
+        padding: 20px;
+        min-width: 236px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .consultation__right .email {
+        font-size: 16px;
+    }
+
+    .consultation__right ul li {
+        margin-bottom: 10px;
+    }
+
+    .consultation__right ul li:last-child {
+        padding-right: 0;
+    }
+
+    .consultation__right .address {
+        padding-right: 0;
+        font-size: 16px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .consultation__right .instagramic {
+        position: relative;
+        right: initial;
+        top: 0;
+        margin-top: 45px;
+        display: inline-block;
+    }
+
+    .consultation:before,
+    .consultation:after {
+        display: none;
+    }
+    .consultation {
+        border-radius: 20px;
+        border-top: 1px solid #B82A2A;
+        border-bottom: 1px solid #B82A2A;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     
 
-   
 
     .infosection,
     .teamsect,

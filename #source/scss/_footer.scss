@@ -296,4 +296,47 @@ footer.footer {
         vertical-align: middle;
         margin-top: -3px;
     }
+
+    footer.footer {
+        text-align: center;
+    }
+
+    .footer__nav li {
+        display: block;
+        margin: 0 0 16px 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    footer .mapwrap {
+        display: none;
+    }
+
+    .footer__info {
+        padding: 23px 20px;
+    }
+
+    .footer__info .footinfwrap ul li {
+        margin-bottom: 20px;
+    }
+
+    .weinsoc span {
+        display: none;
+    }
+
+    .footer__bottomsect .weinsoc a svg {
+        width: 45px;
+        height: auto;
+    }
+
+    .footer__bottomsect ul {
+        margin-top: 40px;
+    }
 }
