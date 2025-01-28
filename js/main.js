@@ -227,7 +227,7 @@ $(document).ready(function () {
     // ------------------------------ПРО КЛІНІКУ------------------------------
 
     var swiper = new Swiper(".abslider1", {
-        slidesPerView: 2,
+        slidesPerView: 1.2,
         spaceBetween: 10,
         loop: true,
         speed: 1200,
@@ -237,6 +237,10 @@ $(document).ready(function () {
         },
 
         breakpoints: {
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
             768: {
                 slidesPerView: 3,
                 spaceBetween: 10,

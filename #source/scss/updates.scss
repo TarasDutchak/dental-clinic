@@ -96,7 +96,7 @@
         }
     }
 
-    .history-slide{
+    .history-slide {
         padding-bottom: 35px;
     }
 
@@ -182,11 +182,1863 @@
         text-align: center;
     }
 
-    
+
 
 
 }
 
 .resultslider .imgwrap img {
     height: auto !important;
+}
+
+// 22.01
+
+
+.reversesect-solo .imgsect video,
+.reversesect-solo .imgsect img,
+.aboutsect .descrwrap .descrwrap__box,
+.cycle-treatment__right .imgwrap,
+.insect2 .imgwraplst img,
+.proces__img img,
+.tablesect__imgright img,
+.medtourinfo-row .mrright img,
+.wrapper .container-r0:nth-child(2n) .medtourinfo-row .mrright img {
+    border-radius: 20px;
+}
+
+.reversesect .imgsect img,
+.reversesect .imgsect video {
+    border-radius: 20px !important;
+}
+
+.aboutsect+.proces {
+    padding-top: 44px;
+}
+
+.proces__img video {
+    width: 100%;
+}
+
+.consultation-wrap:last-child {
+    padding-bottom: 128px;
+}
+
+
+@media(max-width: 1399.8px) {
+    .consultation-wrap:last-child {
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width: 991.8px) {
+    .aboutsect+.proces {
+        padding: 30px 0 20px;
+    }
+}
+
+@media(max-width: 575.8px) {
+    .aboutsect+.proces {
+        padding: 20px 0;
+    }
+
+    .consultation-wrap:last-child {
+        padding-bottom: 50px;
+    }
+}
+
+// adaptive new
+.mobmenu_info,
+.telmob-icon {
+    display: none;
+}
+
+.stat-item p i {
+    font-style: normal;
+}
+
+.docimg {
+    .descrmob {
+        display: none;
+    }
+}
+
+.testimvideo-slider {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+.showmob {
+    display: none;
+}
+
+.main>section:last-child,
+.main>div:last-child {
+    padding-bottom: 128px !important;
+}
+.insect1 .rdborderblock +.borderbtn {
+    margin-top: 20px;
+}
+
+@media(max-width:575.8px) {
+
+    // header
+    header .header__nav nav>ul {
+        margin-bottom: 48px;
+    }
+
+    .languagebox.languagebox__mobile {
+        display: block;
+        margin-right: 0;
+
+        ul {
+            padding: 0;
+            background: transparent;
+            display: block;
+            position: relative;
+            left: 0;
+            transform: none;
+            opacity: 1;
+            z-index: 1;
+            visibility: visible;
+            box-shadow: none;
+            margin-bottom: 48px;
+
+            li {
+                a {
+                    font-size: 20px;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    header .header__nav {
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .mobmenu_info {
+        display: block;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                position: relative;
+                font-weight: 300;
+                font-size: 16px;
+                color: #181818;
+                margin-bottom: 14px;
+                padding-left: 30px;
+                border-bottom: 0.5px solid #C69090;
+                padding-bottom: 5px;
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    padding-bottom: 10px;
+                }
+
+                a {
+                    color: #181818;
+                }
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    header .header__nav nav .redbtn {
+        margin-top: 35px;
+    }
+
+    #consultationmodal {
+        .row>div {
+            &:nth-child(1) {
+                order: 1;
+            }
+
+            &:nth-child(3) {
+                order: 2;
+            }
+
+            &:nth-child(4) {
+                order: 3;
+            }
+
+            &:nth-child(2) {
+                order: 4;
+            }
+
+            &:nth-child(5) {
+                order: 5;
+            }
+
+            &:nth-child(6) {
+                order: 6;
+            }
+        }
+
+        .title {
+            margin-bottom: 48px;
+        }
+    }
+
+    .telmob-icon {
+        display: inline-flex;
+        margin-right: 20px;
+
+        img {
+            width: 34px;
+        }
+    }
+
+    // main
+
+    .herosection {
+        padding: 0;
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    .herosection__wrapper {
+        border-radius: 0;
+        height: calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        img {
+            filter: none;
+            object-position: 84% 50%;
+        }
+    }
+
+    .herosection__content {
+        padding: 50px 17px 45px 17px;
+    }
+
+    .herosection__content h1 {
+        max-width: 314px;
+        margin: 0 auto 18px;
+        font-size: 38px;
+        font-weight: 500;
+    }
+
+    .herosection__content {
+        p {
+            max-width: 314px;
+            margin: 0 auto 18px;
+        }
+
+        .redbtn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .stat-item {
+        span {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .stat-item {
+        display: flex;
+        align-items: center;
+
+        &>span {
+            width: auto;
+        }
+
+        p {
+            padding-left: 6px;
+
+            i {
+                display: none;
+            }
+        }
+    }
+
+    .capabilities .capabilities__wrapper {
+        border: 1px solid var(--darkred);
+    }
+
+    .capabilities .capabilities__wrapper {
+        padding: 25px 20px 7px 20px;
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    .capabilities__box {
+        max-width: 284px;
+        margin: 0 auto 18px;
+    }
+
+    .capabilities__box .boxinfo img {
+        max-width: 44px;
+    }
+
+    .capabilities__box .boxinfo {
+        padding: 0 15px;
+        justify-content: center;
+        display: flex;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        p {
+            max-width: initial;
+            display: inline-block;
+            flex: initial;
+            width: auto;
+            position: relative;
+            padding-left: 50px;
+
+
+            span {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .infosection .sectdescr span {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+
+    .picinfbox .imgwrap {
+        height: 224px;
+    }
+
+    .picinfbox .description {
+        margin-top: -44px;
+        width: calc(100% - 24px);
+        padding: 30px;
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .secbluewrapper {
+        background: #EFF1F5;
+        border-radius: 20px;
+        padding: 48px 26px;
+    }
+
+    .teamsect {
+        padding-top: 20px;
+    }
+
+    .teamsect .descr {
+        margin-top: 0;
+
+        p {
+            margin-bottom: 48px;
+        }
+    }
+
+    .scroll-container {
+        margin-top: 46px;
+    }
+
+    .teamscrollbox {
+        display: block;
+    }
+
+    .docimg {
+        .descrmob {
+            display: block;
+        }
+    }
+
+    .docimg {
+        width: 284px;
+        height: auto;
+        border-radius: 0;
+        text-align: center;
+        margin: 0 auto 48px;
+        display: block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            border-radius: 20px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        p {
+            color: #000;
+        }
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .descr {
+            margin: 0;
+            color: #313131;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    .teamscrollbox {
+        padding-bottom: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 45px;
+        height: 45px;
+
+        img {
+            width: 10px;
+        }
+    }
+
+    .swiper-button-next {
+        right: calc(50% - 50px);
+    }
+
+    .swiper-button-prev {
+        left: calc(50% - 50px);
+    }
+
+    .resultslider {
+        padding-bottom: 60px;
+    }
+
+    .consultation {
+        border: 1px solid #B82A2A;
+        padding-bottom: 49px;
+    }
+
+    .consultation__right .title {
+        font-weight: 300;
+    }
+
+    .consultation__right .instagramic {
+        margin-left: 6px;
+        margin-right: 6px;
+
+        svg {
+            vertical-align: top;
+        }
+    }
+
+    .testimonials-sect {
+        .borderbtn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .testimvideo-slider {
+        padding-bottom: 65px;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: inline-flex;
+        }
+    }
+
+    .testimtext-slider {
+        padding-bottom: 65px;
+    }
+
+    .testimtext-slider {
+        margin-top: 24px;
+    }
+
+    .titleblock .col-xl-3 {
+        display: none;
+    }
+
+    .blog-section .titleblock {
+        margin-bottom: 0;
+    }
+
+    .blog-section {
+        .row:nth-child(2) {
+            .col-md-4:not(:first-child) {
+                display: none;
+            }
+        }
+    }
+
+    .blogbox {
+        margin-bottom: 0;
+    }
+
+    .blog-section .showmob .borderbtn {
+        margin-top: 28px;
+        display: block;
+        text-align: center;
+    }
+
+    .consultation__right .scics {
+        position: relative;
+        bottom: 0;
+        right: initial;
+
+        .instagramic {
+            margin-top: 28px;
+        }
+    }
+
+    .breadcrumbs ul li:after {
+        top: 5px;
+    }
+
+    .aboutsect .descrwrap .descrwrap__box {
+        padding: 28px;
+    }
+
+    .abslider1 {
+        margin-top: 30px;
+
+        .slideimg {
+            height: 211px;
+        }
+    }
+
+    .abslider-wrapper {
+        width: calc(100% + 16px);
+        margin-right: -16px;
+    }
+
+    .infboxr0 {
+        overflow: hidden;
+    }
+
+    .newestmethods .title {
+        margin-bottom: 18px;
+    }
+
+    .redlinelist li {
+        padding-left: 0;
+    }
+
+    .redlinelist li:before {
+        left: -77px;
+    }
+
+    .redlinelist li {
+        margin-bottom: 18px;
+    }
+
+    .newestmethods .d-flex+.abslider-wrapper .abslider1 {
+        margin-top: 18px;
+    }
+
+    .newestmethods+.cycle-treatment {
+        padding-top: 28px;
+    }
+
+    .cycle-treatment .secttitlebtn {
+        margin-bottom: 0;
+
+        .col-lg-3 {
+            display: none;
+        }
+    }
+
+    .topcountlist li:before {
+        font-size: 16px;
+        top: -11px;
+    }
+
+    .cycle-treatment .cycle-treatment__right {
+        display: block;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 28px;
+    }
+
+    .cycle-treatment+.teamsect {
+        padding-top: 70px;
+    }
+
+    .trusted h2 {
+        margin-bottom: 37px;
+
+        img {
+            width: 37px;
+        }
+    }
+
+
+    .trusted .subtitle {
+        display: none;
+    }
+
+    .partnerbox {
+        height: 74px;
+
+        img {
+            max-height: calc(100% - 10px);
+            max-width: calc(100% - 10px);
+        }
+    }
+
+    .service-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+
+        .service-item {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+            border-radius: 0 !important;
+            min-height: 156px;
+            font-size: 24px;
+            margin-bottom: 12px;
+
+            &:nth-child(1) {
+                border-radius: 20px 20px 0 0 !important;
+            }
+
+            &:last-child {
+                border-radius: 0 0 20px 20px !important;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .service-topsect {
+        padding-bottom: 20px;
+    }
+
+    .consultation-wrap+.result {
+        padding-top: 70px;
+    }
+
+    .testimonials-sect .titleblock .col-xl-3 {
+        display: block;
+    }
+
+    .testimonials-sect+.teamsect {
+        padding-top: 70px;
+    }
+
+    .reversesect {
+        .container-r0 {
+            margin-bottom: 0;
+
+            &:nth-child(1) {
+                .reversesect__right {
+                    order: 1;
+                    margin-bottom: 16px;
+                }
+
+                .reversesect__left {
+                    order: 2;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    .reversesect__left {
+        margin-bottom: 16px;
+    }
+
+    .aboutsect {
+        padding-bottom: 20px;
+
+        &+.result {
+            padding-top: 70px;
+        }
+    }
+
+    .result+.insect1 {
+        padding-top: 38px;
+    }
+
+    .insect1 .descrblue h3 {
+        margin-bottom: 12px;
+    }
+
+    .insect1 .descrblue {
+        padding: 30px 20px;
+        margin-bottom: 0;
+    }
+
+    .insect1 .descrlght {
+        margin-top: 18px;
+    }
+
+    .descrlght {
+        padding: 13px 10px;
+    }
+
+    .insect1 .imgwrap {
+        margin-top: 8px;
+        // height: 192px;
+
+        img {
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .insect1+.insect2 {
+        padding-top: 38px;
+    }
+
+    .insect1+.insect2.pt48 {
+        padding-top: 13px;
+    }
+
+    .insect2 .head-inf2 {
+        margin-bottom: 29px;
+
+        .title {
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .probltext {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+    }
+
+    .solutionlist p {
+        padding: 10px 13px;
+    }
+
+    .solutionlist span {
+        font-size: 24px;
+    }
+
+    .solutionlist span {
+        max-width: 40px;
+        flex: 0 0 40px;
+    }
+
+    .solutionlist p {
+        max-width: calc(100% - 40px);
+        flex: 0 0 calc(100% - 40px);
+    }
+
+    .insect2 .rdborderblock {
+        margin-top: 28px;
+    }
+
+    .perform-doc .title {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .perform-doc__wrapper {
+        max-width: 284px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .perform-doc__wrapper .imgwrap {
+        margin-bottom: 12px;
+    }
+
+    .perform-doc__wrapper .descrwrap ul {
+        margin-bottom: 28px;
+    }
+
+    .perform-doc__wrapper .bottblock {
+        margin-top: 0;
+    }
+
+    .perform-doc+.insect1 {
+        padding-top: 70px;
+    }
+
+    .insect2+.insect1+.insect2 .head-inf2 {
+        margin-bottom: 0;
+    }
+
+    .insect2 .col-lg-5 {
+        margin-top: 28px;
+
+        .rdborderblock:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .insect1 .col-lg-5 {
+        .rdborderblock:nth-child(2) {
+            margin-top: 18px;
+        }
+    }
+
+    .tablesect table th {
+        font-size: 14px;
+    }
+
+    .tablesect table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .tablesect .tablewrapper table {
+        min-width: 100%;
+    }
+
+    // .tablesect+.consultation-wrap {
+    //     padding-top: 70px;
+    // }
+
+    .insect1+.tablesect {
+        padding-top: 18px;
+    }
+
+    .tablesect .rdborderblock {
+        margin-top: 28px;
+    }
+
+    .tablesect .rdborderblock p {
+        text-align: center;
+    }
+
+    .rdborderblock {
+        min-height: 167px;
+    }
+
+    // .insect2 + .consultation-wrap {
+    //     padding-top: 70px;
+    // }
+
+    .infosection .col-xl-4 {
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .trusted {
+        margin-bottom: 20px;
+    }
+
+    .insect1 .descrlght {
+        margin-bottom: 0;
+    }
+
+    .reversesect__left .descr {
+        padding: 28px 20px;
+    }
+
+    .tablesect .tablewrapper table {
+        min-width: 500px;
+    }
+
+    .infosection2 .picrow {
+        height: 226px;
+
+        &>img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 23% 50%;
+        }
+
+        .row {
+            display: none;
+        }
+    }
+
+    .insect1.anrb .descrblue {
+        max-width: 100%;
+    }
+
+    .tablesect__diagnostic.tablesect p span {
+        color: #B82A2A;
+        font-weight: 400;
+    }
+
+    .insect4 ul li span:after {
+        display: inline-block;
+    }
+
+    .insect4 .container-largest.container {
+        padding-left: 0;
+    }
+
+    .insect4 ul li p {
+        margin-top: 10px;
+    }
+
+    .insect4 ul li p {
+        padding-top: 0;
+    }
+
+    .insect4 ul li span {
+        padding-right: 0px;
+        padding-top: 22px;
+    }
+
+    .insect4+.insect2 .head-inf2 .col-lg-11 .probltext {
+        margin-bottom: 0;
+    }
+
+    .insect4+.insect2+.tablesect.pt35 {
+        padding-top: 0 !important;
+    }
+
+    .tablesect .title.twocol a {
+        margin: 0 !important;
+    }
+
+    .insect2 .col-lg-7 .probltext:last-child {
+        margin-bottom: 0;
+    }
+
+    .insect1+.infotext {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .infogroup .insect1 .col-lg-5 .descrlght {
+        margin-top: 0;
+    }
+
+    .infotext .redbtn,
+    .insect1 .fldrcol .rdborderblock+.borderbtn {
+        margin: 24px auto 0;
+    }
+
+    .insect1.mhblock .bottboxis {
+        text-align: center;
+    }
+
+    // .reversesect .container-r0:last-child .reversesect__left {
+    //     margin-bottom: 0 !important;
+    // }
+
+    .insect1+.tablesect.pt35+.perform-doc {
+        padding-top: 70px !important;
+    }
+
+    .insect2 .imgwraplst {
+        margin-top: 0;
+    }
+
+
+    .insect4.v2 .container ul li {
+        span {
+            display: inline-block;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .insect4.v2 ul li span:after {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .insect4.v2+.tablesect {
+        padding-top: 18px !important;
+    }
+
+    .tablesect .redbtn {
+        margin: 28px auto 0;
+        display: block;
+        width: 210px;
+    }
+
+    .insect1+.tablesect+.insect2 .head-inf2,
+    .proces+.perform-doc+.insect2 .head-inf2,
+    .infosection3+.insect2 .head-inf2 {
+        margin-bottom: 0;
+    }
+
+    .insect2+.insect1+.tablesect.tablesect__diagnostic {
+        padding-top: 0 !important;
+    }
+
+    .result+.insect1+.proces.littpadd {
+        padding-top: 0;
+    }
+
+    .insect1 .col-lg-5 .imgwrap {
+        margin-top: 0;
+    }
+
+    .insect1 .descrblue {
+        height: auto;
+    }
+
+    .infosection3 h4 {
+        margin-bottom: 16px;
+    }
+
+    .insect2 .text-end.text-sm-start {
+        text-align: left !important;
+    }
+
+    .insect1 .col-lg-5 .descrlght+.imgwrap {
+        margin-top: 24px;
+    }
+
+    .aboutsect.prices h1 {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .accordeon__header p {
+        font-size: 22px;
+    }
+
+    .accordeon__header .arrow {
+        display: inline-block;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    }
+
+    .installments-payment__box .ip__left .title {
+        margin-bottom: 32px;
+    }
+
+    .installments-payment__box .ip__left p {
+        margin-bottom: 32px;
+    }
+
+    .installments-payment__box {
+        padding: 0;
+
+        .ip__left {
+            padding: 38px 19px 0 19px;
+        }
+
+        .borderbtn {
+            width: 202px;
+            margin: 0 auto 16px;
+        }
+    }
+
+    .installments-payment__box .ip__right .imgwrap {
+        border-radius: 0 0 20px 20px;
+        height: 234px;
+    }
+
+    .accordeon__body-body .price {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .accordeon__body-body .pricesrow {
+        margin-bottom: 18px;
+    }
+
+    .styledlist li:before {
+        left: 12px;
+    }
+
+    .instpayhowwaork .paymethods {
+        justify-content: flex-start;
+    }
+
+    .ourteam__infotext {
+        margin: 30px 0 48px;
+    }
+
+    .ourteam {
+        .ourteam__box {
+            .imgwrap {
+                width: 284px;
+                margin: 0 auto 12px;
+                height: 302px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+
+            .topcol {
+                text-align: center;
+            }
+        }
+    }
+
+    .ourteam__box .description .name {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .ourteam__box .description ul {
+        margin-bottom: 28px;
+
+        li {
+            font-size: 14px;
+            margin-bottom: 6px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .ourteam__box {
+        margin-bottom: 90px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .ourteam {
+        padding-bottom: 20px;
+    }
+
+    .teamsingle {
+        padding-top: 32px;
+
+        .teamsingle__leftcol {
+            border: 1px solid var(--darkred);
+            max-width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    .teamsingle__leftcol .imgwrap:after {
+        display: none;
+    }
+
+    .teamsingle__leftcol p {
+        margin-top: 16px;
+    }
+
+    .teamsingle .container-r0 .prbox {
+        h4 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 16px;
+            margin-bottom: 28px;
+        }
+    }
+
+    .teamsingle__rightcol ul {
+        margin-bottom: 24px;
+
+        li {
+            margin-bottom: 9px;
+        }
+    }
+
+    .team__slidertitle {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .certificates {
+        padding-bottom: 60px;
+        margin-bottom: 70px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .history {
+        padding-bottom: 60px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .certificates.smarrow,
+    .history.smarrow {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            bottom: 0;
+            top: initial;
+
+        }
+
+        .swiper-button-next {
+            right: calc(50% - 50px);
+        }
+
+        .swiper-button-prev {
+            left: calc(50% - 50px);
+        }
+    }
+
+    .consultations-sect .secttitle {
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .teamlistsect {
+        margin-bottom: 48px;
+    }
+
+    .history__sortbtns {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            min-height: 53px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-right: 0;
+            width: calc(50% - 7px);
+            margin-bottom: 17px;
+        }
+    }
+
+    .historysect h1 {
+        margin-bottom: 48px;
+    }
+
+    .history-box {
+        margin-bottom: 48px;
+
+        .text-end {
+            display: none;
+        }
+    }
+
+    .history__content {
+        .col-lg-6:last-child .history-box {
+            margin-bottom: 0;
+        }
+    }
+
+    .pagination__next,
+    .pagination__prev {
+        width: 45px;
+        height: 45px;
+
+        img {
+            width: 9px;
+        }
+    }
+
+    .historysect h1.text-left {
+        text-align: left;
+    }
+
+    .historysect .mainhistory {
+        .col-md-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    .mainhistory ul {
+        margin-bottom: 65px;
+
+        li {
+            margin-bottom: 18px;
+
+            p {
+                margin: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .mainhistory {
+        p {
+            margin-bottom: 18px;
+        }
+
+        .imgwrap {
+            margin-bottom: 0;
+        }
+    }
+
+    .historyslider-head {
+        p {
+            text-transform: uppercase;
+        }
+    }
+
+    .result.result__history {
+        .resultslider {
+            padding-top: 70px;
+            margin-top: -60px;
+            padding-bottom: 28px;
+
+            .swiper-button-next {
+                top: 0;
+                right: 0;
+            }
+
+            .swiper-button-prev {
+                top: 0;
+                right: 60px;
+                left: initial;
+            }
+        }
+
+        .btnwrap.showmob {
+            text-align: center;
+        }
+    }
+
+    .testimonials-btns {
+        a {
+            font-size: 16px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 16px;
+            min-height: 55px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .historysect .title-icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .videotestimonials__title {
+        display: none;
+    }
+
+    .testimonials-btns {
+        margin-bottom: 18px;
+    }
+
+    .blogsection__title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .blogsection .col-lg-6 {
+        margin-bottom: 48px;
+    }
+
+    .blogsection {
+        .col-lg-8 {
+            order: 1;
+        }
+
+        .col-lg-3 {
+            order: 3;
+            padding-top: 90px;
+
+            .blogsection__title {
+                text-align: left;
+            }
+        }
+
+        .col-12 {
+            order: 2;
+        }
+
+        .pagination {
+            margin-top: 0;
+        }
+    }
+
+    article {
+        padding-top: 30px;
+    }
+
+    .article__hero {
+        min-height: 140px;
+        padding: 20px;
+        margin-bottom: 45px;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    article ol,
+    article ul {
+        padding-left: 20px;
+    }
+
+    .article__bottnav {
+        .col-lg-4 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+
+            &:nth-child(3) {
+                order: 3;
+            }
+        }
+
+        .bluebtn {
+            margin-top: 0;
+            margin-bottom: 28px;
+        }
+    }
+
+    .medtourinfo {
+        padding-top: 0;
+    }
+
+    .medtourism .imgwrap .tour-mainpic {
+        margin-bottom: 24px;
+    }
+
+    .choose {
+        .col-lg-5 {
+            &:nth-child(1) {
+                .wrapper p {
+                    font-size: 14px;
+                    text-align: right;
+                    padding-right: 30px;
+                }
+            }
+
+            &:nth-child(2) {
+                .wrapper p {
+                    font-size: 14px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .choose .wrapper,
+    .choosecontimg {
+        height: 220px;
+    }
+
+    .centerpic {
+        text-align: center;
+    }
+
+    .onescreenpage .descr {
+        font-size: 48px;
+        margin-bottom: 48px;
+    }
+
+    .onescreenpage a.borderbtn {
+        min-height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr {
+        margin-bottom: 128px;
+        font-size: 16px;
+    }
+
+    .onescreenpage .wrapper.inpr .title-inpr span {
+        font-size: 22px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprdescr {
+        font-size: 48px;
+        margin-bottom: 48px;
+    }
+
+    .onescreenpage .wrapper.inpr .inprsubdescr {
+        font-size: 24px;
+    }
+
+    .onescreenpage {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .onescreenpage .tohome {
+        position: relative;
+        order: 2;
+    }
+
+    .onescreenpage {
+        padding-top: 129px;
+        padding-bottom: 80px;
+        height: auto;
+
+        .wrapper {
+            order: 1;
+        }
+
+        .tohome {
+            display: block;
+            text-align: center;
+            left: initial;
+            top: initial;
+        }
+    }
+
+    .onescreenpage .wrapper.inpr {
+        padding-bottom: 150px;
+    }
+
+
+
+
+    .newestmethods__right .imgwrap {
+        border-radius: 15px;
+    }
+
+    .result h2,
+    .testimonials-sect h2,
+    .blog-section h2,
+    .aboutsect h1,
+    .service-topsect h1,
+    .tablesect .title,
+    .tablesect p,
+    .tablesect.big .title,
+    .insect2 .title-lg,
+    .insect4 .title,
+    .probltext.probltext__bott,
+    .proces.big h2,
+    .instpayhowwaork p,
+    .historyslider-head p,
+    .medtourinfo h2,
+    .insect4.insect4__medtour .title,
+    .choose .title {
+        text-align: left;
+    }
+
+
+    .stats {
+        padding-bottom: 80px;
+    }
+
+
+
+
+    .infosection {
+        padding-top: 55px;
+    }
+
+    // mb
+
+
+    .testimonials-sect h2,
+    .testimonials-sect .titleblock,
+    .blog-section h2 {
+        margin-bottom: 30px;
+    }
+
+    .infosection h2,
+    .picinfbox .description ul li {
+        margin-bottom: 18px;
+    }
+
+
+    // fz
+    .aboutsect h1,
+    .service-topsect h1,
+    h1,
+    .insect4 ul li span {
+        font-size: 30px;
+    }
+
+    .insect1 .descrblue h3,
+    .tablesect .title.twocol i,
+    .proces.big h2,
+    .historyslider-head p,
+    .artfaq__title,
+    .medtourism h1,
+    .medtourinfo h2 {
+        font-size: 24px;
+    }
+
+    .trusted h2,
+    .partnerssect .title,
+    .partnerssect h2,
+    h2,
+    .insect2 .title-lg,
+    .insect2 .head-inf2 .title,
+    .installments-payment__box .ip__left .title,
+    .choose .title {
+        font-size: 24px;
+    }
+
+    .herosection #consultationmodal .title,
+    .capabilities__box .boxinfo p,
+    .picinfbox .description ul li a,
+    .newestmethods .title,
+    .cycle-treatment h3,
+    .tablesect .title,
+    .tablesect.big .title,
+    .descrv2 p.title,
+    .insect4 .title,
+    article h3 {
+        font-size: 20px;
+    }
+
+    .infosection .sectdescr,
+    .teamsect .descr p,
+    .cycle-treatment__botttext p,
+    .service-topsect p,
+    .reversesect__left .descr p,
+    .perform-doc__wrapper .descrwrap .name,
+    .aboutsect.prices .subtitle,
+    .installments-payment__box .ip__left p,
+    .medtourism .subtitle {
+        font-size: 18px;
+    }
+
+    .descrlght p {
+        font-size: 16px;
+    }
+
+    .perform-doc__wrapper .descrwrap ul li {
+        font-size: 14px;
+    }
+
+    .breadcrumbs ul li {
+        font-size: 12px;
+    }
+
+    .hidemob {
+        display: none;
+    }
+
+    .showmob {
+        display: block;
+    }
+
+    .instpayhowwaork {
+        .infosection3 {
+            padding-top: 0 !important;
+        }
+    }
+
+    .insect4.insect4__medtour {
+        padding-top: 50px !important;
+        padding-bottom: 20px;
+    }
+
+    .insect4__medtour .botbtn a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 55px;
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .choose {
+        padding-top: 70px;
+    }
+
+    .insect1 .col-lg-7 + .col-lg-5 .descrlght  {
+        margin-top: 0;
+    }
+
+    .insect1 .solutionlist {
+        margin-bottom: 24px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .insect4 {
+        padding-bottom: 20px;
+    }
+
+    .tablesect+.insect1+.proces.littpadd,
+    .perform-doc+.insect1+.tablesect {
+        padding-top: 0 !important;
+    }
+
+
+    .consultation-wrap,
+    .blog-section,
+    .infosection,
+    .teamsect,
+    .testimonials-sect,
+    .newestmethods,
+    .cycle-treatment,
+    .trusted,
+    .partnerssect,
+    .insect1,
+    .insect2,
+    .perform-doc,
+    .insect1+.tablesect,
+    .tablesect,
+    .infosection2,
+    .infosection3,
+    .insect4,
+    .installments-payment,
+    .instpayhowwaork {
+        padding-top: 70px !important;
+    }
+
+    .teamsect,
+    .service-topsect,
+    .insect1 {
+        padding-bottom: 20px;
+    }
+
+    .aboutsect .imgwrap,
+    .newestmethods .title,
+    .redlinelist,
+    .topcountlist li,
+    .reversesect .container-r0:first-child .reversesect__right,
+    .reversesect .container-r0:first-child .reversesect__left,
+    .reversesect__left,
+
+    .insect2 .head-inf2 .probltext,
+    .insect2 .head-inf2,
+    .solutionlist li,
+    .tablesect p,
+    .tablesect__diagnostic.tablesect p,
+    .tablesect.big .title,
+    .tablesect.big p,
+    .insect4 ul li,
+    .infogroup .insect1 .descrblue,
+    .insect1 .descrblue,
+    .medtourinfo-row .mrleft,
+    .insect4.insect4__medtour .title {
+        margin-bottom: 24px;
+    }
+
+    .abslider1,
+    .newestmethods .d-flex+.abslider-wrapper .abslider1,
+    .cycle-treatment .cycle-treatment__right,
+    .cycle-treatment__botttext p,
+    .insect1 .descrlght,
+    .insect1 .imgwrap,
+    .insect2 .col-lg-5,
+    .insect1 .col-lg-5 .rdborderblock:nth-child(2),
+    .tablesect .rdborderblock,
+    .probltext.probltext__bott,
+    .tablesect .title .borderbtn,
+    .descrv2,
+    .proces .botttext,
+    .mt24 {
+        margin-top: 24px;
+    }
+
+
+    .infosection .sectdescr span,
+    .tablesect.big p,
+    .tablesect p,
+    .tablesect__diagnostic.tablesect p,
+    .tablesect p.mb28,
+    .insect2 .head-inf2 .title,
+    .proces p {
+        margin-bottom: 18px;
+    }
+
+    .mt28 {
+        margin-top: 18px;
+    }
+
+
+
+    .tablesect+section:not(.consultation-wrap),
+    .tablesect+div,
+    .insect1+.tablesect.pt35,
+    .pt0,
+    .mpt0 {
+        padding-top: 0 !important;
+    }
+
+    .mmb0 {
+        margin-bottom: 0 !important;
+    }
+
+    .main>section:last-child,
+    .main>div:last-child {
+        padding-bottom: 90px !important;
+    }
+
+    // -----------------------
+    .insect4.v2+.tablesect+.insect1 {
+        padding-top: 70px !important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
 }

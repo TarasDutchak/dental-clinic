@@ -554,10 +554,15 @@
         margin: 0;
     }
 
-    .instagramic {
+    .scics {
         position: absolute;
-        right: 116px;
+        right: 100px;
         bottom: 83px;
+    }
+
+    .instagramic {
+        
+       
 
         svg path {
             transition: 0.3s;
@@ -1156,15 +1161,15 @@
         margin-bottom: 20px;
     }
 
-    .teamsect {
-        .col-xl-7 {
-            order: 2;
-        }
+    // .teamsect {
+    //     .col-xl-7 {
+    //         order: 2;
+    //     }
 
-        .col-xl-5 {
-            order: 1;
-        }
-    }
+    //     .col-xl-5 {
+    //         order: 1;
+    //     }
+    // }
 
     .teamsect .descr {
         margin-top: 20px;
