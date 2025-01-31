@@ -221,6 +221,21 @@ footer.footer {
     }
 }
 
+.footer__bottomsect .weinsoc a {
+    margin-right: 4px;
+    display: inline-flex;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    svg {
+        width: 23px;
+        height: 23px;
+    }
+}
+
 @media(max-width:1399.8px) {
     .footer__nav li {
         margin: 7px 25px 7px 0;
@@ -339,4 +354,22 @@ footer.footer {
     .footer__bottomsect ul {
         margin-top: 40px;
     }
+
+    .footer__bottomsect .weinsoc a {
+        margin-right: 6px;
+        margin-top: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        svg {
+            width: 45px;
+            height: auto;
+        }
+    }
+
+    
+
+
 }

@@ -278,8 +278,16 @@
 .main>div:last-child {
     padding-bottom: 128px !important;
 }
-.insect1 .rdborderblock +.borderbtn {
+
+.insect1 .rdborderblock+.borderbtn {
     margin-top: 20px;
+}
+
+.infosection3 .infbordbox ul li svg {
+    width: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 @media(max-width:575.8px) {
@@ -1903,7 +1911,7 @@
         padding-top: 70px;
     }
 
-    .insect1 .col-lg-7 + .col-lg-5 .descrlght  {
+    .insect1 .col-lg-7+.col-lg-5 .descrlght {
         margin-top: 0;
     }
 
@@ -2041,4 +2049,44 @@
     .text-center {
         text-align: center !important;
     }
+
+    // -------------------------------
+
+    .infosection3 .infbordbox.blue {
+        background: #fff;
+        border: 1px solid var(--main);
+
+         p, ul li {
+            color: #000;
+
+            svg {
+                path {
+                    fill: #D00404;
+                }
+            }
+         }
+    }
+
+    .reversesect-solo {
+        .reversesect__left {
+            order: 2;
+            margin-bottom: 0;
+        }
+
+        .reversesect__right {
+            order: 1;
+            margin-bottom: 24px;
+        }
+    }
+
+    .doc-group .perform-doc__wrapper {
+        max-width: 90%;
+    }
+
+    .doc-group .perform-doc__wrapper >* {
+        max-width: 284px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
 }
