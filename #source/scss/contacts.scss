@@ -1,0 +1,325 @@
+.contact-wrapper {
+    padding: 64px 0 128px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+.mapwrapper {
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 170px);
+    margin: 0 auto;
+    border-radius: 55px;
+    aspect-ratio: 1 / 0.57;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-bottsectwrap {
+    border-radius: 20px;
+    background: #2B2D42;
+    padding: 232px 105px 90px 85px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -144px;
+
+    .contact-bottsectwrap__left {
+        width: 100%;
+        max-width: 48%;
+        flex: 0 0 48%;
+    }
+
+    .contact-bottsectwrap__right {
+        width: 100%;
+        max-width: 52%;
+        flex: 0 0 52%;
+    }
+}
+
+.contform {
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 48px 64px;
+
+    .title {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .continpfield {
+        position: relative;
+        margin-bottom: 20px;
+
+        label {
+            background: #2B2D42;
+            padding: 2px 5px;
+            position: absolute;
+            left: 18px;
+            top: -11px;
+            color: #fff;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 0.5px solid #fff;
+            height: 51px;
+            padding-left: 14px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+            background: transparent;
+            width: 100%;
+            font-family: "Lato";
+
+            &::placeholder {
+                color: #C7C7C7;
+            }
+        }
+    }
+
+    .submform {
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 56px;
+        padding: 5px 32px;
+        color: #262626;
+        background: #fff;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 20px;
+        margin-top: 28px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-family: "Lato";
+
+        &:hover {
+            background: #D00404;
+            color: #fff;
+        }
+    }
+}
+
+.contact-bottsectwrap__left {
+    .title {
+        margin-bottom: 16px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+
+        li {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                svg {
+                    width: 50px;
+
+                    path {
+                        transition: 0.5s;
+                    }
+                }
+
+                &:hover {
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contactsinfo__box {
+    margin-bottom: 38px;
+
+    .tel {
+        font-size: 38px;
+        color: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            color: #D00404;
+        }
+    }
+
+    p a {
+        color: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            color: #D00404;
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .contact-wrapper h1 {
+        margin-bottom: 60px;
+    }
+
+    .mapwrapper {
+        border-radius: 30px;
+        width: calc(100% - 100px);
+    }
+
+    .contact-bottsectwrap {
+        padding: 220px 60px 60px 60px;
+    }
+
+    .contform {
+        border-radius: 20px;
+        border: 1px solid #fff;
+        padding: 40px 30px;
+    }
+
+    .contform .submform {
+        margin-top: 10px;
+    }
+
+    .contactsinfo__box .tel {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .contact-bottsectwrap .contact-bottsectwrap__left,
+    .contact-bottsectwrap .contact-bottsectwrap__right {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .contact-bottsectwrap__left {
+        padding: 220px 60px 60px 60px;
+        margin-top: -144px;
+        background: #2B2D42;
+        border-radius: 20px;
+    }
+
+    .contact-bottsectwrap {
+        padding: 0;
+        background: transparent;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .contform {
+        border-radius: 20px;
+        border: 1px solid #2B2D42;
+        padding: 40px 30px;
+        margin-top: 90px;
+    }
+
+    .contform .continpfield input {
+        border-color: #716F6F;
+    }
+
+    .contform .continpfield label {
+        background: #fff;
+        color: #292929;
+    }
+
+    .contform .title {
+        color: #262626;
+        font-size: 26px;
+    }
+
+    .contform .submform {
+        background: #2B2D42;
+        color: #fff;
+
+        &:hover {
+            
+        }
+    }
+
+    
+    
+}
+
+@media(max-width:767.8px) {
+    .contact-wrapper h1 {
+        color: #D00404;
+        margin-bottom: 32px;
+        font-size: 30px;
+    }
+
+    .mapwrapper {
+        width: 100%;
+    }
+
+    .contact-bottsectwrap .contact-bottsectwrap__left {
+        padding: 180px 21px 42px 21px;
+    }
+
+    .contact-bottsectwrap__left .title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .contact-bottsectwrap__left p {
+        font-size: 18px;
+    }
+
+    .contactsinfo__box {
+        margin-bottom: 24px;
+    }
+
+    .contactsinfo__box .tel {
+        font-size: 24px;
+    }
+
+    .contact-bottsectwrap__left ul li a svg {
+        width: 45px;
+    }
+
+    .contform .title {
+        font-size: 20px;
+        margin-bottom: 36px;
+    }
+
+    .main>div:last-child, .main>section:last-child.contact-wrapper  {
+        padding-bottom: 90px !important;
+    }
+
+    .contact-wrapper {
+        padding-top: 32px;
+    }
+
+
+}
