@@ -928,6 +928,43 @@
 
 
 
+    <span class="contactbutton" data-modal-target="contactbtnmodal">
+        кнопка
+        зв'язку
+    </span>
+
+    <div id="contactbtnmodal" class="modal mdmodal contactbtnmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="close closemod">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </span>
+                <p class="title">Форма зворотнього зв'язку</p>
+                <form action="#">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="name1">Ваше ім’я*</label>
+                                <input id="name1" type="text" placeholder="Введіть своє ім’я">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="inputfield">
+                                <label for="tel1">Номер телефону*</label>
+                                <input id="tel1" type="number" placeholder="Введіть номер телефону">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <!-- <button type="submit" class="bluebtn">
+                            НАДІСЛАТИ
+                        </button> -->
+                            <a href="#" class="bluebtn close" data-modal-target="thankmodal">НАДІСЛАТИ</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <!-- consultationmodal -->
@@ -987,8 +1024,6 @@
             </div>
         </div>
     </div>
-
-
 
     <div id="thankmodal" class="modal smmodal text-center">
         <div class="modal-content">

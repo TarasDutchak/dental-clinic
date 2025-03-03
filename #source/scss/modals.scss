@@ -281,6 +281,46 @@
     }
 }
 
+.contactbutton {
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 24px;
+    bottom: 40px;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #2B2D42;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 50;
+
+    &:hover {
+        background: #D00404;
+    }
+}
+
+.contactbtnmodal {
+    .modal-content {
+        max-width: 552px;
+        padding: 48px 64px;
+    }
+
+    .title {
+        margin-bottom: 45px;
+    }
+
+    .bluebtn {
+        margin-top: 28px;
+    }
+}
+
+
 @media(max-width:1199.8px) {
     .bgmodal .modal-content {
         max-width: 900px;
@@ -334,6 +374,11 @@
         max-width: 500px;
     }
 
+    .contactbutton {
+        left: inherit;
+        right: 24px;
+    }
+
 }
 
 @media(max-width:575.8px) {
@@ -380,5 +425,17 @@
 
     .mdmodal .bluebtn {
         margin-top: 15px;
+    }
+
+    .contactbtnmodal .modal-content {
+        padding: 48px 16px;
+    }
+
+    .contactbtnmodal .title {
+        margin-bottom: 36px;
+    }
+
+    .contactbtnmodal .bluebtn {
+        margin-top: 4px;
     }
 }
