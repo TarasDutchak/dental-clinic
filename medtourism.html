@@ -47,7 +47,12 @@
         <div class="header__content">
             <div class="container_header container">
                 <div class="header__logo">
-                    <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="img/header/moblogo.svg" media="(max-width: 575px)">
+                            <img src="img/header/logo.svg" alt="logo">
+                        </picture>
+                    </a>
                 </div>
                 <div class="header__nav">
                     <nav>
@@ -111,9 +116,53 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="languagebox languagebox__mobile">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/header/us-flag.svg" alt="english">
+                                        En
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <img src="img/header/ua-flag.svg" alt="ukrainian">
+                                        Uk
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobmenu_info">
+                            <ul>
+                                <li>
+                                    <img src="img/footer/foot-clock.svg" alt="icon">
+                                    <p>
+                                        Пн-Пт: 9:00-20:00 <br>
+                                        Сб-Нд: Зачинено
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-tel.svg" alt="icon">
+                                    <a href="tel:+380978008181">+38 097 80 08 181</a>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-email.svg" alt="icon">
+                                    <a href="mailto:solodentalclinic@gmail.com">solodentalclinic@gmail.com</a>
+                                </li>
+                                <li>
+                                    <img src="img/footer/foot-loc.svg" alt="icon">
+                                    <p>
+                                        Івано-Франківськ, 76018, <br>
+                                        вул. Шухевичів, 14
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                         <a href="#" class="redbtn mobshow" data-modal-target="appointmentmodal">
                             записатись на прийом
                         </a>
+
+
                     </nav>
                     <button class="closemenu">
                         <img src="img/header/close.png" alt="close menu">
@@ -142,8 +191,14 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="tel:+380978008181" class="telmob-icon">
+                        <img src="img/header/tel-icon.svg" alt="icon">
+                    </a>
                     <button class="headermenubtn">
-                        <img src="img/header/menu.png" alt="menu">
+                        <picture>
+                            <source srcset="img/header/menu.svg" media="(max-width: 575px)">
+                            <img src="img/header/menu.png" alt="menu">
+                        </picture>
                     </button>
                 </div>
             </div>
@@ -156,7 +211,6 @@
             <div class="breadcrumbs">
                 <ul>
                     <li><a href="#">Головна сторінка</a></li>
-                    <li><a href="#">Блог</a></li>
                     <li>Стоматологічний туризм</li>
                 </ul>
             </div>
@@ -164,10 +218,12 @@
 
         <section class="medtourism">
             <div class="container">
-                <h1 class="text-center">стоматологічний туризм</h1>
-                <p class="subtitle">
-                    Медичний туризм у SOLO Dental Clinic — це комфорт, турбота та впевненість у результаті!
-                </p>
+                <h1 class="text-center">
+                    <span>Медичний туризм</span> у SOLO Dental Clinic<br> — швидко, чітко й без клопоту
+                </h1>
+                <h3>
+                    Ви приїжджаєте — ми лікуємо, допомагаємо і відправляємо додому <b>з усмішкою</b>.
+                </h3>
                 <div class="imgwrap">
                     <img class="tour-mainpic" src="img/medtourism/medtour1.jpg" alt="img">
                     <img class="tour-logo" src="img/medtourism/logo-el.svg" alt="logo">
@@ -178,86 +234,147 @@
         <section class="medtourinfo">
             <div class="container">
                 <h2>
-                    <span>Дистанційне лікування в SOLO Dental Clinic</span> — це економія часу та коштів для пацієнтів,
-                    що проживають не в Україні.
+                    <span>Лікування</span> в SOLO Dental Clinic навіть <span>на відстані</span> — це зручно, швидко і
+                    без зайвих витрат для тих,
+                    хто живе
+                    за кордоном
                 </h2>
-            </div>
 
-            <div class="wrapper">
-                <div class="container-r0">
-                    <div class="medtourinfo-row">
-                        <div class="mrleft">
-                            <p>
-                                У SOLO Dental Clinic активно займається дистанційним лікуванням пацієнтів, що проживають
-                                у
-                                Європі та США. Ми створили унікальний сервіс, щоб пацієнти з-за кордону могли отримати
-                                якісну стоматологічну допомогу в Україні, заощаджуючи кошти та час.
-                            </p>
+                <div class="medtourinfo__answers">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="titlebox">
+                                <img src="img/new/icq.svg" alt="img">
+                                <h4>Для кого</h4>
+                            </div>
                         </div>
-                        <div class="mrright">
-                            <img src="img/medtourism/medtour2.jpg" alt="img">
+                        <div class="col-lg-9 col-md-8">
+                            <div class="description">
+                                <h4>
+                                    Якщо ви живете за кордоном, але хочете лікувати зуби в Україні — у SOLO Dental
+                                    Clinic це
+                                    просто
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="container-r0">
-                    <div class="medtourinfo-row">
-                        <div class="mrleft">
-                            <p>
-                                Медичний туризм стає все популярнішим серед європейців завдяки поєднанню високої якості
-                                послуг
-                                із доступною вартістю та швидкістю надання послуг.
-                                У SOLO Dental Clinic пацієнти зможуть вирішити всі стоматологічні проблеми <span>від 3
-                                    до 10
-                                    днів</span> і повернутися додому з красивою та здоровою усмішкою.
-                            </p>
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="titlebox">
+                                <img src="img/new/icq.svg" alt="img">
+                                <h4>Як ми допомагаємо</h4>
+                            </div>
                         </div>
-                        <div class="mrright">
-                            <img src="img/medtourism/medtour3.jpg" alt="img">
+                        <div class="col-lg-9 col-md-8">
+                            <div class="description">
+                                <h4>
+                                    Ми допомагаємо вам отримати якісну допомогу без зайвих турбот: консультуємось
+                                    онлайн, плануємо лікування заздалегідь і зустрічаємо
+                                    вас уже готовими до всіх процедур
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="titlebox">
+                                <img src="img/new/icq.svg" alt="img">
+                                <h4>Який результат</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8">
+                            <div class="description">
+                                <h4>
+                                    Повне лікування зазвичай триває від 3 до 10 днів — швидко, чітко й без стресу. Ви
+                                    економите час і кошти, а додому повертаєтесь із впевненою усмішкою.
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="insect4 insect4__medtour">
-            <div class="container">
-                <p class="title">Як усе реалізується</p>
-            </div>
-            <div class="container-largest container">
-                <ul>
-                    <li>
-                        <span>1</span>
-                        <p>
-                            Все розпочинається з безкоштовної онлайн-консультації, де Ви зможете отримати всі відповіді
-                            на Ваші запитання.
-                        </p>
-                    </li>
-                    <li>
-                        <span>2</span>
-                        <p>
-                            А потім, завдяки правильному плануванню Вашого майбутнього лікування, ми можемо максимально
-                            швидко та якісно підібрати всі необхідні методики діагностики та лікування у нас в клініці.
-                            Звичайно, на цьому етапі Ви зможете отримати попередній кошторис Вашого лікування.
-                        </p>
-                    </li>
-                    <li>
-                        <span>3</span>
-                        <p>
-                            Після цього наш лікар-куратор допоможе організувати Ваш тур до нас у клініку, допомогти з
-                            купівлею квитків, бронюванням проживання
-                            і, звичайно, персональним трансфером до нас у клініку.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="text-end botbtn">
-                    <a href="#" class="bluebtn">НАША КОМАНДА </a>
-                    <a href="#" class="bluebtn">ДИВИТИСЬ ЦІНИ</a>
+        <section class="realization">
+            <div class="container container-lg">
+                <div class="realization__header text-center d-flex align-items-center justify-content-center">
+                    <h2>Як усе реалізується</h2>
+                </div>
+                <div class="row realization-row">
+                    <div class="col-lg-4">
+                        <div class="realization__step">
+                            <div class="realization__step-header text-center">
+                                <h4>Безкоштовна <span>онлайн-консультація</span></h4>
+                            </div>
+                            <div class="realization__step-description">
+                                <p>
+                                    Спочатку проводимо безкоштовну онлайн-консультацію. Ви розповідаєте, що вас турбує,
+                                    — ми відповідаємо на всі запитання.
+                                </p>
+                                <a href="#" class="realizationbtn">
+                                    Записатись на консультацію
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="realization__step">
+                            <div class="realization__step-header text-center">
+                                <h4>Разом <span>плануємо лікування</span></h4>
+                            </div>
+                            <div class="realization__step-description">
+                                <p>
+                                    Ми заздалегідь плануємо ваше лікування — підбираємо все необхідне і розраховуємо
+                                    попередню вартість.<br>
+                                    Ви заздалегідь знаєте, що вас очікує, коли приїдете до клініки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="realization__step">
+                            <div class="realization__step-header text-center">
+                                <h4><span>Підготовка</span> до приїзду</h4>
+                            </div>
+                            <div class="realization__step-description">
+                                <p>
+                                    Ми заздалегідь плануємо ваше лікування — підбираємо все необхідне і розраховуємо
+                                    попередню вартість.<br>
+                                    Ви заздалегідь знаєте, що вас очікує, коли приїдете до клініки.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row realization-imgs">
+                    <div class="col-md-6">
+                        <div class="realization__img">
+                            <img src="img/new/img1.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="realization__img">
+                            <img src="img/new/img2.jpg" alt="img">
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="choose">
             <div class="container">

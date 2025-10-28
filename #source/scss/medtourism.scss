@@ -2,11 +2,11 @@
     padding: 60px 0 28px;
 
     h1 {
-        margin-bottom: 48px;
-        color: var(--main);
-        font-size: 38px;
-        font-weight: 400;
-        text-transform: uppercase;
+        margin-bottom: 36px;
+
+        span {
+            color: var(--main);
+        }
     }
 
     .subtitle {
@@ -16,6 +16,13 @@
         color: #000;
         font-size: 24px;
         font-weight: 400;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: var(--main);
     }
 
 
@@ -35,13 +42,13 @@
 }
 
 .medtourinfo {
-    padding: 100px 0 28px;
+    padding: 70px 0 28px;
 
     h2 {
         font-size: 36px;
         font-weight: 400;
         color: #000;
-        margin-bottom: 64px;
+        margin-bottom: 90px;
         text-transform: uppercase;
 
         span {
@@ -211,6 +218,192 @@
     }
 }
 
+.medtourinfo__answers {
+    .description {
+        padding: 32px 40px;
+        border-radius: 20px;
+        background: #2B2D42;
+
+        h4 {
+            margin: 0;
+            color: #fff;
+            font-weight: 400;
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+
+    .titlebox {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-width: 50px;
+            flex: 0 0 50px;
+        }
+
+        h4 {
+            width: 100%;
+            max-width: calc(100% - 50px);
+            flex: 0 0 calc(100% - 50px);
+            padding-left: 8px;
+            color: #B82A2A;
+            font-size: 24px;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+
+    .row {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.realization {
+    padding: 100px 0 0 0;
+
+    h2 {
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .realization__header {
+        border: 1px dashed #181818;
+        border-radius: 20px;
+        min-height: 86px;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+    }
+
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+
+        &>* {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+}
+
+.realizationbtn {
+    padding: 0;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 331px;
+    margin: 0 auto;
+    background: #D00404;
+    transition: 0.3s;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+
+
+    &:hover {
+        background: #b82a2a;
+    }
+}
+
+.realization__step-header {
+    margin-bottom: 16px;
+    min-height: 65px;
+    border: 1px dashed #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 1px;
+        background: rgba(#B82A2A, 0.4);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -16px;
+    }
+
+    h4 {
+        margin: 0;
+        color: #181818;
+        font-size: 22px;
+        font-weight: 700;
+
+        span {
+            color: #B82A2A;
+        }
+    }
+}
+
+.realization__step-description {
+    border-radius: 20px;
+    background: #2B2D42;
+    padding: 30px 32px;
+    min-height: 235px;
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 140%;
+        margin-bottom: 22px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.realization__img {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    margin-top: 33px;
+    border-radius: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        vertical-align: top;
+    }
+}
+
+.realization-row .col-lg-4:last-child {
+    .realization__step-header::after {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1399.8px) {
 
     .medtourinfo h2,
@@ -230,7 +423,6 @@
     }
 
     .medtourism .subtitle,
-    .medtourinfo h2,
     .insect4.insect4__medtour .title {
         margin-bottom: 30px;
     }
@@ -249,6 +441,65 @@
 
     .wrapper .container-r0:nth-child(2n) {
         padding-right: calc((100vw - 1140px) / 2);
+    }
+
+    .medtourism h1 {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .medtourism h3 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .medtourinfo h2 {
+        margin-bottom: 50px;
+    }
+
+    .medtourinfo__answers .titlebox img {
+        max-width: 40px;
+        flex: 0 0 40px;
+    }
+
+    .medtourinfo__answers .titlebox h4 {
+        max-width: calc(100% - 40px);
+        flex: 0 0 calc(100% - 40px);
+    }
+
+    .medtourinfo__answers .description h4,
+    .medtourinfo__answers .titlebox h4 {
+        font-size: 21px;
+    }
+
+    .realization h2 {
+        font-size: 32px;
+    }
+
+    .realization__step-description {
+        padding: 24px;
+    }
+
+    .realization__step .redbtn {
+        padding: 18px 10px;
+    }
+
+    .realizationbtn {
+        min-height: 50px;
+        border-radius: 12px;
+    }
+
+    .realization__step-description p {
+        margin-bottom: 15px;
+    }
+
+
+    .realization__step-description p {
+        font-size: 16px;
+    }
+
+    .realization {
+        padding-top: 70px;
     }
 }
 
@@ -274,6 +525,24 @@
     .wrapper .container-r0:nth-child(2n) {
         padding-right: calc((100vw - 950px) / 2);
     }
+
+    .realizationbtn {
+        font-size: 14px;
+    }
+
+    .realization__step-header h4 {
+        font-size: 18px;
+    }
+
+    .realization .realization__header {
+        margin-bottom: 20px;
+    }
+
+    .medtourinfo__answers .description h4,
+    .medtourinfo__answers .titlebox h4 {
+        font-size: 18px;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -337,6 +606,35 @@
         }
     }
 
+    .medtourism h1 br {
+        display: none;
+    }
+
+    .realization .realization__header {
+        min-height: 70px;
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+    .realization__step-header:after {
+        transform: rotate(90deg);
+        right: 50%;
+        bottom: -10px;
+        top: initial;
+    }
+
+    .realization-row .col-lg-4 {
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+
 }
 
 @media(max-width:767.8px) {
@@ -364,6 +662,24 @@
 
     .medtourism h1 {
         font-size: 32px;
+    }
+
+    .medtourism {
+        h1 {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: left;
+        }
+    }
+
+    .medtourinfo__answers .titlebox {
+        margin-bottom: 20px;
+    }
+
+    .realization-imgs {
+        display: none;
     }
 }
 
@@ -403,6 +719,7 @@
     .insect4.insect4__medtour {
         padding-top: 30px;
     }
+
     .insect4__medtour .botbtn {
         display: flex;
         justify-content: space-between;
@@ -423,7 +740,8 @@
         font-size: 13px;
     }
 
-    .choose .wrapper, .choosecontimg {
+    .choose .wrapper,
+    .choosecontimg {
         height: 250px;
     }
 
@@ -434,6 +752,67 @@
     .choose {
         padding-bottom: 0;
     }
+
+    .medtourism {
+        h1 {
+            text-align: left !important;
+            font-size: 24px;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .medtourinfo h2 {
+        margin-bottom: 32px;
+    }
+
+    .medtourinfo__answers .titlebox h4 {
+        font-size: 20px;
+    }
+
+    .medtourinfo__answers .description {
+        padding: 24px;
+
+        h4 {
+            font-size: 16px;
+        }
+    }
+
+    .medtourinfo__answers .row {
+        margin-bottom: 26px;
+    }
+
+    .realization .realization__header {
+        display: block !important;
+        min-height: initial;
+        border: none;
+        padding: 0;
+        text-align: left !important;
+        margin-bottom: 28px;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .realization__step-header {
+        min-height: 60px;
+    }
+
+    .realization__step-description {
+        min-height: initial;
+        padding: 32px 28px;
+    }
+
+
+
+
+
+
 }
 
 @media(max-width:360.8px) {
@@ -445,5 +824,9 @@
 
     .insect4.insect4__medtour {
         padding-bottom: 0;
+    }
+
+    .realizationbtn {
+        font-size: 13px;
     }
 }
